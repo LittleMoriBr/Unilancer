@@ -46,7 +46,7 @@
         </ul>
         <ul class="navbar-nav me-3">
           <li class="nav-item">
-            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="#cliente"><i class="fas fa-bars pe-4"></i>Sobre</a></b>
+            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="#"><i class="fas fa-bars pe-2"></i>Sobre</a></b>
           </li>
         </ul>
         <ul class="navbar-nav me-3">
@@ -65,71 +65,32 @@
 
         <!-- Pesquisar Menu -->
 
-        <!-- <form class="d-flex align-items-center w-100 form-search">
+      <form class="d-flex align-items-center w-100 form-search">
           <div class="input-group">
-
-            <ul class="dropdown-menu dropdown-menu-dark fa-ul">
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-search"></i></span>All</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-film"></i></span>Titles</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-tv"></i></span>TV
-                  Episodes</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-user-friends"></i></span>Celebs</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-building"></i></span>Companies</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-key"></i></span>Keywords</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"><span class="fa-li pe-2"><i class="fas fa-search-plus"></i></span>Advanced
-                  search<i class="fas fa-chevron-right ps-2"></i></a>
-              </li>
-            </ul>
-            <input type="search" class="form-control" placeholder="Pesquisar" aria-label="Search" />
+            <input type="search" class="input-css form-control" placeholder="Pesquisar" aria-label="Search" />
           </div>
           <a href="#!" class="text-white"><i class="fas fa-search ps-3"></i></a>
-        </form> -->
+        </form>
 
           <!-- IMAGEM, CONFIG, DARK MODE -->
 
-        <div class="topnav">
-          <ul class="navbar-nav ms-3">
-            <li class="nave">
-        <label class="switch">
-          <input onclick="myFunction1()" type="checkbox">
-          <span class="slider"></span>
-        </label>
-        </li>
-          </ul>
+
         </div>
 
-        
-
         <div class="topnav">
-          <ul class="navbar-nav ms-3">
-            <li class="nave1">
-              <b><a class="nav-link black d-flex align-items-center">
-                </a></b>
+          <ul class="navbar-nav">
+            <li class="nav2">
+              <a href="" class="">
+                <button class="botao-Nav">Login</button>
+              </a>
             </li>
           </ul>
         </div>
-
         <div class="topnav">
-          <ul class="navbar-nav ms-3">
+          <ul class="navbar-nav ms-0">
             <li class="nav2">
-              <a href="/buttons/61" class="py-3 px-5 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/50 focus:outline-none">
-                Configurações
+              <a href="" class="">
+                <button class="botao-Nav">Cadastrar</button>
               </a>
             </li>
           </ul>
@@ -142,34 +103,47 @@
 
   <!-- MENSAGEM DE ALERTA -->
 
-  <center>
-    <div class="col-sm-12">
-      <div class="img-fluid" id=""><img class="img-fluid" src="img/a4.png" alt="">
-        <div class="alert info">
-          <span class="closebtn">&times;</span>
-          <strong>ALERTA!</strong> O site está sem javascript no momento, volte mais tarde. :)
-        </div>
+<div class="container-fluid bg-black">
+    <div class="row">
+      <div class="col-6">
+      <div class="inicio">
+      </div>
+      </div>
+      <div class="col-6">
+      <div class="inicio">
+        <h3 class="pt-4">Teste</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Perspiciatis quibusdam quod expedita similique perferendis
+           officiis quos eligendi, numquam dolor sequi 
+           reprehenderit consequuntur impedit autem ipsa cumque
+            accusamus deleniti, beatae tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Perspiciatis quibusdam quod expedita similique perferendis
+           officiis quos eligendi, numquam dolor sequi 
+           reprehenderit consequuntur impedit autem ipsa cumque
+            accusamus deleniti, beatae tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Perspiciatis quibusdam quod expedita similique perferendis
+           officiis quos eligendi, numquam dolor sequi 
+           reprehenderit consequuntur impedit autem ipsa cumque
+            accusamus deleniti, beatae tenetur.
+        </p>
+      </div>
       </div>
     </div>
-  </center>
-
-
-  <br><br>
+  </div>
+  </div>
 
 <!-- SOBRE EMPRESA -->
 
-    <div class="card">
-
     <div class="container">
       <div class="row">
-        <div class="col-6">
+        <div class="col-4">
           <div class="Responsive">
           <div class="img-container">
-            <img src="img/vcss.png" class="w-100 v" alt="">
+            <img src="img/teste2.png" class="w-100" alt="">
           </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-8">
           <div class="textContainer">
             <h2 class="espacoTitulo">Sobre nós</h2>
             <p>
@@ -180,7 +154,6 @@
         </div>
       </div>
     </div>
-    </div>
   
 
     <!-- js (falha no AJAX) <button>Click to fade in boxes</button><br><br>
@@ -190,6 +163,17 @@
 <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 
 -->
+
+<center>
+    <div class="col-sm-12">
+        <div class="alert info">
+          <span class="closebtn">&times;</span>
+          <strong>ALERTA!</strong> O site está sem javascript no momento, volte mais tarde. :)
+        </div>
+      </div>
+    </div>
+  </center>
+
 
 
 <!-- POSTS TRABALHOS -->
@@ -274,6 +258,76 @@
           </div>
         </div>
       </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                Add rows here
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        var modelId = document.getElementById('modelId');
+      
+        modelId.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+      
+          // Use above variables to manipulate the DOM
+        });
+      </script>
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                Add rows here
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script>
+        var modelId = document.getElementById('modelId');
+      
+        modelId.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            let button = event.relatedTarget;
+            // Extract info from data-bs-* attributes
+            let recipient = button.getAttribute('data-bs-whatever');
+      
+          // Use above variables to manipulate the DOM
+        });
+      </script>
+      
 
 
       <!-- MENSAGEM DE AJUDA -->
