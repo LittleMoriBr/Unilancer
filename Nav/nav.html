@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="maxii.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid polu">
+
+            <div class="row">
+                <div class="col-12 ">
+
+                    <img class="maxii ml-5" src="img/MicrosoftTeams-image (4).png" alt="" />
+
+
+                    <span class="m-3">
+                        <button class="btn  ml-5">
+                            <img src="https://img.icons8.com/material-outlined/24/ffffff/marker.png" alt="">
+                            <span class="branco">Adicione sua localização</span>
+                        </button>
+                    </span>
+
+
+
+                    <span class="m-5">
+                        <input name="Pesquisa" id="Pesquisa" class="pesquisa bg-white rounded"
+                            placeholder="Busque por um termo de pesquisa" type="text" />
+                    </span>
+
+                    <span class="">
+                        <button class="btn">
+                            <img src="https://img.icons8.com/pastel-glyph/40/ffffff/person-male--v2.png" alt="">
+                            <span>Faça seu login </span>
+                        </button>
+                    </span>
+
+                    <span class="m-4">
+                        <button class="btn">
+                            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/purchase-order.png" alt="">
+                            <span>Meus serviços</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid cinza">
+            <div class="row">
+                <div class="col-12">
+                    <span class="m-4"> <button class="btn branco">Quem somos?</button></span>
+
+                    <span> <button class="btn branco">Como funciona?</button></span>
+
+                    <span> <button class="btn branco">Preste serviço aqui</button></span>
+
+                    <span> <button class="btn branco">Atendimento Ao Cliente</button></span>
+
+                    <span> <button class="btn branco">Serviços de Casa</button></span>
+
+                    <span> <button class="btn branco">Serviços de Tecnologia</button></span>
+
+                    <span> <button class="btn branco">Serviços de Segurança</button></span>
+
+                    <span> <button class="btn branco">Postar um Projeto</button></span>
+
+                    <span> <button class="btn branco">Serviços de Empresas</button></span>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            document.getElementById("Pesquisa").style.background = "url('https://img.icons8.com/windows/24/000000/search--v1.png') no-repeat ";
+            document.getElementById("Pesquisa").style.backgroundPosition = "10px 8px";
+
+            $("#Pesquisa").hover(
+                function () {
+                    document.getElementById("Pesquisa").style.background = "url('img/icons8-pesquisar.gif') no-repeat ";
+                    document.getElementById("Pesquisa").style.backgroundSize = "24px 24px";
+                    document.getElementById("Pesquisa").style.backgroundPosition = "10px 8px";
+                },
+                function () {
+                    document.getElementById("Pesquisa").style.background = "url('https://img.icons8.com/windows/24/000000/search--v1.png') no-repeat ";
+                    document.getElementById("Pesquisa").style.backgroundPosition = "10px 8px";
+                }
+            );
+
+            $("#Pesquisa").select(
+                function () {
+                    document.getElementById("Pesquisa").style.background = "url('img/icons8-pesquisar.gif') no-repeat ";
+                    document.getElementById("Pesquisa").style.backgroundSize = "24px 24px";
+                    document.getElementById("Pesquisa").style.backgroundPosition = "10px 8px";
+                },
+                function () {
+                    document.getElementById("Pesquisa").style.background = "url('https://img.icons8.com/windows/24/000000/search--v1.png') no-repeat ";
+                    document.getElementById("Pesquisa").style.backgroundPosition = "10px 8px";
+                }
+
+            );
+        });
+    </script>
+
+
+
+</body>
+
+</html>
