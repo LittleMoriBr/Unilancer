@@ -21,7 +21,7 @@ input.form-control { width: 500px!important; }
 
 
 
-/* Add a black background color to the top navigation */
+
   .topnav a {
 	float: left;
 	color: black;
@@ -32,11 +32,14 @@ input.form-control { width: 500px!important; }
 	font-size: 17px;
   }
   
-  /* Add a color to the active/current link */
+
 
 
 .roxotop{
-    background-color: #424242;
+    background-color: #252525;
+	backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.219);
 }
 .espacameto{
     padding: 30px;
@@ -44,6 +47,11 @@ input.form-control { width: 500px!important; }
     background-color: aquamarine;
     height: 50px;
     width: 1360px;
+}
+
+.backInicio{
+	background-image: url(img/back3.png);
+
 }
 
 .black{
@@ -93,13 +101,13 @@ input.form-control { width: 500px!important; }
 
 ::-webkit-scrollbar-thumb 
 {
-  background: linear-gradient(transparent, purple);
+  background: linear-gradient(transparent, rgb(72, 72, 72));
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover 
 {
-  background: linear-gradient(transparent, yellow);
+  background: linear-gradient(transparent, rgb(80, 80, 80));
   border-radius: 10px;
 }
 .wht{
@@ -116,8 +124,9 @@ input.form-control { width: 500px!important; }
 	margin: auto;
 	display: block;
 	border-radius: 20px;
-	
 }
+
+
 
 .roxo{
 	color: #69179e;
@@ -163,11 +172,6 @@ input.form-control { width: 500px!important; }
 
 }
 
-.inicio{
-	background-color: red;
-	height: 800px;
-	width: auto;
-}
 
 .divInicio > .container{
 
@@ -183,15 +187,42 @@ input.form-control { width: 500px!important; }
 
 }
 
-.inicio > h3, p{
+.teste{
+	color: #ff00b4;
+	font-weight: 800;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	padding-top: 100px;
+	text-transform: uppercase;
+	text-align: left;
+}
 
-	margin: auto;
+.teste1{
+	color: #ff00b4;
+	font-weight: 800;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+	padding-top: 50px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.teste2{
+	color: rgb(230, 230, 230);
+}
+
+
+.teste > p{
+	padding-top: 200px;
+	margin-left: 100px;
+	margin-right: 100px;
 }
 
 
 
+
 .botao-Nav {
-	--green: #eaff00;
+	--green: #ff00b4;
 	font-size: 15px;
 	padding: 0.7em 2.7em;
 	letter-spacing: 0.06em;
@@ -203,14 +234,18 @@ input.form-control { width: 500px!important; }
 	transition: all 0.3s;
 	line-height: 1.4em;
 	border: 2px solid var(--green);
-	background: linear-gradient(to right, #eaff007c 1%, transparent 40%,transparent 60% , #eaff0022 100%);
+	background: linear-gradient(to right, #84005cd1 1%, transparent 40%,transparent 60% , #ff00b348 100%);
 	color: white;
-	box-shadow: inset 0 0 10px #eaff007c, 0 0 9px 3px #eaff0022;
+	box-shadow: inset 0 0 10px #84005cd1, 0 0 9px 3px #ff00b348;
    }
    
    .botao-Nav:hover {
-	color: #eaff00;
-	box-shadow: inset 0 0 10px #eaff007c, 0 0 9px 3px #eaff0022;
+	color: #ff00b4;
+	box-shadow: inset 0 0 10px #84005cd1, 0 0 9px 3px #ff00b348;
+   }
+
+   .bg1{
+	background-color: rgb(13, 13, 13);
    }
    
    .botao-Nav:before {
@@ -221,7 +256,7 @@ input.form-control { width: 500px!important; }
 	height: 100%;
 	top: 0;
 	transition: transform .4s ease-in-out;
-	background: linear-gradient(to right, transparent 1%, rgba(208, 253, 27, 0.1) 40%,rgba(253, 242, 27, 0.1) 60% , transparent 100%);
+	background: linear-gradient(to right, transparent 1%, #ff00b348 40%, #ff00b348 60% , transparent 100%);
    }
    
    .botao-Nav:hover:before {
@@ -442,11 +477,11 @@ body .btn-roxo {
 	color: rgb(0, 0, 0);
 	opacity: 1;
 	transition: opacity 0.6s;
-	margin-bottom: 15px;
+	margin: 0px 0px 0px 0px;
   }
   
   .alert.success {background-color: #04AA6D;}
-  .alert.info {background-color: #eeff00;}
+  .alert.info {background-color: #ff00b4;}
   .alert.warning {background-color: #ff9800;}
   
   .closebtn {

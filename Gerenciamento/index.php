@@ -29,7 +29,7 @@
     <!-- Container wrapper -->
     <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#"><img id="" src="img/amare1.png" alt="MDB Logo" draggable="false" height="60" /></a>
+      <a class="navbar-brand" href="#"><img id="" src="img/amare12.png" alt="MDB Logo" draggable="false" height="60" /></a>
 
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,56 +103,64 @@
 
   <!-- MENSAGEM DE ALERTA -->
 
-<div class="container-fluid bg-black">
+<div class="container-fluid backInicio">
+  <div class="container p-5">
     <div class="row">
       <div class="col-6">
       <div class="inicio">
+        <img src="img/homi2.png" alt="">
       </div>
       </div>
       <div class="col-6">
-      <div class="inicio">
-        <h3 class="pt-4">Teste</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      <div class="inicio v-100">
+        <h3 class="teste">Conheça a Unilancer</h3>
+        <p class="teste2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Perspiciatis quibusdam quod expedita similique perferendis
            officiis quos eligendi, numquam dolor sequi 
            reprehenderit consequuntur impedit autem ipsa cumque
-            accusamus deleniti, beatae tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            accusamus deleniti, beatae tenetur. <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Perspiciatis quibusdam quod expedita similique perferendis
-           officiis quos eligendi, numquam dolor sequi 
-           reprehenderit consequuntur impedit autem ipsa cumque
-            accusamus deleniti, beatae tenetur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-          Perspiciatis quibusdam quod expedita similique perferendis
-           officiis quos eligendi, numquam dolor sequi 
-           reprehenderit consequuntur impedit autem ipsa cumque
-            accusamus deleniti, beatae tenetur.
         </p>
       </div>
       </div>
     </div>
   </div>
   </div>
+  </div>
+
+  <center>
+    <div class="col-sm-12">
+        <div class="alert info">
+          <span class="closebtn">&times;</span>
+          <strong>ALERTA!</strong> O site está sem javascript no momento, volte mais tarde. :)
+        </div>
+      </div>
+    </div>
+  </center>
 
 <!-- SOBRE EMPRESA -->
 
+<div class="container-fluid bg1">
     <div class="container">
       <div class="row">
-        <div class="col-4">
-          <div class="Responsive">
-          <div class="img-container">
-            <img src="img/teste2.png" class="w-100" alt="">
-          </div>
-          </div>
-        </div>
         <div class="col-8">
           <div class="textContainer">
-            <h2 class="espacoTitulo">Sobre nós</h2>
-            <p>
+            <h2 class="espacoTitulo teste1">Sobre nós</h2>
+            <p class="teste2">
               Somos uma empresa focada em trazer a melhor experiencia no mercado de freelancer,tanto para o usuário quanto para nossos colaborares, utilizamos diversas ferramentas
               para criar um ambiente fácil e intuitivo para que todos possam utilizar de nossos trabalhos.
             </p>
           </div>
         </div>
+        <div class="col-4">
+          <div class="Responsive">
+          <div class="img-container">
+            <img src="img/m2.png" class="w-100" alt="">
+          </div>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
   
 
@@ -164,15 +172,7 @@
 
 -->
 
-<center>
-    <div class="col-sm-12">
-        <div class="alert info">
-          <span class="closebtn">&times;</span>
-          <strong>ALERTA!</strong> O site está sem javascript no momento, volte mais tarde. :)
-        </div>
-      </div>
-    </div>
-  </center>
+
 
 
 
@@ -333,7 +333,7 @@
       <!-- MENSAGEM DE AJUDA -->
 
 
-      <div class="callout">
+      <!-- <div class="callout">
         <div class="callout-header">Precisa de ajuda?</div>
         <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
         <div class="callout-container">
@@ -345,7 +345,7 @@
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
               </svg>
-            </div>
+            </div> -->
           </button>
 
           <div id="snackbar">Trollei você com sucesso. Parabéns!!!</div>
