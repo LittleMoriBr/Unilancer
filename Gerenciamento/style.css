@@ -40,13 +40,13 @@ input.form-control { width: 500px!important; }
 
 ::-webkit-scrollbar-thumb 
 {
-  background: linear-gradient(transparent, purple);
+  background: linear-gradient(transparent, rgb(72, 72, 72));
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover 
 {
-  background: linear-gradient(transparent, yellow);
+  background: linear-gradient(transparent, rgb(245, 245, 245));
   border-radius: 10px;
 }
 
