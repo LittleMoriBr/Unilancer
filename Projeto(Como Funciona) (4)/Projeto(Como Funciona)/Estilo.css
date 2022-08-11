@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+.center{
+	
+	
+	text-align: center;
+}
+
+.borda{
+
+	margin: auto;
+	display: block;
+	border-radius: 20px;
+}
+
+.color{
+	
+	
+	
+	background-color: #FAF8FB;
+	
+}
+
+
+
+.roxo{
+	color: #69179e;
+	
+}
+
+.btnroxo{
+	
+	border-color: #69179e;
+	color: #69179e;
+	border-style:solid;
+}
+
+.centro2{
+
+   vertical-align: middle;
+   font-size: 30px;
+   font-weight: bold;
+   
+}
+
+.roxo{
+	color: #69179e;
+	
+}
+
+.btnroxo{
+	
+	border-color: #69179e;
+	color: #69179e;
+	border-style:solid;
+}
+
