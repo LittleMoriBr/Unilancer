@@ -27,7 +27,7 @@
     <!-- Container wrapper -->
     <div class="container">
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#"><img id="" src="img/amare12.png" alt="MDB Logo" draggable="false" height="60" /></a>
+      <a class="navbar-brand" href="#"><img id="" src="img/amare12.png" alt="MDB Logo" draggable="false" height="61" /></a>
 
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
