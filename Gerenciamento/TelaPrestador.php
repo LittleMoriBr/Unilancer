@@ -237,7 +237,7 @@
 					<div>
 
 						<label for="pic"><img class="area rounded" src="img/Mais.png" alt=""></label>
-						<input style="display: none" id="pic" type="file" name="pic" accept="image/*" class="form-control">	
+						<input style="display: none" id="pic" type="file" name="pic" accept="image/*" class="form-control">
 
 					</div>
 
@@ -253,3 +253,35 @@
 </body>
 
 </html>
+
+
+
+
+function sucessoPesquisa(datas) {
+debuga.empty().html(datas);
+$("#txtID").val($("#idPrestador").text());
+
+$("#txtPrestador").val($("#nomePrestador").text());
+$("#txtSobrenome").val($("#sobrenomePrestador").text());
+$("#base64Code").val($("#imgPrestador").text());
+$("#txtEmailPrestador").val($("#emailPrestador").text());
+$("#txtCpfCnpjPrestador").val($("#cpfjnPrestador").text());
+$("#txtNacionalidadePrestador").val($("#nacionalidadePrestador").text());
+$("#txtCidadePrestador").val($("#cidadePrestador").text());
+$("#txtUfPrestador").val($("#ufPrestador").text());
+$("#txtEnderecoPrestador").val($("#enderecoPrestador").text());
+$("#txtBairroPrestador").val($("#bairroPrestador").text());
+$("#txtCepPrestador").val($("#cepPrestador").text());
+$("#txtNumeroPrestador").val($("#numeroPrestador").text());
+$("#txtComplementoPrestador").val($("#complementoPrestador").text());
+$("#txtCelularPrestador").val($("#celularPrestador").text());
+$("#txtLoginPrestador").val($("#loginPrestador").text());
+$("#txtSenhaPrestador").val($("#senhaPrestador").text());
+$("#comment").val($("#obsPrestador").text());
+$("#txtAtuacaoPrestador").val($("#atuacaoPrestador").text());
+$("#txtDescricaoPrestador").val($("#descricaoPrestador").text());
+
+document.getElementById("preImg").value = "";
+var preview = document.getElementById("preImg");
+preview.src = $("#base64Code").val();
+}
