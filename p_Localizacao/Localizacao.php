@@ -39,12 +39,12 @@
         <!-- Left links -->
         <ul class="navbar-nav me-3">
           <li class="nav-item">
-            <b><a class="nav-link black active d-flex align-items-center" aria-current="page" href="index.php"><i class="fas fa-bars pe-2"></i>Home</a></b>
+            <b><a class="nav-link black active d-flex align-items-center" aria-current="page" href="../p_Home/index.php"><i class="fas fa-bars pe-2"></i>Home</a></b>
           </li>
         </ul>
         <ul class="navbar-nav me-3">
           <li class="nav-item">
-            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="Somos.php"><i class="fas fa-bars pe-2"></i>Sobre</a></b>
+            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="../p_Quem Somos/Somos.php"><i class="fas fa-bars pe-2"></i>Sobre</a></b>
           </li>
         </ul>
         <ul class="navbar-nav me-3">
@@ -54,7 +54,7 @@
         </ul>
         <ul class="navbar-nav me-3">
           <li class="nav-item">
-            <b><a class="nav-link black active d-flex align-items-center" aria-current="page" href="#"><i class="fas fa-bars pe-2"></i>Localização</a></b>
+            <b><a class="nav-link black active d-flex align-items-center" aria-current="page" href="Localizacao.php"><i class="fas fa-bars pe-2"></i>Localização</a></b>
           </li>
         </ul>
         </li>
