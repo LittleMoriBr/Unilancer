@@ -49,7 +49,7 @@
         </ul>
         <ul class="navbar-nav me-3">
           <li class="nav-item">
-            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="../"><i class="fas fa-bars pe-2"></i>Serviços</a></b>
+            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="../p_Servicos/index.html"><i class="fas fa-bars pe-2"></i>Serviços</a></b>
           </li>
         </ul>
         <ul class="navbar-nav me-3">

@@ -79,20 +79,14 @@
 
       <div class="topnav">
         <ul class="navbar-nav">
-          <li class="nav2">
-            <a href="" class="">
-              <button class="botao-Nav">Login</button>
-            </a>
-          </li>
+         
         </ul>
       </div>
       <div class="topnav">
         <ul class="navbar-nav ms-0">
-          <li class="nav2">
-            <a href="" class="">
-              <button class="botao-Nav">Cadastrar</button>
-            </a>
-          </li>
+          <div class="icon-nave">
+            <img src="img/amare12.png" height="50px" alt="">
+          </div>
         </ul>
       </div>
     </div>
