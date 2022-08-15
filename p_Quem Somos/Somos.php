@@ -175,52 +175,45 @@
     
 
     <div class="container-fluid bg3">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <button class="accordion">Posso achar profissionais de qualquer área?</button>
-            <div class="panel">
-              <p class="pss">Sim! Aqui na Unilancer você tem acesso a todos tipos de profissionais</p>
-            </div>
-
-            <div class="spa"></div>
-
-            <button class="accordion">2</button>
-            <div class="panel">
-              <p class="pss">Lorem ipsum...</p>
-            </div>
-
-            <div class="spa"></div>
-
-
-            <button class="accordion">3</button>
-            <div class="panel">
-              <p class="pss">Lorem ipsum...</p>
-            </div>
-
-            <div class="spa"></div>
-
-
-            <button class="accordion">4</button>
-            <div class="panel">
-              <p class="pss">Lorem ipsum...</p>
-            </div>
-
-            <div class="spa"></div>
-
-
-            <button class="accordion">5</button>
-            <div class="panel">
-              <p class="pss">Lorem ipsum...</p>
-            </div>
-
-            <div class="spa"></div>
-
-
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-12">
+          <button class="accordion">Posso achar profissionais de qualquer área?</button>
+          <div class="panel">
+            <p class="pss text-center">Sim! Aqui na Unilancer você tem acesso a todos tipos de profissionais</p>
           </div>
+
+          <div class="spa"></div>
+
+          <button class="accordion">Posso contratar empresas ao invés de trabalhadores autônomos? 
+</button>
+          <div class="panel">
+            <p class="pss">Sim, Na Unilancer você pode contratar ambos conforme sua preferência.</p>
+          </div>
+
+          <div class="spa"></div>
+
+
+          <button class="accordion">A Unilancer tem responsabilidade sobre o serviço prestado?</button>
+          <div class="panel">
+            <p class="pss">Não, a Unilancer é a apenas um mediador entre cliente e prestador de serviço, sendo assim isento de qualquer responsabilidade que envolva o serviço de terceiros..</p>
+          </div>
+
+          <div class="spa"></div>
+
+
+          <button class="accordion">Posso contratar e acompanhar diversos serviços ao mesmo tempo?</button>
+          <div class="panel">
+            <p class="pss">Sim, um serviço independe do outro podendo assim contratar e acompanhar diversos serviços ao mesmo tempo.</p>
+          </div>
+
+          <div class="spa"></div>
+
+
         </div>
       </div>
     </div>
+  </div>
 
   </div>
 
