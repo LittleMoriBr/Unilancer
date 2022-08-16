@@ -97,7 +97,7 @@
         <ul class="navbar-nav ms-0">
           <li class="nav2">
             <a href="" class="">
-            <a href="../p_Servicos/index.html"><img src="img/secu.png" height="30px" alt=""></a>
+            <a href=""><img src="img/secu.png" height="30px" alt=""></a>
             </a>
           </li>
 </ul>

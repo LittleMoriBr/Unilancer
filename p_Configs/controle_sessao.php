@@ -26,7 +26,7 @@ else if($_SESSION && isset($_SESSION['usuarioSistemaIDF']) && isset($_SESSION['u
 
 else
 {
-    header("Location:indexEmpresa.php");
+    header("Location:ConfigEmpresa.php");
 }
 
 

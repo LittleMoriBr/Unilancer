@@ -18,7 +18,7 @@
 
 <body style="background-color: #121212;" class="rodape">
 
-<?php include_once("controle_sessao.php");?>
+<?php include_once("controle_sessao1.php");?>
 
   <script href="js/bootstrap.bundle.js"></script>
   <link rel="stylesheet" href="js/bootstrap.bundle.js">
