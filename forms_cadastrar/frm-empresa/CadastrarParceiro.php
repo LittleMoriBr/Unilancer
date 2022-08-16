@@ -30,22 +30,6 @@
             $LoginParceiro = $_POST['txtLoginParceiro'];
             $SenhaParceiro = $_POST['txtSenhaParceiro'];
             $img = "";
-            
-            if($_FILES["txtImgParceiro"]["tmp_name"]==null)
-            {
-                echo "<h2>Erro ao inserir, é necessário inserir uma foto.</h2>";
-            }
-            else
-            {
-            
-                if(isset($_FILES['txtImgParceiro']))
-                {
-                    $arquivo = $_FILES['txtImgParceiro'];
-
-                }else{
-                    echo "Imagem deve ser informada";
-                    return;
-                }
 
                 $sql = $conn->prepare("insert into parceiro
                 (
@@ -138,7 +122,6 @@
 
                 }
             }
-        }
 
         else
         {

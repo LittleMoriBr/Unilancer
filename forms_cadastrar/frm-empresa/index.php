@@ -21,7 +21,7 @@
 
     <div class="container">
         
-            <form action="" method="post" class="form-control" enctype="multipart/form-data">
+            <form action="" method="post" class="form-control" id="frmCliente" enctype="multipart/form-data">
 
                     <div class="row">
 
@@ -46,6 +46,9 @@
 
                         </div>
 
+                        </div>
+
+                        <div class="row">
 
                         <div class="col-sm-6">
 
@@ -54,6 +57,66 @@
 
                             <br>
                         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-sm-4">
+                            <div>
+                                <label for="txtImgParceiro" class="form-label">Foto de perfil</label>
+                                <input type="file" class="form-control" id="txtImgParceiro" name="txtImgParceiro"
+                                    onchange="CarregarFto(this)">
+                                <img src="" id="preImg" height="200">
+                            </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="base64Code">Base 64</label>
+                        <textarea name="base64Code" id="base64Code" rows="5" class="form-control"></textarea>
+                    </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <br>
+
+                    <div class="row">
 
                         <div class="col-sm-6">
 
@@ -95,6 +158,12 @@
 
                             <br>
                         </div>
+                        </div>
+
+
+
+                        <div class="row">
+
                         
                         <div class="col-sm-6">
 
@@ -112,6 +181,11 @@
 
                             <br>
                         </div>
+                        </div>
+
+                        <div class="row">
+
+
 
                         <div class="col-sm-6">
 
@@ -122,7 +196,7 @@
                         </div>
 
 
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
 
                             <label for="txtCepParceiro" class="form-label">CEP</label><br>
                             <input type="text" id="txtCepParceiro" name="txtCepParceiro" placeholder="Informe seu CEP" class="form-control" value="<?php echo $cep_parceiro; ?>">
@@ -130,8 +204,9 @@
                             <br>
                         </div>
 
-                        <div class="col-sm-9"> </div>
+                        </div>
 
+                        <div class="row">
                         <div class="col-sm-5">
 
                             <label for="txtCidadeParceiro" class="form-label">Cidade</label><br>
@@ -180,6 +255,10 @@
                             <br>
                         </div>
 
+                        </div>
+
+                        <div class="row">
+
                         <div class="col-sm-5">
 
                             <label for="txtEnderecoParceiro" class="form-label">Endereço</label><br>
@@ -203,6 +282,9 @@
 
                             <br>
                         </div>
+                        </div>
+
+                        <div class="row">
 
                         <div class="col-sm-6">
 
@@ -220,25 +302,13 @@
                             <br>
                         </div>
 
-                        <div class="col-sm-6">
-
-                            <label for="txtCaminhoParceiro" class="form-label">Caminho</label><br>
-                            <input type="hidden" id="txtCaminhoParceiro" name="txtCaminhoParceiro" placeholder="Informe sua Senha" class="form-control" value="<?php echo $img_parceiro; ?>">
-
-                            <br>
                         </div>
 
-                        <div class="col-sm-12">
+                        <div class="row">
 
-                            <label for="txtImgParceiro" class="form-label">Imagem de perfil</label><br>
-                            <input type="file" id="txtImgParceiro" name="txtImgParceiro" placeholder="Informe sua imagem de perfil" class="form-control" >
+                        <div class="col-sm-1">
 
-                            <br>
-                        </div>
-
-
-                        <div class="col-sm-3">
-                            <label for="txtStatusParceiro" class="form-label">Status</label><br>
+                        <label for="txtStatusParceiro" class="form-label">Status</label><br>
                                 <select name="txtStatusParceiro" id="txtStatusParceiro" class="form-control">
                                     <option value="Ativo"
                                      
@@ -263,7 +333,15 @@
 
                                             >Inativo</option>
                                 </select>
+
+                            <br>
                         </div>
+
+
+                        </div>
+                        <div id="resposta"></div>
+
+                        <div class="row">
 
                         <div class="col-sm-12">
 
@@ -272,11 +350,19 @@
 
                                 <br>
                         </div>
+                        </div>
+
+                        <div id="resposta" style="display: none; text-align: center; font-family: Arial, Helvetica, sans-serif; color: white;"></div>
+
+
+                        <div class="row">
 
                         <div class="col-sm-12">
 
-                            <button name="btoCadastrarParceiro" formaction="CadastrarParceiro.php" class="btn btn-outline-success">Cadastrar</button>
+                            <button name="btoCadastrarParceiro" id="btoCadastrar" class="btn btn-outline-success">Cadastrar</button>
                             
+                        </div>
+
                         </div>
 
                     </div>
@@ -286,6 +372,43 @@
             </form>
 
         </div>
+
+        <script src="ValidacaoForm.js"></script>
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/jquery-3.6.0.js"></script>
+        
+
+        <script>
+
+function CarregarFto(imagem) 
+{
+   
+   var preview = document.getElementById("preImg");
+   var file = document.getElementById("txtImgParceiro").files[0];
+
+   var reader = new FileReader();
+   
+   reader.onloadend = function(){
+
+    console.log("teste");
+       var caminho = reader.result;
+       preview.src = caminho;
+
+       document.getElementById("base64Code").value = caminho;
+   }
+
+   if(file)
+   {
+       reader.readAsDataURL(file);
+   }
+   else
+   {
+       preview.src="";
+   }
+}
+
+</script>
 
     </body>
 </html>

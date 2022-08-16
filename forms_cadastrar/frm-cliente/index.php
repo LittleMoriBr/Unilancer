@@ -255,6 +255,33 @@
 	</div>
 
 <script src="js/bootstrap.bundle.js"></script>
+<script src="ValidacaoForm"></script>
+
+<script>
+        console.log("teste");
+
+        function CarregarImg(imagem) {
+            var preview = document.getElementById("preImg");
+            var file = document.getElementById("txtImg").files[0];
+
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                var caminho = reader.result;
+                preview.src = caminho;
+
+                $("#base64Code").val(caminho);
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+            else {
+                preview.src = "";
+            }
+        }
+
+    </script>
 
 </html>
 
