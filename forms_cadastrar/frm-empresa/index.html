@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+
 
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 </head>
@@ -13,22 +13,18 @@
 
     <script src="js/bootstrap.bundle.js"></script>
 
-    <?php include_once("conexao.php"); ?>
-    <?php include_once("PesquisarParceiro.php"); ?>
-
-
 
 
     <div class="container">
         
-            <form action="" method="post" class="form-control" id="frmCliente" enctype="multipart/form-data">
+            <form action="" method="post" class="form-control" id="frmEmpresa" enctype="multipart/form-data">
 
                     <div class="row">
 
                         <div class="col-sm-5">
 
                             <label for="txtIDParceiro" class="form-label">ID</label><br>
-                            <input type="text" id="txtIDParceiro" name="txtIDParceiro" placeholder="ID" class="form-control" value="<?php echo $id_parceiro; ?>" >
+                            <input type="text" id="txtIDParceiro" name="txtIDParceiro" placeholder="ID" class="form-control">
 
                         </div>
 
@@ -42,7 +38,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtDataParceiro" class="form-label">Data</label><br>
-                            <input type="date" id="txtDataParceiro" name="txtDataParceiro" placeholder="Informe Data" class="form-control" value="<?php echo $datacadastro_parceiro; ?>">
+                            <input type="date" id="txtDataParceiro" name="txtDataParceiro" placeholder="Informe Data" class="form-control">
 
                         </div>
 
@@ -53,7 +49,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtNomeParceiro" class="form-label">Nome</label><br>
-                            <input type="text" id="txtNomeParceiro" name="txtNomeParceiro" placeholder="Informe o Nome" class="form-control" value="<?php echo $nome_parceiro; ?>">
+                            <input type="text" id="txtNomeParceiro" name="txtNomeParceiro" placeholder="Informe o Nome" class="form-control">
 
                             <br>
                         </div>
@@ -121,30 +117,11 @@
                         <div class="col-sm-6">
 
                             <label for="txtAreaParceiro" class="form-label">Area de atuação</label><br>
-                            <select class="form-select" aria-label="Default select example" name="txtAreaParceiro">
+                            <select class="form-select" id="txtAreaParceiro" name="txtAreaParceiro" aria-label="Default select example" name="txtAreaParceiro">
 
-                            <option value="Area 1"
-                                     
-                                     <?php
+                            <option value="Area 1">Area 1</option>
 
-                                     if($area_parceiro == "Area 1")
-                                     {
-                                         echo "selected";
-                                     }
-                                     ?>
-
-                                     >Area 1</option>
-
-                             <option value="Outros" 
-
-                                     <?php
-                                     if($area_parceiro == "Outros")
-                                     {
-                                         echo "selected";
-                                     }
-                                     ?>
-
-                                     >Outros</option>
+                             <option value="Outros">Outros</option>
 
                             </select>
 
@@ -154,7 +131,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtNacionalidadeParceiro" class="form-label">Nacionalidade</label><br>
-                            <input type="text" id="txtNacionalidadeParceiro" name="txtNacionalidadeParceiro" placeholder="Informe a nacionalidade" class="form-control" value="<?php echo $nacionalidade_parceiro; ?>">
+                            <input type="text" id="txtNacionalidadeParceiro" name="txtNacionalidadeParceiro" placeholder="Informe a nacionalidade" class="form-control">
 
                             <br>
                         </div>
@@ -168,7 +145,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtCnpjParceiro" class="form-label">CNPJ</label><br>
-                            <input type="text" id="txtCnpjParceiro" name="txtCnpjParceiro" placeholder="Informe o CNPJ" class="form-control" value="<?php echo $cnpj_parceiro; ?>">
+                            <input type="text" id="txtCnpjParceiro" name="txtCnpjParceiro" placeholder="Informe o CNPJ" class="form-control">
 
                             <br>
                         </div>
@@ -177,7 +154,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtCelularParceiro" class="form-label">Numero de telefone</label><br>
-                            <input type="number" id="txtCelularParceiro" name="txtCelularParceiro" placeholder="Informe seu numero de contato" class="form-control" value="<?php echo $celular_parceiro; ?>">
+                            <input type="number" id="txtCelularParceiro" name="txtCelularParceiro" placeholder="Informe seu numero de contato" class="form-control">
 
                             <br>
                         </div>
@@ -190,7 +167,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtEmailParceiro" class="form-label">Email</label><br>
-                            <input type="email" id="txtEmailParceiro" name="txtEmailParceiro" placeholder="Informe seu Email" class="form-control" value="<?php echo $email_parceiro; ?>">
+                            <input type="email" id="txtEmailParceiro" name="txtEmailParceiro" placeholder="Informe seu Email" class="form-control">
 
                             <br>
                         </div>
@@ -199,7 +176,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtCepParceiro" class="form-label">CEP</label><br>
-                            <input type="text" id="txtCepParceiro" name="txtCepParceiro" placeholder="Informe seu CEP" class="form-control" value="<?php echo $cep_parceiro; ?>">
+                            <input type="text" id="txtCepParceiro" name="txtCepParceiro" placeholder="Informe seu CEP" class="form-control">
 
                             <br>
                         </div>
@@ -210,7 +187,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtCidadeParceiro" class="form-label">Cidade</label><br>
-                            <input type="text" id="txtCidadeParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="form-control" value="<?php echo $cidade_parceiro; ?>">
+                            <input type="text" id="txtCidadeParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="form-control">
 
                             <br>
                         </div>
@@ -220,28 +197,9 @@
                             <label for="txtUFParceiro" class="form-label">UF</label><br>
                             <select class="form-select" aria-label="Default select example" name="txtUFParceiro">
 
-                            <option value="RJ"
-                                     
-                                     <?php
+                            <option value="RJ">RJ</option>
 
-                                     if($status_parceiro == "RJ")
-                                     {
-                                         echo "selected";
-                                     }
-                                     ?>
-
-                                     >RJ</option>
-
-                             <option value="SP" 
-
-                                     <?php
-                                     if($status_parceiro == "SP")
-                                     {
-                                         echo "selected";
-                                     }
-                                     ?>
-
-                                     >SP</option>
+                             <option value="SP">SP</option>
                             </select>
 
                             <br>
@@ -250,7 +208,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtBairroParceiro" class="form-label">Bairro</label><br>
-                            <input type="text" id="txBairroParceiro" name="txtBairroParceiro" placeholder="Informe seu Bairro" class="form-control" value="<?php echo $bairro_parceiro; ?>">
+                            <input type="text" id="txBairroParceiro" name="txtBairroParceiro" placeholder="Informe seu Bairro" class="form-control">
 
                             <br>
                         </div>
@@ -262,7 +220,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtEnderecoParceiro" class="form-label">Endereço</label><br>
-                            <input type="text" id="txtEnderecoParceiro" name="txtEnderecoParceiro" placeholder="Informe seu Endereço" class="form-control" value="<?php echo $endereco_parceiro; ?>">
+                            <input type="text" id="txtEnderecoParceiro" name="txtEnderecoParceiro" placeholder="Informe seu Endereço" class="form-control">
 
                             <br>
                         </div>
@@ -270,7 +228,7 @@
                         <div class="col-sm-2">
 
                             <label for="txtNumeroParceiro" class="form-label">Numero</label><br>
-                            <input type="text" id="txtNumeroParceiro" name="txtNumeroParceiro" placeholder="Nº de endereço" class="form-control" value="<?php echo $numero_parceiro; ?>">
+                            <input type="text" id="txtNumeroParceiro" name="txtNumeroParceiro" placeholder="Nº de endereço" class="form-control">
 
                             <br>
                         </div>
@@ -278,7 +236,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtComplementoParceiro" class="form-label">Complemento</label><br>
-                            <input type="text" id="txtComplementoParceiro" name="txtComplementoParceiro" placeholder="Informe seu Complemento" class="form-control" value="<?php echo $complemento_parceiro; ?>">
+                            <input type="text" id="txtComplementoParceiro" name="txtComplementoParceiro" placeholder="Informe seu Complemento" class="form-control">
 
                             <br>
                         </div>
@@ -289,7 +247,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtLoginParceiro" class="form-label">Login</label><br>
-                            <input type="text" id="txtLoginParceiro" name="txtLoginParceiro" placeholder="Informe seu Login" class="form-control" value="<?php echo $login_parceiro; ?>">
+                            <input type="text" id="txtLoginParceiro" name="txtLoginParceiro" placeholder="Informe seu Login" class="form-control">
 
                             <br>
                         </div>
@@ -297,7 +255,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtSenhaParceiro" class="form-label">Senha</label><br>
-                            <input type="password" id="txtSenhaParceiro" name="txtSenhaParceiro" placeholder="Informe sua Senha" class="form-control" value="<?php echo $senha_parceiro; ?>">
+                            <input type="password" id="txtSenhaParceiro" name="txtSenhaParceiro" placeholder="Informe sua Senha" class="form-control">
 
                             <br>
                         </div>
@@ -339,20 +297,20 @@
 
 
                         </div>
-                        <div id="resposta"></div>
+
 
                         <div class="row">
 
                         <div class="col-sm-12">
 
                             <label for="txtObsParceiro" class="form-label">Observação</label><br>
-                            <textarea name="txtObsParceiro" id="txtObsParceiro" cols="30" rows="5" class="form-control"><?php echo $obs_parceiro; ?></textarea>
+                            <textarea name="txtObsParceiro" id="txtObsParceiro" cols="30" rows="5" class="form-control"></textarea>
 
                                 <br>
                         </div>
                         </div>
 
-                        <div id="resposta" style="display: none; text-align: center; font-family: Arial, Helvetica, sans-serif; color: white;"></div>
+                        <div id="Resposta" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; color: white;"></div>
 
 
                         <div class="row">
@@ -373,10 +331,11 @@
 
         </div>
 
-        <script src="ValidacaoForm.js"></script>
+       
 
-        <script src="js/bootstrap.bundle.js"></script>
         <script src="js/jquery-3.6.0.js"></script>
+        <script src="validacaoEmpresa.js"></script>
+
         
 
         <script>

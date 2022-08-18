@@ -1,35 +1,20 @@
-<!doctype html>
-<html>
 
-
-    <body>
         
         <?php
+
         include_once("conexao.php");
         
         if($_POST)
         {
 
-            $IdParceiro = $_POST['txtIDParceiro'];
-            $NomeParceiro = $_POST['txtNomeParceiro'];
-            $CnpjParceiro = $_POST['txtCnpjParceiro'];
-            $AreaParceiro = $_POST['txtAreaParceiro'];
-            $EmailParceiro = $_POST['txtEmailParceiro'];
-            $NacionalidadeParceiro = $_POST['txtNacionalidadeParceiro'];
-            $CelularParceiro = $_POST['txtCelularParceiro'];
-            $DataParceiro = $_POST['txtDataParceiro'];
-            $StatusParceiro = $_POST['txtStatusParceiro'];
-            $ObsParceiro = $_POST['txtObsParceiro'];
-            $CepParceiro = $_POST['txtCepParceiro'];
-            $EnderecoParceiro = $_POST['txtEnderecoParceiro'];
-            $NumeroParceiro = $_POST['txtNumeroParceiro'];
-            $ComplementoParceiro = $_POST['txtComplementoParceiro'];
-            $CidadeParceiro = $_POST['txtCidadeParceiro'];
-            $UFParceiro = $_POST['txtUFParceiro'];
-            $BairroParceiro = $_POST['txtBairroParceiro'];
-            $LoginParceiro = $_POST['txtLoginParceiro'];
-            $SenhaParceiro = $_POST['txtSenhaParceiro'];
-            $img = "";
+            $data = json_decode(file_get_contents('php://input'), true);
+
+
+            extract($data);
+        
+        
+        
+            $id1 = 1;
 
                 $sql = $conn->prepare("insert into parceiro
                 (
@@ -103,7 +88,7 @@
                 if($sql->rowCount() == 1)
                 {
                     echo "<p>Dados cadastrados com sucesso</p>";
-                    echo "<p>ID Gerado - ".$conn->lastInsertId()."</p>";
+                    echo "<p id='joaquim'>ID Gerado - ".$conn->lastInsertId()."</p>";
 
                     //estrutura de envio da imagem
 
@@ -129,5 +114,4 @@
         }
         ?>
         <a href="parceiro.php?" class="btn btn-dark">voltar</a>
-    </body>
-</html>
+    
