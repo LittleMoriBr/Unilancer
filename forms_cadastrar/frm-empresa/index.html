@@ -55,23 +55,6 @@
                         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         <div class="col-sm-4">
                             <div>
                                 <label for="txtImgParceiro" class="form-label">Foto de perfil</label>
@@ -86,31 +69,7 @@
                     </div>
                     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <br>
+          <br>
 
                     <div class="row">
 
@@ -195,11 +154,11 @@
                         <div class="col-sm-2">
 
                             <label for="txtUFParceiro" class="form-label">UF</label><br>
-                            <select class="form-select" aria-label="Default select example" name="txtUFParceiro">
+                            <select id="txtUFParceiro" class="form-select" aria-label="Default select example" name="txtUFParceiro">
 
-                            <option value="RJ">RJ</option>
+                            <option id="txtRJ" value="RJ">RJ</option>
 
-                             <option value="SP">SP</option>
+                            <option id="txtSP" value="SP">SP</option>
                             </select>
 
                             <br>
@@ -208,7 +167,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtBairroParceiro" class="form-label">Bairro</label><br>
-                            <input type="text" id="txBairroParceiro" name="txtBairroParceiro" placeholder="Informe seu Bairro" class="form-control">
+                            <input type="text" id="txtBairroParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="form-control">
 
                             <br>
                         </div>
@@ -268,28 +227,9 @@
 
                         <label for="txtStatusParceiro" class="form-label">Status</label><br>
                                 <select name="txtStatusParceiro" id="txtStatusParceiro" class="form-control">
-                                    <option value="Ativo"
-                                     
-                                            <?php
+                                    <option value="Ativo">Ativo</option>
 
-                                            if($status_parceiro == "Ativo")
-                                            {
-                                                echo "selected";
-                                            }
-                                            ?>
-
-                                            >Ativo</option>
-
-                                    <option value="Inativo" 
-
-                                            <?php
-                                            if($status_parceiro == "Inativo")
-                                            {
-                                                echo "selected";
-                                            }
-                                            ?>
-
-                                            >Inativo</option>
+                                    <option value="Inativo">Inativo</option>
                                 </select>
 
                             <br>
@@ -310,7 +250,7 @@
                         </div>
                         </div>
 
-                        <div id="Resposta" style=" text-align: center; font-family: Arial, Helvetica, sans-serif; color: white;"></div>
+                        <div id="Lucas"></div>
 
 
                         <div class="row">
@@ -334,7 +274,8 @@
        
 
         <script src="js/jquery-3.6.0.js"></script>
-        <script src="validacaoEmpresa.js"></script>
+    <!--<script src="validacaoEmpresa.js"></script> -->
+    <script src="pagina.JS"></script>
 
         
 

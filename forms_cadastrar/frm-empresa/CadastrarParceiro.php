@@ -4,6 +4,8 @@
 
         include_once("conexao.php");
         
+
+
         if($_POST)
         {
 
@@ -62,24 +64,24 @@
 
                 $sql->execute(array(
 
-                    ':nome_parceiro'=>$NomeParceiro,
-                    ':cnpj_parceiro'=>$CnpjParceiro,
-                    ':area_parceiro'=>$AreaParceiro,
-                    ':email_parceiro'=>$EmailParceiro,
-                    ':nacionalidade_parceiro'=>$NacionalidadeParceiro,
-                    ':celular_parceiro'=>$CelularParceiro,
-                    ':status_parceiro'=>$StatusParceiro,
-                    ':obs_parceiro'=>$ObsParceiro,
-                    ':cep_parceiro'=>$CepParceiro,
-                    ':endereco_parceiro'=>$EnderecoParceiro,
-                    ':numero_parceiro'=>$NumeroParceiro,
-                    ':complemento_parceiro'=>$ComplementoParceiro,
-                    ':cidade_parceiro'=>$CidadeParceiro,
-                    ':uf_parceiro'=>$UFParceiro,
-                    ':bairro_parceiro'=>$BairroParceiro,  
-                    ':login_parceiro'=>$LoginParceiro,
-                    ':senha_parceiro'=>$SenhaParceiro,
-                    ':img_parceiro'=>$arquivo["name"]
+                    ':nome_parceiro'=>$nome_parceiro,
+                    ':cnpj_parceiro'=>$cnpj_parceiro,
+                    ':area_parceiro'=>$area_parceiro,
+                    ':email_parceiro'=>$area_parceiro,
+                    ':nacionalidade_parceiro'=>$nacionalidade_parceiro,
+                    ':celular_parceiro'=>$celular_parceiro,
+                    ':status_parceiro'=>$status_parceiro,
+                    ':obs_parceiro'=>$obs_parceiro,
+                    ':cep_parceiro'=>$cep_parceiro,
+                    ':endereco_parceiro'=>$endereco_parceiro,
+                    ':numero_parceiro'=>$numero_parceiro,
+                    ':complemento_parceiro'=>$complemento_parceiro,
+                    ':cidade_parceiro'=>$cidade_parceiro,
+                    ':uf_parceiro'=>$uf_parceiro,
+                    ':bairro_parceiro'=>$bairro_parceiro,  
+                    ':login_parceiro'=>$login_parceiro,
+                    ':senha_parceiro'=>$senha_parceiro,
+                    ':img_parceiro'=>$img_parceiro
 
                 ));
 
@@ -90,20 +92,6 @@
                     echo "<p>Dados cadastrados com sucesso</p>";
                     echo "<p id='joaquim'>ID Gerado - ".$conn->lastInsertId()."</p>";
 
-                    //estrutura de envio da imagem
-
-                    $pasta_dir = 'img/'.$conn->lastInsertId().'/';
-
-                    if(!file_exists($pasta_dir))
-                    {
-                        mkdir($pasta_dir);
-                    }
-
-                    $img = $pasta_dir . $arquivo["name"];
-
-                    move_uploaded_file($arquivo["tmp_name"],$img);
-
-                    //fim da estrutura
 
                 }
             }
