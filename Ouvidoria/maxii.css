@@ -1,0 +1,71 @@
+.maxii {
+	max-height: 70px;
+}
+
+.polu {
+	background: rgba(74, 69, 69, 0.92);
+
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(6.5px);
+	border: 1px solid rgba(74, 69, 69, 0.3);
+
+	padding: 0px !important;
+
+	position: fixed;
+	top: 0px;
+}
+
+.fixado {
+	position: fixed;
+	top: 56px;
+}
+
+input .pesquisa {
+	background-position: 10px 8px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	width: 400px;
+	margin-left: 120px;
+
+	background-position: 10px 8px;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	width: 750px;
+	height: 40px;
+	background-color: white;
+	color: black;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+}
+
+.branco {
+	color: white;
+}
+
+.cinza {
+	background-color: #424242;
+}
+
+button {
+	color: white;
+}
+
+span {
+	color: white;
+}
+
+.btnu {
+	background: none;
+	color: inherit;
+	border: none;
+	font: inherit;
+	outline: inherit;
+}
+
+.btnu:hover {
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+}

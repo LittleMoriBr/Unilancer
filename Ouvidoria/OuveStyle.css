@@ -1,0 +1,187 @@
+.pradrao {
+	border-color: #ff00b4 !important;
+	border: solid thin #ff00b4 !important;
+	background-color: #373737;
+	color: #ffffff;
+}
+
+.pretum {
+	background-color: #111111;
+	border: none;
+}
+
+.maisbrancoquebranco {
+	color: white;
+}
+
+input.form-control {
+	width: 500px !important;
+}
+
+select option {
+	color: #8e8e8e !important;
+}
+
+.maxiunsd {
+	width: 100%;
+}
+
+input[type="text"]:focus {
+	border-color: #ff00b4 !important;
+}
+
+input:focus {
+	outline: #ff00b4 !important;
+	border: solid thin #ff00b4 !important;
+}
+
+input[type="text"],
+textarea {
+	color: white !important;
+	background-color: #373737;
+}
+
+@media (max-width: 992px) {
+	.prararara {
+		padding-top: 35px;
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 770px) {
+	.prararara {
+		display: none;
+	}
+
+	.quitotim {
+		display: none;
+	}
+
+	.saaaaapra {
+		width: auto;
+	}
+}
+
+input[type="text"],
+textarea:focus {
+	color: white !important;
+	background-color: #373737 !important;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.switch {
+	--button-width: 3.5em;
+	--button-height: 2em;
+	--toggle-diameter: 1.5em;
+	--button-toggle-offset: calc(
+		(var(--button-height) - var(--toggle-diameter)) / 2
+	);
+	--toggle-shadow-offset: 10px;
+	--toggle-wider: 3em;
+	--color-grey: #ffffff;
+	--color-green: #ffee00;
+}
+
+.slider {
+	display: inline-block;
+	width: var(--button-width);
+	height: var(--button-height);
+	background-color: var(--color-grey);
+	border-radius: calc(var(--button-height) / 2);
+	position: relative;
+	transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+	content: "";
+	display: inline-block;
+	width: var(--toggle-diameter);
+	height: var(--toggle-diameter);
+	background-color: #69179e;
+	border-radius: calc(var(--toggle-diameter) / 2);
+	position: absolute;
+	top: var(--button-toggle-offset);
+	transform: translateX(var(--button-toggle-offset));
+	box-shadow: var(--toggle-shadow-offset) 0
+		calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+	transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+	background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+	transform: translateX(
+		calc(
+			var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)
+		)
+	);
+	box-shadow: calc(var(--toggle-shadow-offset) * -1) 0
+		calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+	display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+	width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+	transform: translateX(
+		calc(
+			var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)
+		)
+	);
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	background-color: #373737;
+	color: white;
+	text-align: center;
+	font-weight: 500;
+	cursor: pointer;
+	padding: 15px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active2,
+.accordion:hover {
+	background-color: #ff00b4;
+	color: #000000;
+	border-radius: 20px 0px 0px 0px;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	margin-bottom: 5px;
+	background-color: #303030;
+	display: none;
+	overflow: hidden;
+}
+
+.pss {
+	color: #ff00b4;
+	font-weight: 600;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.spa {
+	padding: 2px;
+}
