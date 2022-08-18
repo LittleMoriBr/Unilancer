@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+
+<body>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-7 ">
+                <h1 style="text-align: center ;">Cadastro de Usuario</h1>
+                <hr>
+                <form action="" method="post" class="form-control p-4  " id="formularioPrestador">
+                    <div class="row ">
+                        <!-- ID  -->
+                        <div class="col-sm-2">
+                            <div>
+                                <label for="txtID">ID Prestador</label><br>
+                                <input type="text" name="txtID" id="txtID" placeholder="ID" class="form-control">
+                            </div>
+                        </div>
+                        <!-- ID PARCEIRO -->
+                        <div class="col-sm-2">
+                            <div>
+                                <label for="txtIDParceiro">ID Parceiro</label><br>
+                                <input type="text" name="txtIDParceiro" id="txtIDParceiro" placeholder="ID"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <!--Botão Pesquisar-->
+                        <div class="col-sm-4">
+                            <br>
+                            <div>
+                                <button id="btoPesquisar" class="btn btn-primary">Pesquisar</button>
+                            </div>
+                        </div>
+
+                        <!--Data Cadastro-->
+                        <div class="col-sm-4">
+
+                            <div>
+                                <label for="txtDataCadastro">Data Cadastro</label>
+                                <input type="date" name="txt" id="txtDataCadastro" placeholder="dd/mm/aaaa"
+                                    class="form-control">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <br>
+
+                    <!-- NOME -->
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div>
+                                <label for="txtPrestador">Nome</label>
+                                <input type="text" name="txtPrestador" id="txtPrestador" placeholder="Nome"
+                                    class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- SOBRENOME -->
+                        <div class="col-sm-4">
+                            <div>
+                                <label for="txtSobrenome">Sobrenome</label>
+                                <input type="text" name="txtSobrenome" id="txtSobrenome" placeholder="Sobrenome"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <!-- FOTO DE PERFIL -->
+                        <div class="col-sm-4">
+                            <div>
+                                <label for="txtImg">Foto de perfil</label>
+                                <input type="file" class="form-control" id="txtImg" name="txtImg"
+                                    onchange="CarregarImg(this)">
+                                <img src="" id="preImg" height="200">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-2" style="display: none;">
+                        <label for="base64Code">Base 64</label>
+                        <textarea name="base64Code" id="base64Code" rows="5" class="form-control"></textarea>
+                    </div>
+
+                    <!-- EMAIL/GMAIL -->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="txtEmailPrestador">Email/Gmail</label>
+                                <input type="text" name="txtEmailPrestador" id="txtEmailPrestador"
+                                    placeholder="unilancer@gmail.com" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- CNPJ/CPF -->
+                        <div class="col-sm-6">
+                            <div>
+                                <label for="txtCpfCnpjPrestador">CPF/CNPJ</label>
+                                <input type="text" name="txtCpfCnpjPrestador" id="txtCpfCnpjPrestador"
+                                    placeholder="123.123.123-12" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- NACIONALIDADE -->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div>
+                                    <label for="txtNacionalidadePrestador">Nacionalidade</label>
+                                    <input type="text" name="txtNacionalidadePrestador" id="txtNacionalidadePrestador"
+                                        placeholder="Nascionalidade" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- CIDADE -->
+                            <div class="col-sm-4">
+                                <div>
+                                    <label for="txtCidadePrestador">Cidade</label>
+                                    <input type="text" name="txtCidadePrestador" id="txtCidadePrestador"
+                                        placeholder="Cidade" class="form-control">
+                                </div>
+                            </div>
+                            <!-- UF-->
+                            <div class="col-sm-2">
+                                <div>
+                                    <label for="txtUfPrestador">UF</label>
+                                    <input type="text" name="txtUfPrestador" id="txtUfPrestador" placeholder="UF"
+                                        class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ENDEREÇO -->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div>
+                                    <label for="txtEnderecoPrestador">Endereço</label>
+                                    <input type="text" name="txtEnderecoPrestador" id="txtEnderecoPrestador"
+                                        placeholder="Endereço" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- BAIRRO -->
+                            <div class="col-sm-3">
+                                <div>
+                                    <label for="txtBairroPrestador">Bairro</label>
+                                    <input type="text" name="txtBairroPrestador" id="txtBairroPrestador"
+                                        placeholder="Bairro" class="form-control">
+                                </div>
+                            </div>
+                            <!-- CEP -->
+                            <div class="col-sm-3">
+                                <div>
+                                    <label for="txtCepPrestador">Cep</label>
+                                    <input type="text" name="txtCepPrestador" id="txtCepPrestador"
+                                        placeholder="Informe o Cep" class="form-control">
+                                </div>
+                            </div>
+                            <!-- Nº -->
+                            <div class="col-sm-2">
+                                <div>
+                                    <label for="txtNumeroPrestador">Nº</label>
+                                    <input type="text" name="txtNumeroPrestador" id="txtNumeroPrestador"
+                                        placeholder="Número" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- COMPLEMENTO-->
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div>
+                                    <input type="text" name="txtComplementoPrestador" id="txtComplementoPrestador"
+                                        placeholder="Complemento" class="form-control">
+                                </div>
+                            </div>
+                            <!-- CELULAR -->
+                            <div class="col-sm-4">
+                                <div>
+                                    <label for="txtCelularPrestador">Celular</label>
+                                    <input type="text" name="txtCelularPrestador" id="txtCelularPrestador"
+                                        placeholder="Informe seu Número " class="form-control">
+                                </div>
+                            </div>
+                            <!-- Status -->
+                            <div class="col-sm-4">
+                                <label for="txtStatus">Status</label>
+                                <select name="txtStatus" id="txtStatus" class="form-control">
+                                    <option value="ATIVO">Ativo</option>
+                                    <option value="INATIVO">Inativo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- USUARIO -->
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div>
+                                    <label for="txtLoginPrestador">Login</label>
+                                    <input type="text" name="txtLoginPrestador" id="txtLoginPrestador"
+                                        placeholder="Usuario" class="form-control">
+
+                                </div>
+                            </div>
+
+                            <!-- SENHA -->
+                            <div class="col-sm-5">
+                                <div>
+                                    <label for="txtSenhaPrestador">Senha</label>
+                                    <input type="password" name="txtSenhaPrestador" id="txtSenhaPrestador"
+                                        placeholder="Senha" class="form-control">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- OBS -->
+                        <div>
+                            <label for="txtObs">Obs</label>
+                            <textarea class="form-control" rows="5" id="comment" name="txtObs"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="txtAtuacaoPrestador">Área de Atuação</label>
+                            <input type="text" name="txtAtuacaoPrestador" id="txtAtuacaoPrestador" class="form-control">
+                        </div>
+
+                        <div>
+                            <label for="txtDescricaoPrestador">Descrição</label>
+                            <textarea class="form-control" rows="5" id="txtDescricaoPrestador"
+                                name="txtDescricaoPrestador"></textarea>
+                        </div>
+
+
+
+                        <div style="display: none;" id="Resposta"></div>
+
+                        <div><br>
+
+                            <button id="btoCadastrar" class="btn btn-primary">Cadastrar</button>
+
+
+                        </div>
+
+                        <div>
+                            <label style="display:none ;" for="txtDataTermino">Data Cadastro</label>
+                            <input type="date" style="display:none ;" name="txt" id="txtDataTermino">
+                        </div>
+                        <div>
+                            <label style="display:none ;" for="txtRecomendacoes">Recomendações</label>
+                            <input type="text" style="display:none ;" name="txtRecomendacoes" id="txtRecomendacoes">
+                        </div>
+                        <div>
+                            <label style="display:none ;" for="txtAvaliacoes">Recomendações</label>
+                            <input type="text" style="display:none ;" name="txtAvaliacoes" id="txtAvaliacoes">
+                        </div>
+
+                        <div>
+                            <label style="display:none ;" for="txtRecomendacao">Recomendações</label>
+                            <input type="text" style="display:none ;" name="txtRecomendacao" id="txtRecomendacao">
+                        </div>
+                </form>
+                <div class="col-sm-2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="Validacao.js"></script>
+
+    <script>
+        console.log("teste");
+
+        function CarregarImg(imagem) {
+            var preview = document.getElementById("preImg");
+            var file = document.getElementById("txtImg").files[0];
+
+            var reader = new FileReader();
+
+            reader.onloadend = function () {
+                var caminho = reader.result;
+                preview.src = caminho;
+
+                $("#base64Code").val(caminho);
+            }
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+            else {
+                preview.src = "";
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
