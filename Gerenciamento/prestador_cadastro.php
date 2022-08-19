@@ -13,10 +13,6 @@ if ($_POST) {
 
 
 
-	$id1 = 1;
-
-
-
 	$sql = $conn->prepare("insert into prestador
 			(
 				
@@ -98,10 +94,3 @@ if ($_POST) {
 
 	header("Location:frm_prestador.html");
 }
-
-?>
-
-
-</body>
-
-</html>

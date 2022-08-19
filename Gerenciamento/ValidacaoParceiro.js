@@ -5,31 +5,81 @@ $(function () {
         return false;
     });
 
-    $("#btoCadastrarParceiro").click(function () {
+    $("#btoPesquisar").click(function () {
         console.log("Cliquei no botão Pesquisar");
         const xhr = new XMLHttpRequest();
 
         var formData = {
-            IdParceiro: $("#txtIDParceiro").val(),
-            NomeParceiro: $("#txtNomeParceiro").val(),
-            CnpjParceiro: $("#txtCnpjParceiro").val(),
-            AreaParceiro: $("#txtAreaParceiro").val(),
-            EmailParceiro: $("#txtEmailParceiro").val(),
-            NacionalidadeParceiro: $("#txtNacionalidadeParceiro").val(),
-            CelularParceiro: $("#txtCelularParceiro").val(),
-            DataParceiro: $("#txtDataParceiro").val(),
-            StatusParceiro: $("#txtStatusParceiro").val(),
-            ObsParceiro: $("#txtObsParceiro").val(),
-            CepParceiro: $("#txtCepParceiro").val(),
-            EnderecoParceiro: $("#txtEnderecoParceiro").val(),
-            NumeroParceiro: $("#txtCelularParceiro").val(),
-            ComplementoParceiro: $("#txtComplementoParceiro").val(),
-            CidadeParceiro: $("#txtCidadeParceiro").val(),
-            UFParceiro: $("#txtUFParceiro").val(),
-            BairroParceiro: $("#txtBairroParceiro").val(),
-            LoginParceiro: $("#txtLoginParceiro").val(),
-            SenhaParceiro: $("#txtSenhaParceiro").val(),
-            img: $("#base64Code").val(),
+            idParceiro: $("#txtID").val(),
+
+
+        };
+
+
+        formData = JSON.stringify(formData);
+        xhr.onload = function () {
+            const Resposta = document.getElementById("Resposta");
+            Resposta.innerHTML = this.responseText;
+
+            $("#txtDataCadastro").val($("#datacadastroParceiro").text());
+            $("#txtNome").val($("#nomeParceiro").text());
+            $("#txtCnpj").val($("#cnpjParceiro").text());
+            $("#txtArea").val($("#areaParceiro").text());
+            $("#txtEmail").val($("#emailParceiro").text());
+            $("#txtNacionalidade").val($("#nacionalidadeParceiro").text());
+            $("#txtCelular").val($("#celularParceiro").text());
+            $("#txtData").val($("#datacadastroParceiro").text());
+            $("#txtExcluirData").val($("#excluircadastroParceiro").text());
+            $("#txtStatus").val($("#statusParceiro").text());
+            $("#txtObs").val($("#obsParceiro").text());
+            $("#txtCep").val($("#cepParceiro").text());
+            $("#txtEndereco").val($("#enderecoParceiro").text());
+            $("#txtNumero").val($("#numeroParceiro").text());
+            $("#txtComplemento").val($("#complementoParceiro").text());
+            $("#txtCidade").val($("#cidadeParceiro").text());
+            $("#txtUF").val($("#ufParceiro").text());
+            $("#txtBairro").val($("#bairroParceiro").text());
+            $("#txtLogin").val($("#loginParceiro").text());
+            $("#txtSenha").val($("#senhaParceiro").text());
+            $("#base64Code").val($("#imgParceiro").text());
+
+
+
+        };
+
+        xhr.open("POST", "parceiro_pesquisar.php", formData);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send(formData);
+
+        xhr.onreadystatechange = function () {
+            console.log(formData);
+        };
+    });
+
+    $("#btoCadastrar").click(function () {
+        console.log("Cliquei no botão Pesquisar");
+        const xhr = new XMLHttpRequest();
+
+        var formData = {
+            id_parceiro: $("#txtID").val(),
+            nome_parceiro: $("#txtNome").val(),
+            cnpj_parceiro: $("#txtCnpj").val(),
+            area_parceiro: $("#txtArea").val(),
+            email_parceiro: $("#txtEmail").val(),
+            nacionalidade_parceiro: $("#txtNacionalidade").val(),
+            celular_parceiro: $("#txtCelular").val(),
+            status_parceiro: $("#txtStatus").val(),
+            obs_parceiro: $("#comment").val(),
+            cep_parceiro: $("#txtCep").val(),
+            endereco_parceiro: $("#txtEndereco").val(),
+            numero_parceiro: $("#txtNumero").val(),
+            complemento_parceiro: $("#txtComplemento").val(),
+            cidade_parceiro: $("#txtCidade").val(),
+            uf_parceiro: $("#txtUF").val(),
+            bairro_parceiro: $("#txtBairro").val(),
+            login_parceiro: $("#txtLogin").val(),
+            senha_parceiro: $("#txtSenha").val(),
+            img_parceiro: $("#base64Code").val(),
         };
 
 
@@ -39,7 +89,7 @@ $(function () {
             Resposta.innerHTML = this.responseText;
         };
 
-        xhr.open("POST", "CadastrarParceiro.php", formData);
+        xhr.open("POST", "parceiro_cadastro.php", formData);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send(formData);
 

@@ -7,64 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="input.css">
 
 </head>
+
 
 <body>
     <div class="container ">
         <div class="row ">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-7 ">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 ">
                 <h1 style="text-align: center ;">Cadastro de Parceiro</h1>
                 <hr>
-                <form action="" method="post" class="form-control p-4  " id="FrmAdmParceiro">
+                <form action="" method="post" class="form-control cor p-4" id="FrmAdmParceiro">
                     <div class="row ">
                         <!-- ID  -->
-                        <div class="col-sm-2">
-                            <div>
-                                <label for="txtIDParceiro">ID Prestador</label><br>
-                                <input type="text" name="txtID" id="txtIDParceiro" placeholder="ID"
-                                    class="form-control">
+                        <div class="col-sm-4  p-2  ">
+                            <div class=" inputBox">
+                                <input type="text" name="txtID" id="txtID">
+                                <label for="txtID">ID</label>
                             </div>
                         </div>
-
                         <!--Botão Pesquisar-->
-                        <div class="col-sm-4">
-                            <br>
+                        <div class="col-sm-3  p-2">
                             <div>
-                                <button id="btoPesquisarParceiro" class="btn btn-primary">Pesquisar</button>
+                                <button id="btoPesquisar" class="btn btn-roxo">Pesquisar</button>
                             </div>
                         </div>
 
                         <!--Data Cadastro-->
-                        <div class="col-sm-4">
+                        <div class="col-sm-4  p-2">
 
                             <div>
-                                <label for="txtDataParceiro">Data Cadastro</label>
-                                <input type="date" name="txt" id="txtDataParceiro" placeholder="dd/mm/aaaa"
-                                    class="form-control">
+                                <input class="inputBorder" type="date" name="txt" id="txtData">
+
                             </div>
                         </div>
-
-
 
                     </div>
 
                     <!-- NOME -->
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtNomeParceiro">Nome</label>
-                                <input type="text" name="txtNomeParceiro" id="txtNomeParceiro" placeholder="Nome"
-                                    class="form-control">
+                        <div class="col-sm-4  p-2  ">
+                            <div class=" inputBox">
+                                <input type="text" name="txtNome" id="txtNome" required="required">
+                                <label for="txtNome">Nome</label>
                             </div>
                         </div>
 
                         <!-- FOTO DE PERFIL -->
-                        <div class="col-sm-4">
+                        <div class="col-sm-4  p-2">
                             <div>
-                                <label for="txtImg">Foto de perfil</label>
-                                <input type="file" class="form-control" id="txtImg" name="txtImg"
+
+                                <input type="file" class="inputBorder" id="txtImg" name="txtImg"
                                     onchange="CarregarImg(this)">
                                 <img src="" id="preImg" height="200">
                             </div>
@@ -77,12 +72,11 @@
                         </div>
                     </div>
 
-                    <!-- Área de Interese -->
+                    <!-- Área de Atuação -->
                     <div class="row">
-                        <div class="col-sm-5">
-                            <label for="txtAreaParceiro">Area de atuação</label>
-                            <select class="form-select inputBorder" aria-label="Default select example"
-                                name="txtAreaParceiro" required="required">
+                        <div class="col-sm-4 p-2 ">
+
+                            <select class="form-select inputBorder" id="txtArea" required="required">
 
                                 <option value="Area 1">Area 1</option>
 
@@ -93,39 +87,41 @@
                         </div>
 
                         <!-- CNPJ -->
-                        <div class="col-sm-4 inputBox">
-                            <label for="txtCnpjParceiro">CNPJ</label><br>
-                            <input type="text" id="txtCnpjParceiro" name="txtCnpjParceiro" required="required"
-                                class="form-control">
+                        <div class="col-sm-4  p-2 inputBox">
+                            <div class="inputBox">
+                                <input type="text" id="txtCnpj" id="txtCnpj" required="required">
+                                <label for="txtCnpj">CNPJ</label>
+                            </div>
                         </div>
                     </div>
                     <br>
 
                     <!-- Nacionalidade -->
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtNacionalidadeParceiro">Nacionalidade</label>
-                                <input type="text" name="txtNacionalidadeParceiro" id="txtNacionalidadeParceiro"
-                                    class="form-control">
+                        <div class="col-sm-4 inputBox  p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtNacionalidade" id="txtNacionalidade" required="required">
+                                <label for="txtNacionalidade">Nacionalidade</label>
                             </div>
                         </div>
 
                         <!-- CIDADE -->
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtCidadeParceiro">Cidade</label>
-                                <input type="text" name="txtCidadeParceiro" id="txtCidadeParceiro" class="form-control">
+                        <div class="col-sm-4 p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtCidade" id="txtCidade" required="required">
+                                <label for="txtCidade">Cidade</label>
                             </div>
                         </div>
 
                         <!-- UF -->
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 p-2">
                             <div>
-                                <label for=""></label>
-                                <select class="form-select inputBorder" aria-label="Default select example"
-                                    name="txtUFParceiro" required="required">
+
+                                <select class=" inputBorder" aria-label="Default select example" id="txtUF"
+                                    required="required">
+
+                                    <option value="UF">UF</option>
 
                                     <option value="RJ">RJ</option>
 
@@ -135,58 +131,53 @@
                         </div>
                     </div>
 
-
-
                     <div class="row">
                         <!-- BAIRRO -->
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtBairroParceiro">Bairro</label>
-                                <input type="text" name="txtBairroParceiro" id="txtBairroParceiro" class="form-control">
+                        <div class="col-sm-4  p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtBairro" id="txtBairro" required="required">
+                                <label for="txtBairro">Bairro</label>
                             </div>
                         </div>
 
                         <!-- ENDEREÇO -->
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtEnderecoParceiro">Endereço</label>
-                                <input type="text" name="txtEnderecoParceiro" id="txtEnderecoParceiro"
-                                    class="form-control">
+                        <div class="col-sm-4 p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtEndereco" id="txtEndereco" required="required">
+                                <label for="txtEndereco">Endereço</label>
                             </div>
                         </div>
 
                         <!-- NUMERO -->
-                        <div class="col-sm-2">
-                            <div>
-                                <label for="txtNumeroParceiro">Numero</label>
-                                <input type="text" name="txtNumeroParceiro" id="txtNumeroParceiro" class="form-control">
+                        <div class="col-sm-4 p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtNumero" id="txtNumero" required="required">
+                                <label for="txtNumero">Numero</label>
                             </div>
                         </div>
                     </div>
 
                     <!-- COMPLEMENTO -->
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtComplementoParceiro">Complemento</label>
-                                <input type="text" name="txtComplementoParceiro" id="txtComplementoParceiro"
-                                    class="form-control">
+                        <div class="col-sm-4  p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtComplemento" id="txtComplemento" required="required">
+                                <label for="txtComplemento">Complemento</label>
                             </div>
                         </div>
 
                         <!-- Telefone -->
-                        <div class="col-sm-3">
-                            <div>
-                                <label for="txtCelularParceiro">Celular</label>
-                                <input type="text" name="txtCelularParceiro" id="txtCelularParceiro"
-                                    placeholder="Bairro" class="form-control">
+                        <div class="col-sm-4  p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtCelular" id="txtCelular" required="required">
+                                <label for="txtCelular">Celular</label>
                             </div>
                         </div>
                         <!-- CEP -->
-                        <div class="col-sm-3">
-                            <div>
-                                <label for="txtCepParceiro">Cep</label>
-                                <input type="text" name="txtCepParceiro" id="txtCepParceiro" class="form-control">
+                        <div class="col-sm-4 p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtCep" id="txtCep" required="required">
+                                <label for="txtCep">Cep</label>
                             </div>
                         </div>
 
@@ -194,33 +185,70 @@
 
                     <!-- EMAIL -->
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div>
-                                <label for="txtEmailParceiro">Email</label>
-                                <input type="text" name="txtEmailParceiro" id="txtEmailParceiro" class="form-control">
+                        <div class="col-sm-4   p-2">
+                            <div class="inputBox">
+                                <input type="text" name="txtEmail" id="txtEmail" required="required">
+                                <label for="txtEmail">Email</label>
                             </div>
                         </div>
                         <!-- Status -->
 
-                        <div class="col-sm-4">
-                            <label for="txtStatusParceiro">Status</label>
-                            <select name="txtStatusParceiro" id="txtStatusParceiro" class="form-control">
+                        <div class="col-sm-3   p-2">
+
+                            <select name="txtStatus" id="txtStatus" class="inputBorder">
+                                <option value="Status">Status</option>
                                 <option value="ATIVO">Ativo</option>
                                 <option value="INATIVO">Inativo</option>
                             </select>
                         </div>
 
                     </div>
+
+                    <!-- Login -->
+                    <div class="row">
+                        <div class="col-sm-4 p-2">
+                            <div class="inputBox">
+
+                                <input type="text" name="txtLogin" id="txtLogin" required="required">
+                                <label for="txtLogin">Login</label>
+
+                            </div>
+                        </div>
+
+                        <!-- SENHA -->
+                        <div class="col-sm-4 p-2">
+                            <div class="inputBox">
+
+                                <input type="password" name="txtSenha" id="txtSenha" required="required">
+                                <label for="txtSenha">Senha</label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OBS -->
+                    <div class="col-sm-3   p-2">
+                        <div>
+                            <label for="txtObs">Obs</label>
+                            <textarea class="inputBorder" rows="5" id="comment" name="txtObs"></textarea>
+                        </div>
+                    </div>
+
                     <hr>
                     <!-- BOTÃO -->
                     <div class="col-sm-6">
 
-                        <button id="btoCadastrarParceiro" class="btn btn-outline-success">Cadastrar</button>
-                        <button name="btoAlterarParceiro" class="btn btn-outline-warning">Alterar</button>
-                        <button name="btoExcluirParceiro" class="btn btn-outline-danger">Excluir</button>
+                        <button id="btoCadastrar" class="btn btn-roxo">Cadastrar</button>
+                        <button name="btoAlterarParceiro" class="btn btn-roxo">Alterar</button>
+                        <button name="btoExcluirParceiro" class="btn btn-roxo">Excluir</button>
                     </div>
 
                     <div id="Resposta"></div>
+
+                    <div style="display:none ;">
+                        <label for="txtExcluirData"></label>
+                        <input type="date" name="txtExcluirData" id="txtExcluirData">
+                    </div>
 
                 </form>
                 <div class="col-sm-2"></div>
@@ -229,6 +257,7 @@
     </div>
 
     <script src="js/jquery-3.5.1.js"></script>
+    <script src="ValidacaoParceiro.js"></script>
 
     <script>
         console.log("teste");
