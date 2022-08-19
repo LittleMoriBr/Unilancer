@@ -6,17 +6,20 @@
   color: #fff;
 }
 
+
+
 .inputBox {
   position: relative;
 }
 
 .inputBox input {
   padding: 10px;
+  width: 100%;
   border: 1px solid #ff00b4;
   background: rgb(35, 35, 35);
   border-radius: 5px;
   outline: none;
-  color: #fff;
+  color: rgb(192, 192, 192);
   transition: 0.5s;
 }
 
@@ -25,10 +28,9 @@
   left: 0;
   padding: 10px;
   pointer-events: none;
-  color: #fff;
-  text-transform: uppercase;
+  color: rgb(192, 192, 192);
+  font-weight: 600;
   transition: 0.5s;
-  margin-left: 10px;
 }
 
 .inputBox input:valid ~ label,
@@ -36,9 +38,8 @@
   color: #ff00b4;
   transform: translateX(10px) translateY(-7px);
   font-size: 0.75em;
-  padding: 0 10px;
+  padding: 0 px;
   background: rgb(35, 35, 35);
-
   letter-spacing: 0.2em;
 }
 
@@ -48,6 +49,7 @@
 }
 
 .inputBorder {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ff00b4;
   background: rgb(35, 35, 35);
@@ -63,17 +65,19 @@ label {
 }
 
 .cor {
-  background-color: rgb(71, 71, 71);
+  background-color: rgba(49, 49, 49, 0.171);
   border: none;
   border-radius: 1rem;
-  box-shadow: 0 8px 10px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 10px 0 rgba(46, 46, 46, 0.37);
   backdrop-filter: blur(13.5px);
   -webkit-backdrop-filter: blur(13.5px);
 }
 
 body {
-  background-color: rgb(35, 35, 35);
+  background-color: #161616;
 }
+
+
 
 .btn {
   border-color: #ff00b4;
