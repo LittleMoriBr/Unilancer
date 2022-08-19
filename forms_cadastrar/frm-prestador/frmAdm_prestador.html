@@ -12,22 +12,22 @@
 
 <body>
     <div class="container ">
-        <div class="row ">
+        <div class="row">
             <div class="col-sm-3"></div>
-            <div class="col-sm-7 ">
-                <h1 style="text-align: center ;">Cadastro de Usuario</h1>
+            <div class="col-sm-7">
+                <h1 style="text-align: center;">Cadastro de Usuario</h1>
                 <hr>
-                <form action="" method="post" class="form-control p-4  " id="formularioPrestador">
+                <form action="" method="post" class="form-control p-4  " id="frmPrestador">
                     <div class="row ">
                         <!-- ID  -->
-                        <div class="col-sm-2">
+                        <div class="col-sm-2" style="display: none;">
                             <div>
                                 <label for="txtID">ID Prestador</label><br>
                                 <input type="text" name="txtID" id="txtID" placeholder="ID" class="form-control">
                             </div>
                         </div>
                         <!-- ID PARCEIRO -->
-                        <div class="col-sm-2">
+                        <div class="col-sm-2" style="display: none;">
                             <div>
                                 <label for="txtIDParceiro">ID Parceiro</label><br>
                                 <input type="text" name="txtIDParceiro" id="txtIDParceiro" placeholder="ID"
@@ -35,15 +35,10 @@
                             </div>
                         </div>
                         <!--Botão Pesquisar-->
-                        <div class="col-sm-4">
-                            <br>
-                            <div>
-                                <button id="btoPesquisar" class="btn btn-primary">Pesquisar</button>
-                            </div>
-                        </div>
 
+                        
                         <!--Data Cadastro-->
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" style="display: none;">
 
                             <div>
                                 <label for="txtDataCadastro">Data Cadastro</label>
@@ -273,8 +268,7 @@
     </div>
 
     <script src="js/jquery-3.5.1.js"></script>
-    <script src="Validacao.js"></script>
-
+    <script src="pagina.JS"></script>
     <script>
         console.log("teste");
 

@@ -1,6 +1,7 @@
 
     /*Botão Cadastrar*/
-    $(document).ready(function () {
+    $(document).ready(function () 
+{
 
         $(function () {
             console.log("Entrou na pag.js");
@@ -40,11 +41,11 @@
 
             formData = JSON.stringify(formData);
             xhr.onload = function () {
-                const Resposta = document.getElementById("Resposta");
+                const Resposta = document.getElementById("Lucas");
                 Resposta.innerHTML = this.responseText;
             };
 
-            xhr.open("POST", "prestador_cadastro.php", formData);
+            xhr.open("POST", "CadastrarParceiro.php", formData);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.send(formData);
 
@@ -53,19 +54,8 @@
             };
         });
 
+        
+
     });
 
-        formData = JSON.stringify(formData);
-        xhr.onload = function () {
-            const Resposta = document.getElementById("Resposta");
-            Resposta.innerHTML = this.responseText;
-        };
-
-        xhr.open("POST", "prestador_alterar.php", formData);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send(formData);
-
-        xhr.onreadystatechange = function () {
-            console.log(formData);
-        };
-    });
+});
