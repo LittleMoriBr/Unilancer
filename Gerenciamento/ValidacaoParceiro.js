@@ -98,4 +98,48 @@ $(function () {
         };
     });
 
+    $("#btoAlterar").click(function () {
+        console.log("Cliquei no botão btoAlterar");
+        const xhr = new XMLHttpRequest();
+
+        var formData = {
+            datacadastro_parceiro:$('#txtData').val(),	
+            id_parceiro: $("#txtID").val(),
+            nome_parceiro:$('#txtNome').val(),	
+            cnpj_parceiro:$('#txtCnpj').val(),	
+            area_parceiro:$('#txtArea').val(),	
+            email_parceiro:$('#txtEmail').val(),	
+            nacionalidade_parceiro:$('#txtNacionalidade').val(),	
+            celular_parceiro:$('#txtCelular').val(),
+            status_parceiro:$('#txtStatus').val(),	
+            obs_parceiro:$('#comment').val(),	
+            cep_parceiro:$('#txtCep').val(),	
+            endereco_parceiro:$('#txtEndereco').val(),	
+            numero_parceiro:$('#txtNumero').val(),	
+            complemento_parceiro:$('#txtComplemento').val(),	
+            cidade_parceiro:$('#txtCidade').val(),	
+            uf_parceiro:$('#txtUF').val(),	
+            bairro_parceiro:$('#txtBairro').val(),	
+            login_parceiro:$('#txtLogin').val(),	
+            senha_parceiro:$('#txtSenha').val(),	
+            img_parceiro:$('#base64Code').val(),	
+
+        };
+
+        formData = JSON.stringify(formData);
+        xhr.onload = function () {
+            const Resposta = document.getElementById("Resposta");
+            Resposta.innerHTML = this.responseText;
+        };
+
+        xhr.open("POST", "parceiro_alterar.php", formData);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send(formData);
+
+        xhr.onreadystatechange = function () {
+            console.log(formData);
+        };
+    });
+
 }); 
+

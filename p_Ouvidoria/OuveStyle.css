@@ -185,3 +185,29 @@ textarea:focus {
 .spa {
 	padding: 2px;
 }
+
+body .btn-roxo {
+	border-color: #ff00b4;
+
+	color: #ff00b4;
+}
+
+body .btn-roxo:hover,
+body .btn-roxo:focus {
+	border-color: #ff00b4 !important;
+
+	background-color: #ff00b4 !important;
+
+	color: #fff;
+}
+
+body .btn-roxo:active,
+body .btn-roxo:visited,
+body .btn-roxo:active:focus,
+body .btn-roxo:active:hover {
+	border-color: #ff00b4 !important;
+
+	background-color: #ff00b4 !important;
+
+	color: #fff !important;
+}

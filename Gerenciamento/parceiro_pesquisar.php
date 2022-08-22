@@ -18,7 +18,6 @@ if ($_POST) {
         $sql = $conn->query("select * from parceiro where id_parceiro = " . $idParceiro);
         if ($sql->rowCount() == 1) {
             foreach ($sql as $linha) {
-                $linha[0] = substr($linha[0], 0, 10);
                 echo "<p id='idParceiro'>" . $linha[0] . "</p>";
                 echo "<p id='nomeParceiro'>" . $linha[1] . "</p>";
                 echo "<p id='cnpjParceiro '>" . $linha[2] . "</p>";
@@ -26,6 +25,7 @@ if ($_POST) {
                 echo "<p id='emailParceiro '>" . $linha[4] . "</p>";
                 echo "<p id='nacionalidadeParceiro'>" . $linha[5] . "</p>";
                 echo "<p id='celularParceiro '>" . $linha[6] . "</p>";
+                $linha[7] = substr($linha[7], 0, 10);
                 echo "<p id='datacadastroParceiro'>" . $linha[7] . "</p>";
                 echo "<p id='excluircadastroParceiro'>" . $linha[8] . "</p>";
                 echo "<p id='statusParceiro'>" . $linha[9] . "</p>";
