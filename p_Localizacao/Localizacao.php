@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styleSomos.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="js/jquery.min.js">
+  <link rel="stylesheet" href="../p_Home/styleIndex.css">
+
 
 
 
@@ -23,79 +25,23 @@
 
   <!-- NAV/MENU -->
 
-  <nav id="nave" class="navbar navbar-expand-lg roxotop">
-    <!-- Container wrapper -->
-    <div class="container">
-      <!-- Navbar brand -->
-      <a class="navbar-brand" href="#"><img id="" src="img/amare12.png" alt="MDB Logo" draggable="false" height="60" /></a>
-
-      <!-- Toggle button -->
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <!-- Left links -->
-        <ul class="navbar-nav me-3">
-          <li class="nav-item">
-            <b><a class="nav-link black active d-flex align-items-center" aria-current="page" href="../p_Home/index.php"><i class="fas fa-bars pe-2"></i>Home</a></b>
-          </li>
+  <div class="backMenu">
+  <section class="top-nav">
+        <div>
+          <img class="imgUni" src="img/amare12.png" alt="">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+        <ul class="menu">
+          <li><a class="link-re" href="../p_Home/index.php">Home</a></li>
+          <li><a class="link-re" href="../p_Quem Somos/Somos.php">Sobre</a></li>
+          <li><a class="link-re" href="../p_Servicos/index.html">Serviços</a></li>
+          <li><a class="link-re" href="Localizacao.php">Localização</a></li>
         </ul>
-        <ul class="navbar-nav me-3">
-          <li class="nav-item">
-            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href="../p_Quem Somos/Somos.php"><i class="fas fa-bars pe-2"></i>Sobre</a></b>
-          </li>
-        </ul>
-        <ul class="navbar-nav me-3">
-          <li class="nav-item">
-            <b> <a class="nav-link black active d-flex align-items-center" aria-current="page" href=""><i class="fas fa-bars pe-2"></i>Serviços</a></b>
-          </li>
-        </ul>
-        <ul class="navbar-nav me-3">
-          <li class="nav-item">
-            <b><a class="nav-link black active d-flex align-items-center" aria-current="page" href="Localizacao.php"><i class="fas fa-bars pe-2"></i>Localização</a></b>
-          </li>
-        </ul>
-        </li>
-        </ul>
-
-
-        <!-- Pesquisar Menu -->
-
-        <form class="d-flex align-items-center w-100 form-search">
-          <div class="input-group">
-            <input type="search" class="input-css form-control" placeholder="Pesquisar" aria-label="Search" />
-          </div>
-          <a href="#!" class="text-white"><i class="fas fa-search ps-3"></i></a>
-        </form>
-
-        <!-- IMAGEM, CONFIG, DARK MODE -->
-
-
+      </section>
       </div>
-
-      <div class="topnav">
-        <ul class="navbar-nav">
-          <li class="nav2">
-            <a href="" class="">
-              <button class="botao-Nav">Login</button>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="topnav">
-        <ul class="navbar-nav ms-0">
-          <li class="nav2">
-            <a href="" class="">
-              <button class="botao-Nav">Cadastrar</button>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </div>
-  </nav>
 
   <!-- Navbar FINAL -->
 
