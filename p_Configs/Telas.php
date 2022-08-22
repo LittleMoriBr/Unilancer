@@ -10,15 +10,15 @@ if ($_GET && isset($_GET['tela'])) {
         include_once("parceiro.php");
     }
 
-    if ($_GET['tela'] == "fornecedor") {
-        include_once("frm_fornecedores.php");
+    if ($_GET['tela'] == "Some") {
+        include_once("Some.php");
     }
 
-    if ($_GET['tela'] == "categoria") {
-        include_once("frm_categoria.php");
+    if ($_GET['tela'] == "Preferencias") {
+        include_once("Preferencias.php");
     }
 
-    if ($_GET['tela'] == "produto") {
-        include_once("frm_produtos.php");
+    if ($_GET['tela'] == "Historico") {
+        include_once("Historico.php");
     }
 }
