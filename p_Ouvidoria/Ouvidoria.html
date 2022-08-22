@@ -83,35 +83,43 @@
 
                     <h1 align="center" class="maisbrancoquebranco">Envie uma mensagem</h1>
 
-                    <form action="" method="post" class="form-control pretum" enctype="multipart/form-data">
+                    <form id="ovidoria" action="" method="post" class="form-control pretum"
+                        enctype="multipart/form-data">
 
                         <div class="row">
 
                             <div class="col-12">
 
                                 <label for="" class="form-label maisbrancoquebranco ">E-Mail</label><br>
-                                <input placeholder="Insira aqui seu e-mail" class=" maxiunsd pradrao rounded p-1"
-                                    type="text">
+                                <input id="email_ouvidoria" placeholder="Insira aqui seu e-mail"
+                                    class=" maxiunsd pradrao rounded p-1" type="text">
 
                             </div>
 
                             <div class="col-12 mt-3">
 
-                                <select class="maxiunsd pradrao rounded p-1" name="" id="">
+                                <select class="maxiunsd pradrao rounded p-1" name="" id="problema_ouvidoria">
                                     <option class="valorein" style="display: none;" value="">Selecione uma opção
                                     </option>
-                                    <option value="">Problemas tecnicos com o site</option>
-                                    <option value="">Problemas com pagamento</option>
-                                    <option value="">Problemas com um cliente</option>
-                                    <option value="">Problemas com um prestador de serviço</option>
+                                    <option value="Problemas tecnicos com o site">Problemas tecnicos com o site</option>
+                                    <option value="Problemas com pagamento">Problemas com pagamento</option>
+                                    <option value="Problemas com um cliente">Problemas com um cliente</option>
+                                    <option value="Problemas com um prestador de serviço">Problemas com um prestador de
+                                        serviço</option>
                                 </select>
 
                             </div>
 
                             <div class="col-12 mt-2">
                                 <label class="form-label maisbrancoquebranco" for="">Informe seu problema</label>
-                                <textarea class="form-control maxiunsd pradrao rounded p-1" name="" id="" cols="30"
-                                    rows="10"></textarea>
+                                <textarea id="mensagem_ouvidoria" class="form-control maxiunsd pradrao rounded p-1"
+                                    name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="col-sm-10"></div>
+                            <div class="col-2 mt-3">
+                                <button id="Enviar" align="right"
+                                    class="btn btn-outline-danger btn-roxo">Enviar</button>
                             </div>
                         </div>
 
@@ -206,7 +214,9 @@
 
     </footer>
 
+    <script src="js/jquery-3.5.1.js"></script>
     <script src="section.js"></script>
+    <script src="EnviarMensagem.js"></script>
 
 
 
