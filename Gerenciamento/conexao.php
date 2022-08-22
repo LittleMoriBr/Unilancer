@@ -2,7 +2,7 @@
 
 $servidor = "localhost";
 $bd = "unilancer";
-$userBD = "root" ;
+$userBD = "root";
 $passBD = "";
 
 try
@@ -15,6 +15,6 @@ try
 }
 catch(PDOException $e)
 {
-    echo "Erro: ". $e->getMessage();
+    echo "Erro: ".$e->getMessage();
 }
 ?>
