@@ -30,6 +30,41 @@ a{
     
 }
 
+.center{
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.center:hover
+{
+    color: #ff00b4;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.center2{
+
+    color: #ff00b4;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.cardPesquisar{
+    background-color: rgb(49, 49, 49);
+    border-radius: 15px;
+    padding: 0;
+    margin-top: 70px;
+}
+
+
 .cor{
 
     background-color: #A344E2;
