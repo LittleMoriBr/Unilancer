@@ -19,26 +19,49 @@
     <div class="container">
         <div class="row">
             <div class="col-12 border b-1">
-                <div class="row">
-                    <div class="col-sm-2 ">
-                        <img class="" width="100px" height="100px" src="img/amare12.png" alt="">
-                    </div>
 
-                    <div class="col-sm-7">
-                        <h3 class="margem-nome">Suposto Nome</h3>
-                    </div>
+                <?php
 
-                    <div class="col-sm-3">
-                        <h3 class="margem-nome">Status</h3>
-                    </div>
+                include_once("conexao.php");
+
+                $sql = $conn->query("select * from prestador");
 
 
-                    <div class="col-sm-2 aribaa"></div>
+                echo   '<div class="row">';
+                echo      ' <div class="col-sm-2 pt-4 ">';
+                echo          '  <img class="" width="100px" height="100px" src="img/amare12.png" alt="">';
+                echo       ' </div>';
 
-                    <div class="col-sm-10 aribaa">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ex exercitationem quo delectus corporis iure ratione beatae facilis, aspernatur nobis doloribus nulla obcaecati tempore commodi, quae totam autem corrupti officiis.</p>
-                    </div>
-                </div>
+                echo      ' <div class="col-sm-7">';
+                echo         ' <h3 class="margem-nome">Suposto Nome</h3>';
+                echo     ' </div>';
+
+                echo     ' <div class="col-sm-1">';
+                echo        ' <h3 class="margem-nome">Status:</h3>';
+                echo      '</div>';
+
+                echo     ' <div class="col-sm-1">';
+                echo           '<p class="bolinha"></p>';
+                echo      '</div>';
+
+                echo     '<div class="col-sm-2 aribaa"></div>';
+
+                echo    ' <div class="col-sm-7 aribaa">';
+                echo       ' <p >Valor do contrato: 2 R$</p>';
+                echo    ' </div>';
+
+                echo    ' <div class="col-sm-3 aribaa">';
+                echo       ' <p>Nome do serviço</p>';
+                echo    ' </div>';
+
+                echo     '<div class="col-sm-2 class="aribaaa"></div>';
+
+                echo    ' <div class="col-sm-10 aribaaa ">';
+                echo       '<div class=""> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ex exercitationem quo delectus corporis iure ratione beatae facilis, aspernatur nobis doloribus nulla obcaecati tempore commodi, quae totam autem corrupti officiis.</p></div>';
+                echo    ' </div>';
+
+                echo  ' </div>';
+                ?>
             </div>
 
         </div>
