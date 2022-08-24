@@ -8,15 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
 
-            <div class="col-sm-9">
-                <div class="row">
+
                     <?php include_once('conexao.php');
 
 
@@ -28,7 +26,6 @@
 
 
 
-                    echo '<div class="row">';
 
                     try {
 
@@ -37,40 +34,37 @@
 
                         foreach ($sql as $dados) {
 
-                            echo '<div class="col-sm-5 m-3  ">';
-                            echo '<img class=" tamanho " src="' . $dados['img_prestador'] . '">';
+                            echo '<div class="col-sm-4 m-3  ">';
+                            echo '<img class="tamanho" src="' . $dados['img_prestador'] . '">';
                             echo '</div>';
                             echo '<div class="col-sm-8 m-3 ">';
                             echo '<div class="row">';
 
-                            echo '<p">' . $dados['nome_prestador'] . '</p>';
+                            echo '<p class="name-pesquisa">' . $dados['nome_prestador'] . '</p>';
                             echo '<div class="col-sm-4">';
                             echo '<button type="submit" class="btn btn cor" formaction="">Contrate</button>';
+                            echo '<p class="t"></p>';
 
                             echo "</div>";
                             echo '<br>';
                             echo '<div class="row">';
-                            echo '<p">' . $dados['atuacao_prestador'] . '</p>';
+                            echo '<p class="funcao-pres">' . $dados['atuacao_prestador'] . '</p>';
                             echo "</div>";
                             echo '<br>';
                             echo '<div class="row">';
-                            echo '<p">' . $dados['descricao_prestador'] . '</p>';
+                            echo '<p class="descr-pres">' . $dados['descricao_prestador'] . '</p>';
                             echo "</div>";
                             echo "</div>";
                             echo "</div>";
                         }
-                        echo "</div>";
-                        echo "</div>";
+                    
                     } catch (PDOException $e) {
 
                         echo $e->getMessage();
                     }
 
-                    echo "</div>";
                     ?>
-                </div>
-            </div>
+              
 
-        </div>
-    </div>
+
 </body>

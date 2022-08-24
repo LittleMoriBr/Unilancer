@@ -38,8 +38,6 @@ input.form-control { width: 500px!important; }
   flex-direction: row;
   align-items: center;
   border-radius: 15px;
-  position: fixed;
-  z-index: 5;
   justify-content: left;
   backdrop-filter: blur( 13.5px );
   -webkit-backdrop-filter: blur( 13.5px );
@@ -47,7 +45,6 @@ input.form-control { width: 500px!important; }
   border: none;  
   color: #FFF;
   height: 50px;
-  padding: 1em;
 }
 
 .menu {
