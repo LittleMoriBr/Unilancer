@@ -10,7 +10,7 @@ $(function () {
         const xhr = new XMLHttpRequest();
 
         var formData = {
-            idPrestador: $("#txtID").val(),
+            idCliente: $("#txtID").val(),
 
 
         };
@@ -21,38 +21,36 @@ $(function () {
             const Resposta = document.getElementById("Resposta");
             Resposta.innerHTML = this.responseText;
 
-            $("#txtDataCadastro").val($("#dataCadastroPrestador").text());
-            $("#txtPrestador").val($("#nomePrestador").text());
-            $("#txtSobrenome").val($("#sobrenomePrestador").text());
-            $("#base64Code").val($("#imgPrestador").text());
-            $("#txtEmailPrestador").val($("#emailPrestador").text());
-            $("#txtCpfCnpjPrestador").val($("#cpfjnPrestador").text());
-            $("#txtNacionalidadePrestador").val($("#nacionalidadePrestador").text());
-            $("#txtCidadePrestador").val($("#cidadePrestador").text());
-            $("#txtUfPrestador").val($("#ufPrestador").text());
-            $("#txtEnderecoPrestador").val($("#enderecoPrestador").text());
-            $("#txtBairroPrestador").val($("#bairroPrestador").text());
-            $("#txtCepPrestador").val($("#cepPrestador").text());
-            $("#txtNumeroPrestador").val($("#numeroPrestador").text());
-            $("#txtComplementoPrestador").val($("#complementoPrestador").text());
-            $("#txtCelularPrestador").val($("#celularPrestador").text());
-            $("#txtLoginPrestador").val($("#loginPrestador").text());
-            $("#txtSenhaPrestador").val($("#senhaPrestador").text());
-            $("#txtObs").val($("#obsPrestador").text());
-            $("#txtStatus").val($("#statusPrestador").text());
-            $("#txtIDParceiro").val($("#idParceiro").text());
-            $("#txtDataTermino").val($("#terminoContratoPrestador").text());
-            $("#txtAtuacaoPrestador").val($("#atuacaoPrestador").text());
-            $("#txtRecomendacao").val($("#recomendacaoPrestador").text());
-            $("#txtDescricaoPrestador").val($("#descricaoPrestador").text());
-            $("#txtAvaliacoes").val($("#avaliacaoPrestador").text());
+            			
+            $('#txtNome').val($('#nomeCliente').text());				
+            $('#txtSobrenome').val($('#sobrenomeCliente').text());				
+            $('#txtCpf').val($('#cpfCliente').text());				
+            $('#txtNascimento').val($('#nascimentoCliente').text());				
+            $('#txtEndereco').val($('#enderecoCliente').text());				
+            $('#txtNumero').val($('#numeroCliente').text());				
+            $('#txtCidade').val($('#cidadeCliente').text());				
+            $('#txtCep').val($('#cepCliente').text());				
+            $('#txtComplemento').val($('#complementoCliente').text());				
+            $('#txtUF').val($('#ufCliente').text());				
+            $('#txtNacionalidade').val($('#nacionalidadeCliente').text());				
+            $('#txtLogin').val($('#usuarioCliente').text());				
+            $('#txtSenha').val($('#senhaCliente').text());				
+            $('#txtObs').val($('#obsCliente').text());				
+            $('#txtStatus').val($('#statusCliente').text());				
+            $('#txtData').val($('#datacadastroCliente').text());				
+            $('#txtExcluirData').val($('#dataexcluircadastroCliente').text());				
+            $('#txtBairro').val($('#bairroCliente').text());				
+            $('#txtEmail').val($('#emailCliente').text());				
+            $('#txtCelular').val($('#celularCliente').text());				
+            $('#base64Code').val($('#imgCliente').text());				
+            
 
 
 
 
         };
 
-        xhr.open("POST", "prestador_pesquisar.php", formData);
+        xhr.open("POST", "cliente_pesquisar.php", formData);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send(formData);
 
@@ -77,15 +75,16 @@ $(function () {
                 endereco_cliente: $('#txtEndereco').val(),
                 numero_cliente: $('#txtNumero').val(),
                 cidade_cliente: $('#txtCidade').val(),
-                cep_cliente: $('#txtUF').val(),
+                cep_cliente: $('#txtCep').val(),
                 complemento_cliente: $('#txtComplemento').val(),
-                uf_cliente: $('#txtBairro').val(),
-                nacionalidade_cliente: $('#txtEndereco').val(),
+                uf_cliente: $('#txtUF').val(),
+                nacionalidade_cliente: $('#txtNacionalidade').val(),
                 usuario_cliente: $('#txtLogin').val(),
                 senha_cliente: $('#txtSenha').val(),
-                obs_cliente: $('#txtNacionalidade').val(),
+                obs_cliente: $('#txtObs').val(),
                 status_cliente: $('#txtStatus').val(),
                 datacadastro_cliente: $('#txtData').val(),
+                dataexcluircadastro_cliente: $('#txtExcluirData').val(),
                 bairro_cliente: $('#txtBairro').val(),
                 email_cliente: $('#txtEmail').val(),
                 celular_cliente: $('#txtCelular').val(),
