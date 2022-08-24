@@ -3,14 +3,14 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documento sem título</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="styleIndexus.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="js/jquery.min.js">
-  <link rel="stylesheet" href="../p_Home/styleIndex.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento sem título</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styleIndexus.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="js/jquery.min.js">
+    <link rel="stylesheet" href="../p_Home/styleIndex.css">
 
 
 
@@ -18,329 +18,306 @@
 
 <body style="background-color: black;" class="rodape">
 
-  <script href="js/bootstrap.bundle.js"></script>
-  <link rel="stylesheet" href="js/bootstrap.bundle.js">
+    <script href="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="js/bootstrap.bundle.js">
 
 
-  <!-- NAV/MENU -->
-<div class="colorback">
-  <div class="backMenu p-0" style="margin-top: -60px;">
+    <!-- NAV/MENU -->
+
     <section class="top-nav">
-          <div>
+        <div>
             <img class="imgUni" src="img/amare12.png" alt="">
-          </div>
-          <input id="menu-toggle" type="checkbox" />
-          <label class='menu-button-container' for="menu-toggle">
-          <div class='menu-button'></div>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
         </label>
-          <ul class="menu">
+        <ul class="menu">
             <li><a class="link-re" href="../p_Home/index.php">Home</a></li>
             <li><a class="link-re" href="../p_Quem Somos/Somos.php">Sobre</a></li>
             <li><a class="link-re" href="index.html">Serviços</a></li>
             <li><a class="link-re" href="../p_Localizacao/Localizacao.php">Localização</a></li>
-          </ul>
-        </section>
-        </div>
-    </div>
-
-  <div class="separador"></div>
-<div class="container ">
-  <div class="row">
-    <div class="col-sm-4">
-            <form action="" method="post" class="cardPesquisar" id="principal_Servico">
-                <div class="container ">
-                       
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            <button class="btn center2 p-0">
-                                <span class="filtro center2">Áreas de Interese</span> 
-                            </button>
-
-                        </div>
-                    </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Todos os Serviços -->
-                            <button id="Todas" class="btn p-0">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Todas</h6>
-                                </span>
-                            </button>
-            
-                            <input name="Todas2" id="Todas2" class="input-css2" style="display: none;" value="Todas" type="text">
-
-                        </div>
-                    </div>
+        </ul>
+    </section>
 
 
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Encanador -->
-                            <button id="Encanador" name="Encanador" class="btn p-0" onchange="CarregarImg(this)">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Encanador</h6>
-                                </span>
-                            </button>
-            
-                            <input name="Encanador2" class="input-css2" id="Encanador2" style="display: none;" value="Encanador" type="text">
+    <div class="separador"></div>
 
-                        </div>
-                    </div>
-
-
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Fotógrafo -->
-                            <button id="Fotografo" class="btn p-0">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Fotógrafo</h6>
-                                </span>
-                            </button>
-                            <input name="Fotografo2" class="input-css2" id="Fotografo2" style="display: none;" value="Fotografo" type="text">
-
-                        </div>
-                    </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Designer Gráfico -->
-                            <button id="DesignerGrafico" class="btn p-0">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Designer Gráfico</h6>
-                                </span>
-                            </button>
-                            <input name="Designer2" class="input-css2" id="Designer2" style="display: none;" value="Designer" type="text">
-
-                        </div>
-                    </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Diarista -->
-                            <button id="Diarista" class="btn p-0">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Diarista</h6>
-                                </span>
-                            </button>
-                            <input name="Diarista2" class="input-css2" id="Diarista2" style="display: none;" value="Diarista" type="text">
-
-                        </div>
-                    </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Mecanico -->
-                            <button id="Mecanico" class="btn p-0">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Mecânico</h6>
-                                </span>
-                            </button>
-                            <input name="Mecanico2" class="input-css2" id="Mecanico2" style="display: none;" value="Mecanico" type="text">
-
-                        </div>
-                    </div>
-
-                            <div class="row">
-                                <div class="col-sm-12">
-            
-                            <!--Pesquisar Pintor -->
-                            <button id="Pintor" class="btn p-0">
-                                <span class="filtrinhos">
-                                    <h6 class="center">Pintor</h6>
-                                </span>
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-                <!--Filtro -->
-                
-                <input name="Pintor2" class="input-css2" id="Pintor2" style="display: none;" value="Pintor" type="text">
-                <hr>
-
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                <button id="Avaliacoes" class="btn p-0">
-                    <span class="filtro center2">Avaliações </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="5Estrela" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">5 estrelas</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="4Estrela" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">4 estrelas</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="3Estrela" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">3 estrelas</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="2Estrela" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">2 estrelas</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="1Estrela" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">1 estrelas</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-    </div>
-
-    <hr>
-
-    
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-4">
+                <form action="" method="post" class="cardPesquisar" id="principal_Servico">
+                    <div class="container ">
 
-                <button id="Localizacao" class="btn p-0">
-                    <span class="center2 filtro">Localização</span>
-                </button>
+                        <div class="row">
+                            <div class="col-sm-12">
 
+                                <button class="btn center2 p-0">
+                                    <span class="filtro center2">Áreas de Interese</span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Todos os Serviços -->
+                                <button id="Todas" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Todas</h6>
+                                    </span>
+                                </button>
+
+                                <input name="Todas2" id="Todas2" class="input-css2" style="display: none;" value="Todas"
+                                    type="text">
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Encanador -->
+                                <button id="Encanador" name="Encanador" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Encanadores</h6>
+                                    </span>
+                                </button>
+
+                                <input name="Encanador2" class="input-css2" id="Encanador2" style="display: none;"
+                                    value="Encanador" type="text">
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Fotógrafo -->
+                                <button id="Fotografo" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Fotógrafos</h6>
+                                    </span>
+                                </button>
+                                <input name="Fotografo2" class="input-css2" id="Fotografo2" style="display: none;"
+                                    value="Fotografo" type="text">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Designer Gráfico -->
+                                <button id="DesignerGrafico" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Designers</h6>
+                                    </span>
+                                </button>
+                                <input name="Designer2" class="input-css2" id="Designer2" style="display: none;"
+                                    value="Designer" type="text">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Diarista -->
+                                <button id="Diarista" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Diaristas</h6>
+                                    </span>
+                                </button>
+                                <input name="Diarista2" class="input-css2" id="Diarista2" style="display: none;"
+                                    value="Diarista" type="text">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Mecanico -->
+                                <button id="Mecanico" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Mecânicos</h6>
+                                    </span>
+                                </button>
+                                <input name="Mecanico2" class="input-css2" id="Mecanico2" style="display: none;"
+                                    value="Mecanico" type="text">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <!--Pesquisar Pintor -->
+                                <button id="Pintor" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Pintores</h6>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Filtro -->
+
+                    <input name="Pintor2" class="input-css2" id="Pintor2" style="display: none;" value="Pintor"
+                        type="text">
+                    <hr>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="Avaliacoes" class="btn p-0">
+                                    <span class="filtro center2">Avaliações </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="5Estrela" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">5 estrelas</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="4Estrela" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">4 estrelas</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="3Estrela" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">3 estrelas</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="2Estrela" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">2 estrelas</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="1Estrela" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">1 estrelas</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="Localizacao" class="btn p-0">
+                                    <span class="center2 filtro">Localização</span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="SaoPaulo" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">São Paulo</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="Bahia" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Bahia</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="MinasJerais" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Minas Gerais</h6>
+                                    </span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <button id="RioDeJaneiro" class="btn p-0">
+                                    <span class="filtrinhos">
+                                        <h6 class="center">Rio de Janeiro</h6>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="SaoPaulo" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">São Paulo</h6>
-                    </span>
-                </button>
-
+            <div class="col-sm-8 pt-6">
+                <div id="Resposta"></div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="Bahia" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">Bahia</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="MinasJerais" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">Minas Gerais</h6>
-                    </span>
-                </button>
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-
-                <button id="RioDeJaneiro" class="btn p-0">
-                    <span class="filtrinhos">
-                        <h6 class="center">Rio de Janeiro</h6>
-                    </span>
-                </button>
-            </div>
-        </div>
-    </div>
 
 
-
-            </form>
-
-        </div>
-    </div>
-</div>
-
-        </div>
-        <div class="col-sm-9">
-
-            <div class="row">
-
-                <div id="Resposta">
-
-
-                </div>
-
-            </div>
         </div>
 
 
-    </div>
-</div>
-
-<div class="container">
-    <div class="col-sm-9">
-
-        <div class="row">
-
-            <div id="Resposta"></div>
-
-        </div>
-    </div>
-
-
-</div>
-</div>
-
-  <br><br><br>
+    <br><br><br>
 
 
     <!--<div class="marquee">
@@ -395,41 +372,42 @@
     -->
 
     <script>
-      console.log("teste");
+        console.log("teste");
 
-      function CarregarImg(imagem) {
-          var preview = document.getElementById("preImg");
-          var file = document.getElementById("Encanador").files[0];
+        function CarregarImg(imagem) {
+            var preview = document.getElementById("preImg");
+            var file = document.getElementById("Encanador").files[0];
 
-          var reader = new FileReader();
+            var reader = new FileReader();
 
-          reader.onloadend = function () {
-              var caminho = reader.result;
-              preview.src = caminho;
+            reader.onloadend = function () {
+                var caminho = reader.result;
+                preview.src = caminho;
 
-              $("#base64Code").val(caminho);
-          }
+                $("#base64Code").val(caminho);
+            }
 
-          if (file) {
-              reader.readAsDataURL(file);
-          }
-          else {
-              preview.src = "";
-          }
-      }
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+            else {
+                preview.src = "";
+            }
+        }
 
-  </script>
+    </script>
 
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="Pesquisar_script.js"></script>
-  <script src="PesquisarEncanador_script.js"></script>
-  <script src="PesquisarFotografo_script.js"></script>
-  <script src="PesquisarMecanico_script.js"></script>
-  <script src="PesquisarPintor_script.js"></script>
-  <script src="PesquisarDiarista_script.js"></script>
-  <script src="PesquisarDesigner_script.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="Pesquisar_script.js"></script>
+    <script src="PesquisarEncanador_script.js"></script>
+    <script src="PesquisarFotografo_script.js"></script>
+    <script src="PesquisarMecanico_script.js"></script>
+    <script src="PesquisarPintor_script.js"></script>
+    <script src="PesquisarDiarista_script.js"></script>
+    <script src="PesquisarDesigner_script.js"></script>
 
 
-    
+
 </body>
+
 </html>
