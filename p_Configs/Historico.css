@@ -20,6 +20,10 @@
 	margin-left: 25px;
 }
 
+.bolinha .Ativo {
+	background-color: rgb(50, 202, 88) !important;
+}
+
 .relativo {
 	position: relative;
 }
