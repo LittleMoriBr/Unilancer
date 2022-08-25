@@ -21,12 +21,16 @@ input.form-control { width: 500px!important; }
 .link-re{
     text-decoration: none;
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: none;
+    font-size: 15px;
     font-weight: 600;
     display: flex;
+}
 
+.link-re:hover{
+	color: #ff00b4;
+	transition: 0.5s;
 }
 
 .imgUni{
@@ -36,15 +40,41 @@ input.form-control { width: 500px!important; }
 .top-nav {
   display: flex;
   flex-direction: row;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   align-items: center;
+  position: fixed;
   border-radius: 15px;
+  z-index: 2;
   justify-content: left;
   backdrop-filter: blur( 13.5px );
+  text-transform: uppercase;
+  font-weight: 800;
   -webkit-backdrop-filter: blur( 13.5px );
   box-shadow: 0px 10px 40px rgba(105, 105, 105, 0.331);
   border: none;  
   color: #FFF;
   height: 50px;
+}
+
+.top-nav2{
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-weight: 800;
+	text-transform: uppercase;
+	border-radius: 15px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	justify-content: left;
+	z-index: 2;
+	backdrop-filter: blur( 13.5px );
+	-webkit-backdrop-filter: blur( 13.5px );
+	box-shadow: 0px 10px 40px rgba(105, 105, 105, 0.331);
+	border: none;  
+	color: #FFF;
+	height: 50px;
+
 }
 
 .menu {
@@ -629,10 +659,9 @@ body .btn-roxo {
       border-color: #69179e;
       background-color: #69179e;
       color: #FFF; }
-
+	  
 
 .rodape1{
-
 	background-color: #303030;
 }
 
@@ -985,6 +1014,38 @@ body .btn-roxo {
 	}
   }
 
+  .alinhaMenu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+
+  #btoMenu{
+	position: absolute;
+	right: 0px;
+	width: 150px;
+	height: 50px; 
+	text-align: center;
+	margin-top: 3px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	border: none;
+	background-color: #ff00b4;
+	color: white;
+	border-radius: 10px;
+  }
+  #btoMenu:hover{
+	transition: 1.5s;
+	color: #ff00b4;
+	background-color: black;
+	border: solid 1px #ff00b4;
+  }
+
   .cartitu{
 	text-align: center;
 	color: #ff00b4;
@@ -1060,8 +1121,9 @@ body .btn-roxo {
 
 
 .rodape{
-	background-color: white;
-  }
+	background-color: rgb(0, 0, 0);
+	margin: 0;
+}
   
   .dark-mode {
 	background-color: #69179e;
