@@ -3,5 +3,30 @@
 }
 
 .aribaa {
-	margin-top: -50px;
+	margin-top: -80px;
+}
+
+.aribaaa {
+	margin-top: -55px;
+}
+
+.bolinha {
+	text-align: left;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: aqua;
+	margin-top: 26px;
+	margin-left: 25px;
+}
+
+.relativo {
+	position: relative;
+}
+.dinheiro {
+	margin-top: -80px;
+}
+
+.texto {
+	margin-top: -10px;
 }
