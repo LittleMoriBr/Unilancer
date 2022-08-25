@@ -57,11 +57,13 @@ a{
     font-weight: 600;
 }
 
+.marge{
+    margin-top: 200px;
+}
+
 .cardPesquisar{
     background-color: rgb(49, 49, 49);
     border-radius: 15px;
-    padding: 0;
-    margin-top: 70px;
 }
 
 
