@@ -1,10 +1,5 @@
 <?php
 
-echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa///";
-
-
-print_r($_GET);
-
 if ($_GET && isset($_GET['tela'])) {
     if ($_GET['tela'] == "usuario") {
         include_once("parceiro.php");

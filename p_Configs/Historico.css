@@ -2,6 +2,10 @@
 	margin-top: 15px;
 }
 
+.margem-nome1 {
+	margin-top: 15px;
+}
+
 .aribaa {
 	margin-top: -80px;
 }
@@ -20,8 +24,20 @@
 	margin-left: 25px;
 }
 
-.bolinha .Ativo {
+.pouquinho {
+	margin-top: -5px;
+}
+
+.Ativo {
 	background-color: rgb(50, 202, 88) !important;
+}
+
+.Inativo {
+	background-color: red !important;
+}
+
+.Pendente {
+	background-color: yellow !important;
 }
 
 .relativo {
@@ -33,4 +49,32 @@
 
 .texto {
 	margin-top: -10px;
+}
+
+.bordaa {
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.1s;
+}
+
+.bordaa:hover {
+	transition: 0.1s;
+	border-color: #ff00b4 !important;
+	border-width: 2px !important;
+	padding: 1px;
+
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: white;
+	background: #ff00b4;
+}
+
+::selection {
+	color: white;
+	background: #ff00b4;
 }
