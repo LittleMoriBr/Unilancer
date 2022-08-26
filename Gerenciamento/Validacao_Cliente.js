@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    $(".menu-button").click(function () {
+        $(".menu-bar").toggleClass("open");
+    })
+})
 $(function () {
     console.log("Entrou na pag.js");
 
@@ -44,10 +49,6 @@ $(function () {
             $('#txtCelular').val($('#celularCliente').text());
             $('#base64Code').val($('#imgCliente').text());
 
-
-
-
-
         };
 
         xhr.open("POST", "cliente_pesquisar.php", formData);
@@ -65,6 +66,7 @@ $(function () {
         $("#btoCadastrar").click(function () {
             console.log("Cliquei no botão btoCadastrar");
             const xhr = new XMLHttpRequest();
+
 
             var formData = {
                 id_cliente: $('#txtID').val(),
