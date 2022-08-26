@@ -167,13 +167,26 @@ $(function () {
     $("#btoLimpar").click(function () {
         console.log("Cliquei no botão btoLimpar");
         $("#txtID").val("");
-        $("#txtNome").val("");
-        $("#txtImg").val("");
-        $("#txtLogin").val("");
-        $("#txtSenha").val("");
+        $("#txtIDParceiro").val("");
+        $("#txtPrestador").val("");
+        $("#txtSobrenome").val("");
         $("#base64Code").val("");
-        $("#txtStatus").val("");
-        $("#txtObs").val("");
+        $("#txtEmailPrestador").val("");
+        $("#txtCpfCnpjPrestador").val("");
+        $("#txtCidadePrestador").val("");
+        $("#txtUfPrestador").val("");
+        $("#txtEnderecoPrestador").val("");
+        $("#txtBairroPrestador").val("");
+        $("#txtCepPrestador").val("");
+        $("#txtNumeroPrestador").val("");
+        $("#txtNacionalidadePrestador").val("");
+        $("#txtComplementoPrestador").val("");
+        $("#txtCelularPrestador").val("");
+        $("#txtLoginPrestador").val("");
+        $("#txtSenhaPrestador").val("");
+        $("#comment").val("");
+        $("#txtAtuacaoPrestador").val("");
+        $("#txtDescricaoPrestador").val("");
         document.getElementById("preImg").src = "";
     });
 

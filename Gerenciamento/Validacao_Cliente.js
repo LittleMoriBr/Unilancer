@@ -21,29 +21,29 @@ $(function () {
             const Resposta = document.getElementById("Resposta");
             Resposta.innerHTML = this.responseText;
 
-            			
-            $('#txtNome').val($('#nomeCliente').text());				
-            $('#txtSobrenome').val($('#sobrenomeCliente').text());				
-            $('#txtCpf').val($('#cpfCliente').text());				
-            $('#txtNascimento').val($('#nascimentoCliente').text());				
-            $('#txtEndereco').val($('#enderecoCliente').text());				
-            $('#txtNumero').val($('#numeroCliente').text());				
-            $('#txtCidade').val($('#cidadeCliente').text());				
-            $('#txtCep').val($('#cepCliente').text());				
-            $('#txtComplemento').val($('#complementoCliente').text());				
-            $('#txtUF').val($('#ufCliente').text());				
-            $('#txtNacionalidade').val($('#nacionalidadeCliente').text());				
-            $('#txtLogin').val($('#usuarioCliente').text());				
-            $('#txtSenha').val($('#senhaCliente').text());				
-            $('#txtObs').val($('#obsCliente').text());				
-            $('#txtStatus').val($('#statusCliente').text());				
-            $('#txtData').val($('#datacadastroCliente').text());				
-            $('#txtExcluirData').val($('#dataexcluircadastroCliente').text());				
-            $('#txtBairro').val($('#bairroCliente').text());				
-            $('#txtEmail').val($('#emailCliente').text());				
-            $('#txtCelular').val($('#celularCliente').text());				
-            $('#base64Code').val($('#imgCliente').text());				
-            
+
+            $('#txtNome').val($('#nomeCliente').text());
+            $('#txtSobrenome').val($('#sobrenomeCliente').text());
+            $('#txtCpf').val($('#cpfCliente').text());
+            $('#txtNascimento').val($('#nascimentoCliente').text());
+            $('#txtEndereco').val($('#enderecoCliente').text());
+            $('#txtNumero').val($('#numeroCliente').text());
+            $('#txtCidade').val($('#cidadeCliente').text());
+            $('#txtCep').val($('#cepCliente').text());
+            $('#txtComplemento').val($('#complementoCliente').text());
+            $('#txtUF').val($('#ufCliente').text());
+            $('#txtNacionalidade').val($('#nacionalidadeCliente').text());
+            $('#txtLogin').val($('#usuarioCliente').text());
+            $('#txtSenha').val($('#senhaCliente').text());
+            $('#txtObs').val($('#obsCliente').text());
+            $('#txtStatus').val($('#statusCliente').text());
+            $('#txtData').val($('#datacadastroCliente').text());
+            $('#txtExcluirData').val($('#dataexcluircadastroCliente').text());
+            $('#txtBairro').val($('#bairroCliente').text());
+            $('#txtEmail').val($('#emailCliente').text());
+            $('#txtCelular').val($('#celularCliente').text());
+            $('#base64Code').val($('#imgCliente').text());
+
 
 
 
@@ -124,7 +124,7 @@ $(function () {
         document.getElementById("preImg").src = "";
 
         var formData = {
-            id_prestador: $("#txtID").val(),
+            id_cliente: $("#txtID").val(),
 
         };
 
@@ -134,7 +134,7 @@ $(function () {
             Resposta.innerHTML = this.responseText;
         };
 
-        xhr.open("POST", "prestador_excluir.php", formData);
+        xhr.open("POST", "cliente_excluir.php", formData);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send(formData);
 
@@ -142,39 +142,55 @@ $(function () {
             console.log(formData);
         };
 
-        $("#txtID").val("");
-        $("#txtPrestador").val("");
-        $("#txtSobrenome").val("");
-        $("#base64Code").val("");
-        $("#txtEmailPrestador").val("");
-        $("#txtCpfCnpjPrestador").val("");
-        $("#txtCidadePrestador").val("");
-        $("#txtUfPrestador").val("");
-        $("#txtEnderecoPrestador").val("");
-        $("#txtBairroPrestador").val("");
-        $("#txtCepPrestador").val("");
-        $("#txtNumeroPrestador").val("");
-        $("#txtNacionalidadePrestador").val("");
-        $("#txtComplementoPrestador").val("");
-        $("#txtCelularPrestador").val("");
-        $("#txtLoginPrestador").val("");
-        $("#txtSenhaPrestador").val("");
-        $("#comment").val("");
-        $("#txtAtuacaoPrestador").val("");
-        $("#txtDescricaoPrestador").val("");
+        $('#txtID').val('');
+        $('#txtNome').val('');
+        $('#txtSobrenome').val('');
+        $('#txtNascimento').val('');
+        $('#txtImg').val('');
+        $('#txtCpf').val('');
+        $('#txtCep').val('');
+        $('#txtUF').val('');
+        $('#txtCidade').val('');
+        $('#txtBairro').val('');
+        $('#txtEndereco').val('');
+        $('#txtNumero').val('');
+        $('#txtComplemento').val('');
+        $('#txtNacionalidade').val('');
+        $('#txtCelular').val('');
+        $('#txtEmail').val('');
+        $('#txtLogin').val('');
+        $('#txtSenha').val('');
+        $('#txtStatus').val('');
+        $('#txtData').val('');
+        $('#txtObs').val('');
     });
 
 
     $("#btoLimpar").click(function () {
         console.log("Cliquei no botão btoLimpar");
-        $("#txtID").val("");
-        $("#txtNome").val("");
-        $("#txtImg").val("");
-        $("#txtLogin").val("");
-        $("#txtSenha").val("");
-        $("#base64Code").val("");
-        $("#txtStatus").val("");
-        $("#txtObs").val("");
+
+        $('#txtID').val('');
+        $('#txtNome').val('');
+        $('#txtSobrenome').val('');
+        $('#txtNascimento').val('');
+        $('#txtImg').val('');
+        $('#txtCpf').val('');
+        $('#txtCep').val('');
+        $('#txtUF').val('');
+        $('#txtCidade').val('');
+        $('#txtBairro').val('');
+        $('#txtEndereco').val('');
+        $('#txtNumero').val('');
+        $('#txtComplemento').val('');
+        $('#txtNacionalidade').val('');
+        $('#txtCelular').val('');
+        $('#txtEmail').val('');
+        $('#txtLogin').val('');
+        $('#txtSenha').val('');
+        $('#txtStatus').val('');
+        $('#txtData').val('');
+        $('#txtObs').val('');
+
         document.getElementById("preImg").src = "";
     });
 
@@ -183,31 +199,28 @@ $(function () {
         const xhr = new XMLHttpRequest();
 
         var formData = {
-            datacadastro_prestador: $("#txtDataCadastro").val(),
-            id_prestador: $("#txtID").val(),
-            nome_prestador: $("#txtPrestador").val(),
-            sobrenome_prestador: $("#txtSobrenome").val(),
-            img_prestador: $("#base64Code").val(),
-            email_prestador: $("#txtEmailPrestador").val(),
-            cpfnj_prestador: $("#txtCpfCnpjPrestador").val(),
-            nacionalidade_prestador: $("#txtNacionalidadePrestador").val(),
-            cidade_prestador: $("#txtCidadePrestador").val(),
-            uf_prestador: $("#txtUfPrestador").val(),
-            endereco_prestador: $("#txtEnderecoPrestador").val(),
-            bairro_prestador: $("#txtBairroPrestador").val(),
-            cep_prestador: $("#txtCepPrestador").val(),
-            numero_prestador: $("#txtNumeroPrestador").val(),
-            complemento_prestador: $("#txtComplementoPrestador").val(),
-            celular_prestador: $("#txtCelularPrestador").val(),
-            login_prestador: $("#txtLoginPrestador").val(),
-            senha_prestador: $("#txtSenhaPrestador").val(),
-            obs_prestador: $("#comment").val(),
-            status_prestador: $("#txtStatus").val(),
-            id_parceiro: $("#txtIDParceiro").val(),
-            atuacao_prestador: $("#txtAtuacaoPrestador").val(),
-            recomendacoes_prestador: $("#txtRecomendacoes").val(),
-            descricao_prestador: $("#txtDescricaoPrestador").val(),
-            avaliacoes_prestador: $("#txtAvaliacoes").val(),
+
+            id_cliente: $('#txtID').val(),
+            nome_cliente: $('#txtNome').val(),
+            sobrenome_cliente: $('#txtSobrenome').val(),
+            nascimento_cliente: $('#txtNascimento').val(),
+            img_cliente: $('#base64Code').val(),
+            cpf_cliente: $('#txtCpf').val(),
+            cep_cliente: $('#txtCep').val(),
+            uf_cliente: $('#txtUF').val(),
+            cidade_cliente: $('#txtCidade').val(),
+            bairro_cliente: $('#txtBairro').val(),
+            endereco_cliente: $('#txtEndereco').val(),
+            numero_cliente: $('#txtNumero').val(),
+            complemento_cliente: $('#txtComplemento').val(),
+            nacionalidade_cliente: $('#txtNacionalidade').val(),
+            celular_cliente: $('#txtCelular').val(),
+            email_cliente: $('#txtEmail').val(),
+            usuario_cliente: $('#txtLogin').val(),
+            senha_cliente: $('#txtSenha').val(),
+            status_cliente: $('#txtStatus').val(),
+            datacadastro_cliente: $('#txtData').val(),
+            obs_cliente: $('#txtObs').val(),
 
         };
 
@@ -217,7 +230,7 @@ $(function () {
             Resposta.innerHTML = this.responseText;
         };
 
-        xhr.open("POST", "prestador_alterar.php", formData);
+        xhr.open("POST", "cliente_alterar.php", formData);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xhr.send(formData);
 
