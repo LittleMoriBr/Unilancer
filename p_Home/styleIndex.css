@@ -445,9 +445,7 @@ h2 {
 		background-color: #111111;
 		padding: 30px;
 		margin: auto;
-		display: flex !important;
-		justify-items: center !important;
-		align-items: center !important;
+
 	}
 	.bg4{
 		background-color: #111111;
@@ -1221,9 +1219,10 @@ body .btn-roxo {
 	font-weight: 500;
 	cursor: pointer;
 	padding: 15px;
-	width: 600px;
+	margin: auto;
 	border: none;
 	transition: 0.4s;
+
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
