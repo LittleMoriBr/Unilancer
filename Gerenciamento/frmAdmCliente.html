@@ -8,278 +8,336 @@
 	<title>formulário de clientes</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="input.css">
+	<link rel="stylesheet" href="styleIndex.css">
 
 
 </head>
 
 <body class="fundo">
 
-
-
 	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
 
-		<h2 class="text-center">Formulário de Clientes</h2>
-		<br>
-		<div>
-			<form action="" method="post" class="form-control  form-back" id="frmCliente">
+				<ul class="menu">
 
-				<!-- ID -->
-				<div class="row">
+					<li title="home"><a href="#" class="menu-button home">menu</a></li>
 
-					<div class="col-sm-4 p-2">
-						<label for="txtID">ID</label>
-						<input type="text" name="txtID" id="txtID" class="form-control">
-					</div>
+					<li title="search"><a href="#" class="search">search</a></li>
+					<li title="pencil"><a href="#" class="pencil">pencil</a></li>
+					<li title="about"><a href="#" class="active about">about</a></li>
+					<li title="archive"><a href="#" class="archive">archive</a></li>
+					<li title="contact"><a href="#" class="contact">contact</a></li>
+				</ul>
 
-					<!--Botão Pesquisar-->
-					<div class="col-sm-2 p-2">
-						<br>
-						<div>
-							<button id="btoPesquisar" class="btn btn-roxo">Pesquisar</button>
-						</div>
-					</div>
+				<ul class="menu-bar">
+					<li><a href="#" class="menu-button">Formulários</a></li>
+					<li><a href="frmAdmCliente.html"> Cliente</a></li>
+					<li><a href="frmAdm_prestador.html"> Prestador</a></li>
+					<li><a href="FrmAdmParceiro.html">Parceiro</a></li>
+					<li><a href="#">Ouvidoria</a></li>
 
-					<!--Data Cadastro-->
-					<div class="col-sm-4 p-2">
-						<label for="txtData">Data de Cadastro</label>
-						<input type="date" name="txtData" id="txtData" class="form-control">
-					</div>
-
-				</div>
-				<br>
-
-				
-				<div class="row">
-
-					<!-- NOME -->
-					<div class="col-sm-3 p-2">
-						<label for="txtNome">Nome</label>
-						<input type="text" name="txtNome" id="txtNome" class="form-control">
-					</div>
-
-					<!-- SOBRENOME -->
-					<div class=" col-sm-3 p-2">
-						<label for="txtSobrenome">Sobrenome</label>
-						<input type="text" name="txtSobrenome" id="txtSobrenome" class="form-control">
-					</div>
-
-					<div class="col-sm-2 p-2">
-						<label for="txtNascimento">Data de Nascimento</label>
-						<input type="date" name="txtNascimento" id="txtNascimento" class="form-control">
-					</div>
-
-					<!-- FOTO PERFIL -->
-					<div class="col-sm-3 p-2">
-						<label for="txtImg">Enviar Imagem</label>
-						<input type="file" id="txtImg" name="txtImg" class="form-control">
-					</div>
-
-					<!-- BASE 64 -->
-					<div style=" display: none;">
-						<label for="base64Code">Base 64</label>
-						<textarea name="base64Code" id="base64Code" rows="5" class="form-control"></textarea>
-					</div>
-				</div>
-
-
-				<div class="row">
-
-					<!-- CPF -->
-					<div class="col-sm-3 p-2">
-						<div>
-							<label for="txtCpf">CPF</label>
-							<input type="number" name="txtCpf" id="txtCpf" class="form-control">
-						</div>
-					</div>
-
-					<!-- CEP -->
-					<div class="col-sm-3 p-2">
-						<div>
-							<label for="txtCep">CEP</label>
-							<input type="number" name="txtCep" id="txtCep" class="form-control">
-						</div>
-					</div>
-
-					<!-- UF -->
-					<div class="col-sm-2 p-2">
-						<div>
-
-							<select class=" form-control" id="txtUF">
-
-								<option value="UF">UF</option>
-
-								<option value="RJ">RJ</option>
-
-								<option value="SP">SP</option>
-							</select>
-						</div>
-					</div>
-
-					<!-- CIDADE -->
-					<div class="col-sm-3 p-2">
-						<div>
-							<label for="txtCidade" class="form-label">Cidade</label>
-							<input type="text" name="txtCidade" id="txtCidade" class="form-control">
-						</div>
-					</div>
-
-				</div>
-
-
-				<div class="row">
-					
-					<!-- BAIRRO -->
-					<div class="col-sm-3">
-						<div>
-							<label for="txtBairro">Bairro</label>
-							<input type="text" name="txtBairro" id="txtBairro" class="form-control">
-						</div>
-					</div>
-
-					<!-- ENDEREÇO -->
-					<div class="col-sm-4">
-						<div>
-							<label for="txtEndereco">Endereço</label>
-							<input type="text" name="txtEndereco" id="txtEndereco" class="form-control">
-						</div>
-					</div>
-
-					<!-- NÚMERO -->
-					<div class="col-sm-1">
-						<div>
-							<label for="txtNumero">Número</label>
-							<input type="number" name="txtNumero" id="txtNumero" class="form-control">
-						</div>
-					</div>
-
-					<!-- COMPLEMENTO -->
-					<div class="col-sm-4">
-						<div>
-							<label for="txtComplemento">Complemento</label>
-							<input type="text" name="txtComplemento" id="txtComplemento" class="form-control">
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-
-					<!-- NACIONALIDADE -->
-					<div class="col-sm-4 p-2">
-
-						<div class="">
-							<input type="text" name="txtNacionalidade" id="txtNacionalidade" class="form-control">
-							<label for="txtNacionalidade">Nacionalidade</label>
-						</div>
-
-					</div>
-
-					<!-- TELEFONE -->
-					<div class="col-sm-2 p-2">
-						<label for="txtCelular">Telefone</label>
-						<input type="tel" name="txtCelular" id="txtCelular" class="form-control">
-					</div>
-
-					<!-- EMAIL -->
-					<div class="col-sm-8 p-2">
-						<label for="txtEmail">Email</label>
-						<input type="email" name="txtEmail" id="txtEmail" class="form-control">
-					</div>
-				</div>
-
-				<div class="row">
-
-					<!-- LOGIN -->
-					<div class="col-sm-6 p-2">
-						<label for="txtLogin">Login</label>
-						<input type="text" name="txtLogin" id="txtLogin" class="form-control">
-
-
-					</div>
-
-					<!-- SENHA -->
-					<div class="col-sm-4 p-2">
-						<div class="inputBox">
-
-							<input type="password" name="txtSenha" id="txtSenha" required="required">
-							<label for="txtSenha">Senha</label>
-
-						</div>
-					</div>
-
-				</div>
-
-				<div class="row">
-
-					<!-- STATUS -->
-					<div class="col-sm-3   p-2">
-
-						<select name="txtStatus" id="txtStatus" class="form-control">
-							<option value="Status">Status</option>
-							<option value="ATIVO">Ativo</option>
-							<option value="INATIVO">Inativo</option>
-						</select>
-					</div>
-				</div>
-
-				<!-- OBS -->
-				<div>
-					<label for="txtObs">Observação</label>
-					<br>
-					<textarea name="txtObs" id="txtObs" cols="" rows="10" class="form-control"></textarea>
-				</div>
-				<br>
-
-				<!-- DATA EXCLUIR -->
-				<div style="display:none ;">
-					<label for="txtExcluirData"></label>
-					<input type="date" name="txtExcluirData" id="txtExcluirData">
-				</div>
-
-				<div id="Resposta"></div>
-
-				<!-- BOTÃO -->
-				<div class="col-sm-6">
-
-					<button id="btoCadastrar" class="btn btn-roxo">Cadastrar</button>
-					<button id="btoAlterar" class="btn btn-roxo">Alterar</button>
-					<button id="btoLimpar" class="btn btn-roxo">Limpar</button>
-					<button id="btoExcluir" class="btn btn-roxo">Excluir</button>
-				</div>
+				</ul>
 
 
 
-
-			</form>
+			</div>
 		</div>
 
-		<script src="js/jquery-3.5.1.js"></script>
-		<script src="Validacao_Cliente.js"></script>
 
-		<script>
-			console.log("teste");
+		<div class="container">
 
-			function CarregarImg(imagem) {
-				var preview = document.getElementById("preImg");
-				var file = document.getElementById("txtImg").files[0];
+			<div>
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-8 ">
+						<h2 class="text-center">Cadastro de Clientes</h2>
+						<hr><br>
+						<form action="" method="post" class="form-control  form-back" id="frmCliente">
+							<br>
+							<!-- ID -->
+							<div class="row">
 
-				var reader = new FileReader();
+								<div class="col-sm-2 p-2">
+									<div class="inputBox">
+										<input type="text" name="txtID" id="txtID" required="required">
+										<label for="txtID">ID</label>
+									</div>
+								</div>
 
-				reader.onloadend = function () {
-					var caminho = reader.result;
-					preview.src = caminho;
+								<!--Botão Pesquisar-->
+								<div class="col-sm-2 p-3">
 
-					$("#base64Code").val(caminho);
-				}
+									<div>
+										<button id="btoPesquisar" class="btn btn-roxo">Pesquisar</button>
+									</div>
+								</div>
 
-				if (file) {
-					reader.readAsDataURL(file);
-				}
-				else {
-					preview.src = "";
-				}
-			}
+								<!--Data Cadastro-->
+								<div class="col-sm-4 p-2">
+									<div>
+										<input type="date" name="txtData" id="txtData" class=" inputBorder"
+											required="required">
+									</div>
+								</div>
 
-		</script>
+							</div>
+
+
+							<div class="row">
+
+								<!-- NOME -->
+								<div class="col-sm-3 p-2">
+									<div class="inputBox">
+										<input type="text" name="txtNome" id="txtNome" required="required">
+										<label for="txtNome">Nome</label>
+									</div>
+								</div>
+
+								<!-- SOBRENOME -->
+								<div class=" col-sm-3 p-2">
+									<div class="inputBox">
+										<input type="text" name="txtSobrenome" id="txtSobrenome" required="required">
+										<label for="txtSobrenome">Sobrenome</label>
+									</div>
+								</div>
+
+								<!-- Data Nascimento -->
+								<div class="col-sm-2 p-2">
+									<div>
+										<input type="date" name="txtNascimento" id="txtNascimento"
+											class="form-control inputBorder">
+									</div>
+								</div>
+
+								<!-- FOTO PERFIL -->
+								<div class="col-sm-3 p-2">
+									<div>
+										<input type="file" class="inputBorder" id="txtImg" name="txtImg"
+											onchange="CarregarImg(this)">
+										<img src="" id="preImg" height="200" style="display: none ;">
+									</div>
+								</div>
+
+								<!-- BASE 64 -->
+								<div style=" display: none;">
+									<label for="base64Code">Base 64</label>
+									<textarea name="base64Code" id="base64Code" rows="5"
+										class="form-control"></textarea>
+								</div>
+							</div>
+
+
+							<div class="row">
+
+								<!-- CPF -->
+								<div class="col-sm-3 p-2">
+									<div class="inputBox">
+										<input type="text" name="txtCpf" id="txtCpf" required="required">
+										<label for="txtCpf">CPF</label>
+									</div>
+								</div>
+
+								<!-- CEP -->
+								<div class="col-sm-3 p-2">
+									<div class="inputBox">
+										<input type="text" name="txtCep" id="txtCep" required="required">
+										<label for="txtCep">CEP</label>
+									</div>
+								</div>
+
+								<!-- UF -->
+								<div class="col-sm-2 p-2">
+									<div class="">
+
+										<select class=" form-control inputBorder" id="txtUF">
+
+											<option value="UF">UF</option>
+
+											<option value="RJ">RJ</option>
+
+											<option value="SP">SP</option>
+										</select>
+									</div>
+								</div>
+
+								<!-- CIDADE -->
+								<div class="col-sm-3 p-2">
+									<div class="inputBox">
+										<input type="text" name="txtCidade" id="txtCidade" required="required">
+										<label for="txtCidade" class="form-label">Cidade</label>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<!-- BAIRRO -->
+								<div class="col-sm-3 p-3">
+									<div class="inputBox">
+
+										<input type="text" name="txtBairro" id="txtBairro" required="required">
+										<label for="txtBairro">Bairro</label>
+									</div>
+								</div>
+
+								<!-- ENDEREÇO -->
+								<div class="col-sm-3 p-3">
+									<div class="inputBox">
+
+										<input type="text" name="txtEndereco" id="txtEndereco" required="required">
+										<label for="txtEndereco">Endereço</label>
+									</div>
+								</div>
+
+								<!-- NÚMERO -->
+								<div class="col-sm-2 p-3">
+									<div class="inputBox">
+
+										<input type="text" name="txtNumero" id="txtNumero" required="required">
+										<label for="txtNumero">Nº</label>
+									</div>
+								</div>
+
+								<!-- COMPLEMENTO -->
+								<div class="col-sm-3 p-3">
+									<div class="inputBox">
+										<input type="text" name="txtComplemento" id="txtComplemento"
+											required="required">
+										<label for="txtComplemento">Complemento</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+
+								<!-- NACIONALIDADE -->
+								<div class="col-sm-4 p-3">
+									<div class="inputBox">
+										<div class="">
+											<input type="text" name="txtNacionalidade" id="txtNacionalidade"
+												required="required">
+											<label for="txtNacionalidade">Nacionalidade</label>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- TELEFONE -->
+								<div class="col-sm-3 p-3">
+									<div class="inputBox">
+										<input type="tel" name="txtCelular" id="txtCelular" required="required">
+										<label for="txtCelular">Telefone</label>
+									</div>
+								</div>
+
+								<!-- EMAIL -->
+								<div class="col-sm-4 p-3">
+									<div class="inputBox">
+										<input type="email" name="txtEmail" id="txtEmail" required="required">
+										<label for="txtEmail">Email</label>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+
+								<!-- LOGIN -->
+								<div class="col-sm-3 p-3">
+									<div class="inputBox">
+										<input type="text" name="txtLogin" id="txtLogin" required="required">
+										<label for="txtLogin">Login</label>
+									</div>
+
+								</div>
+
+								<!-- SENHA -->
+								<div class="col-sm-3 p-3">
+									<div class="inputBox">
+										<input type="password" name="txtSenha" id="txtSenha" required="required">
+										<label for="txtSenha">Senha</label>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="row">
+
+								<!-- STATUS -->
+								<div class="col-sm-3  p-3">
+
+									<select name="txtStatus" id="txtStatus" class="form-control inputBorder">
+										<option value="Status">Status</option>
+										<option value="ATIVO">Ativo</option>
+										<option value="INATIVO">Inativo</option>
+									</select>
+								</div>
+							</div>
+
+							<!-- OBS -->
+							<div>
+								<label for="txtObs">Observação</label>
+								<br>
+								<textarea name="txtObs" id="txtObs" cols="" rows="10"
+									class="form-control inputBorder"></textarea>
+							</div>
+							<br>
+
+							<!-- DATA EXCLUIR -->
+							<div style="display:none ;">
+								<label for="txtExcluirData"></label>
+								<input type="date" name="txtExcluirData" id="txtExcluirData">
+							</div>
+
+							<div id="Resposta"></div>
+
+							<!-- BOTÃO -->
+							<div class="col-sm-6">
+
+								<button id="btoCadastrar" class="btn btn-roxo">Cadastrar</button>
+								<button id="btoAlterar" class="btn btn-roxo">Alterar</button>
+								<button id="btoLimpar" class="btn btn-roxo">Limpar</button>
+								<button id="btoExcluir" class="btn btn-roxo">Excluir</button>
+							</div>
+
+
+
+
+						</form>
+
+						<div class="col-sm-2"></div>
+					</div>
+				</div>
+
+				<script src="js/jquery-3.5.1.js"></script>
+				<script src="Validacao_Cliente.js"></script>
+
+				<script>
+					console.log("teste");
+
+					function CarregarImg(imagem) {
+						var preview = document.getElementById("preImg");
+						var file = document.getElementById("txtImg").files[0];
+
+						var reader = new FileReader();
+
+						reader.onloadend = function () {
+							var caminho = reader.result;
+							preview.src = caminho;
+
+							$("#base64Code").val(caminho);
+						}
+
+						if (file) {
+							reader.readAsDataURL(file);
+						}
+						else {
+							preview.src = "";
+						}
+					}
+
+				</script>
 
 </html>
 

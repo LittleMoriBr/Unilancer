@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    $(".menu-button").click(function () {
+        $(".menu-bar").toggleClass("open");
+    })
+})
 $(function () {
     console.log("Entrou na pag.js");
 
@@ -67,6 +72,125 @@ $(function () {
         $("#btoCadastrar").click(function () {
             console.log("Cliquei no botão btoCadastrar");
             const xhr = new XMLHttpRequest();
+
+            if ($("#txtPrestador").val() == "") {
+
+                alert("Informe O nome")
+                return;
+
+            }
+
+            if ($("#txtSobrenome").val() == "") {
+
+                alert("Informe O sobrenome")
+                return;
+
+            }
+
+            if ($("#txtEmailPrestador").val() == "") {
+
+                alert("Informe O Email")
+                return;
+
+            }
+
+            if ($("#txtCpfCnpjPrestador").val() == "") {
+
+                alert("Informe O Cpf Cnpj")
+                return;
+
+            }
+
+            if ($("#txtNacionalidadePrestador").val() == "") {
+
+                alert("Informe O Nacionalidade")
+                return;
+
+            }
+
+            if ($("#txtCidadePrestador").val() == "") {
+
+                alert("Informe O Cidade")
+                return;
+
+            }
+
+            if ($("#txtUfPrestador").val() == "") {
+
+                alert("Informe O Uf")
+                return;
+
+            }
+
+            if ($("#txtEnderecoPrestador").val() == "") {
+
+                alert("Informe O Endereco")
+                return;
+
+            }
+
+            if ($("#txtBairroPrestador").val() == "") {
+
+                alert("Informe O Bairro")
+                return;
+
+            }
+
+            if ($("#txtCepPrestador").val() == "") {
+
+                alert("Informe O Cep")
+                return;
+
+            }
+
+            if ($("#txtNumeroPrestador").val() == "") {
+
+                alert("Informe o Numero")
+                return;
+
+            }
+
+            if ($("#txtComplementoPrestador").val() == "") {
+
+                alert("Informe o Numero")
+                return;
+
+            }
+
+            if ($("#txtCelularPrestador").val() == "") {
+
+                alert("Informe o Celular")
+                return;
+
+            }
+
+            if ($("#txtLoginPrestador").val() == "") {
+
+                alert("Informe o Login")
+                return;
+
+            }
+
+            if ($("#txtSenhaPrestador").val() == "") {
+
+                alert("Informe o Senha")
+                return;
+
+            }
+
+            if ($("#txtAtuacaoPrestador").val() == "") {
+
+                alert("Informe o Senha")
+                return;
+
+            }
+
+            if ($("#txtDescricaoPrestador").val() == "") {
+
+                alert("Informe o Descrição")
+                return;
+
+            }
 
             var formData = {
                 id_prestador: $("#txtID").val(),
