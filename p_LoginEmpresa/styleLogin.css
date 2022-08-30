@@ -93,7 +93,7 @@ body * {
 
 .link-re:hover{
 	color: #1f1f1f;
-  background-color: red !important;
+  background-color: rgba(12, 12, 12, 0) !important;
 	transition: 0.5s;
 }
 
@@ -123,6 +123,7 @@ body * {
     align-items: flex-start;
     justify-content: center;
 }
+
 
 .top-nav2 {
     display: flex;
