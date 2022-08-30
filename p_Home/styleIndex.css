@@ -57,6 +57,7 @@ input.form-control { width: 500px!important; }
   height: 50px;
 }
 
+
 .top-nav2{
 
 	display: flex;
@@ -110,8 +111,8 @@ input.form-control { width: 500px!important; }
   display: block;
   background-color: #fff;
   position: absolute;
-  height: 4px;
-  width: 30px;
+  height: 3px;
+  width: 20px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
@@ -410,7 +411,7 @@ h2 {
 	font-family: Arial, Helvetica, sans-serif;
 	border-radius: 0.6em;
 	text-transform: uppercase;
-	overflow: hidden;
+	overflow: auto;
 	transition: all 0.3s;
 	line-height: 1.4em;
 	border: 2px solid var(--green);
@@ -439,9 +440,12 @@ h2 {
 		padding-top: 60px;
 	}
 
+
 	.bg3{
 		background-color: #111111;
 		padding: 30px;
+		margin: auto;
+
 	}
 	.bg4{
 		background-color: #111111;
@@ -512,6 +516,9 @@ h2 {
 .card {
 	height: 17rem;
 	background-color: #212121;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border-radius: 1rem;
 	border: #212121 0.2rem solid;
 	transition: all 0.4s ease-in;
@@ -836,7 +843,6 @@ body .btn-roxo {
 	float: right;
 	font-size: 22px;
 	line-height: 20px;
-	
 	cursor: pointer;
 	transition: 0.3s;
   }
@@ -911,7 +917,7 @@ body .btn-roxo {
 	display: flex;
 	align-items: center;
 	box-shadow: inset 0 0 1.6em -0.6em #69179e;
-	overflow: hidden;
+	overflow: auto;
 	position: relative;
 	height: 2.8em;
 	padding-right: 3.3em;
@@ -1014,12 +1020,31 @@ body .btn-roxo {
 	}
   }
 
+  .uniAumen{
+	color: #ff00b4;
+	text-shadow: #ff00b353 0.1em 0.1em 0.1em;
+	font-weight: 800;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80px;
+	text-transform: uppercase;
+	text-align: left;
+  }
+
   .alinhaMenu{
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	flex-direction: row;
   }
+
+  .coul{
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	margin-right: 20px;
+	margin-left: 20px;
+  }
+  
 
   #btoMenu{
 	position: absolute;
@@ -1191,15 +1216,13 @@ body .btn-roxo {
 .accordion {
 	background-color: #373737;
 	color: white;
-	text-align: center;
 	font-weight: 500;
 	cursor: pointer;
 	padding: 15px;
-	width: 600px;
-	text-align: left;
+	margin: auto;
 	border: none;
-	outline: none;
 	transition: 0.4s;
+
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -1213,14 +1236,13 @@ body .btn-roxo {
   .panel {
 
 	display: flex;
-	width: 600px;
+	width: auto;
 	justify-items: center;
 	align-items: center;
 	margin-bottom: 5px;
 	background-color: #303030;
 	border-radius: 0px 0px 20px 20px;
 	display: none;
-	overflow: hidden;
   }
 
   .pss{
