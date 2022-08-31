@@ -11,11 +11,6 @@
   <link rel="stylesheet" href="js/jquery.min.js">
   <link rel="stylesheet" href="styleIndex.css">
 
-
-
-
-
-
 </head>
 
 <body class="rodape">

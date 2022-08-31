@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleLogin.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+
+
     
     <title>Login</title>
 </head>
@@ -45,6 +47,8 @@
       </div>
 
 <?php
+
+include_once("../p_Configs/conexao.php");
         
         $usuarioLogado = "";
         $tentouEntrar = 0;
@@ -55,21 +59,21 @@
             $login = $_POST['txtLogin'];
             $senha = $_POST['txtSenha'];
             
-            $sql = $conn->query("select * from usuario 
+            $sql = $conn->query("select * from cliente 
                     where 
-                        login_usuario = '".$login."' and 
-                        senha_usuario = '".$senha."'");
+                        usuario_cliente = '".$login."' and 
+                        senha_cliente = '".$senha."'");
             
             foreach($sql as $linha)
             {
-                $usuarioLogado = $linha['login_usuario'];
+                $usuarioLogado = $linha['usuario_cliente'];
 				
                 
                 session_start();
-                $_SESSION['usuarioSistemaID'] = $linha['id_usuario'];
+                $_SESSION['usuarioSistemaID'] = $linha['id_cliente'];
                 $_SESSION['usuarioSistemaLogin'] = $linha['login_usuario'];
-                $_SESSION['usuarioSistemaNome'] = $linha['nome_usuario'];
-                $_SESSION['usuarioSistemaImagem'] = $linha['img_usuario'];
+                $_SESSION['usuarioSistemaNome'] = $linha['nome_cliente'];
+                $_SESSION['usuarioSistemaImagem'] = $linha['img_cliente'];
 
             }
             
@@ -103,7 +107,6 @@
         </div>
     </div>
 </form>
-
                             <?php
 
                             if($usuarioLogado == "" && $tentouEntrar == 1)
@@ -113,7 +116,7 @@
                             else if($usuarioLogado != "" && $tentouEntrar == 1)
                             {
                                 echo "usuário seja bem vindo";
-                                header("Location:Inicial.php");
+                                header("Location:../p_Home/index.php");
                             }
                             
                             ?>
