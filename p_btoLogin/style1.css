@@ -1,0 +1,18 @@
+.position{
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    right: 50%;
+    margin: 0;
+    padding-left: 200px;
+}
+.center-one-tela{
+    background-color: blue;
+    margin: -100 auto !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao22{
+    width: 300px;
+}
