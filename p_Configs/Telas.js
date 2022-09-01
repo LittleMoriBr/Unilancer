@@ -20,7 +20,10 @@ $(function () {
 			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 			xhr.send();
 
+
+
 			return false;
+
 		});
 	});
 
