@@ -11,11 +11,6 @@
   <link rel="stylesheet" href="js/jquery.min.js">
   <link rel="stylesheet" href="styleIndex.css">
 
-
-
-
-
-
 </head>
 
 <body class="rodape">
@@ -42,19 +37,15 @@
     </ul>
   </section>
 
-  <div class="container">
-    <div class="row">
-      <div class="coul col-sm-4">
-    <a href="../p_LoginCliente/index.php"><button id="btoMenu">Cliente</button></a>
-      </div>
-      <div class="coul col-sm-4">
-    <a href="../p_LoginPrestador/index.php"><button id="btoMenu">Prestador</button></a>
-      </div>
-      <div class="coul col-sm-4">
-    <a href="../p_LoginEmpresa/"><button id="btoMenu">Empresa</button></a>
-      </div>
+      <div class="menu">
+      <li><div class="">
+    <a href="../p_btoLogin/telaindex.php"><button id="btoMenu">Login</button></a>
+      </div></li>
+      <li><div class="">
+    <a href="../p_LoginPrestador/index.php"><button id="btoMenu">Cadastrar</button></a>
+      </div></li>
     </div>
-  </div>
+
 
 
   <div class="container-fluid backInicio" style="margin-top: -23px;">
@@ -121,9 +112,6 @@
   </div>
 
 
-  <br><br><br>
-
-
 
 
   <!-- SOBRE EMPRESA -->
@@ -179,8 +167,8 @@
       </div>
     </div>
   </div>
-  <br><br><br>
 
+  <div class="bg3">
   <div class="carousel__container">
     <div class="carousel__item">
       <h3 class="cartitu">Manutenção</h3>
@@ -195,8 +183,8 @@
       <img src="img/ser3.png" class="carousel__image">
     </div>
   </div>
+  </div>
 
-  <br><br><br>
 
   <div class="container-fluid bg1">
     <div class="container">

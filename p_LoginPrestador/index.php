@@ -45,6 +45,9 @@
       </div>
 
 <?php
+
+include_once("../p_Configs/conexao.php");
+
         
         $usuarioLogado = "";
         $tentouEntrar = 0;
@@ -55,21 +58,21 @@
             $login = $_POST['txtLogin'];
             $senha = $_POST['txtSenha'];
             
-            $sql = $conn->query("select * from usuario 
+            $sql = $conn->query("select * from prestador 
                     where 
-                        login_usuario = '".$login."' and 
-                        senha_usuario = '".$senha."'");
+                        login_prestador = '".$login."' and 
+                        senha_prestador = '".$senha."'");
             
             foreach($sql as $linha)
             {
-                $usuarioLogado = $linha['login_usuario'];
+                $usuarioLogado = $linha['login_prestador'];
 				
                 
                 session_start();
-                $_SESSION['usuarioSistemaID'] = $linha['id_usuario'];
-                $_SESSION['usuarioSistemaLogin'] = $linha['login_usuario'];
-                $_SESSION['usuarioSistemaNome'] = $linha['nome_usuario'];
-                $_SESSION['usuarioSistemaImagem'] = $linha['img_usuario'];
+                $_SESSION['usuarioSistemaID'] = $linha['id_prestador'];
+                $_SESSION['usuarioSistemaLogin'] = $linha['login_prestador'];
+                $_SESSION['usuarioSistemaNome'] = $linha['nome_prestador'];
+                $_SESSION['usuarioSistemaImagem'] = $linha['img_prestador'];
 
             }
             
@@ -113,7 +116,7 @@
                             else if($usuarioLogado != "" && $tentouEntrar == 1)
                             {
                                 echo "usuário seja bem vindo";
-                                header("Location:Inicial.php");
+                                header("Location:../p_Home/index.php");
                             }
                             
                             ?>
