@@ -32,41 +32,30 @@
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
-            <li><a class="link-re" href="index.php">Home</a></li>
+            <li><a class="link-re" href="../p_Home/index.php">Home</a></li>
             <li><a class="link-re" href="../p_Quem Somos/Somos.php">Sobre</a></li>
             <li><a class="link-re" href="../p_Servicos/index.html">Serviços</a></li>
             <li><a class="link-re" href="../p_Localizacao/Localizacao.php">Localização</a></li>
         </ul>
     </section>
 
-    <div class="menu">
-        <li>
-            <div class="">
-                <a href="../p_LoginCliente/index.php"><button id="btoMenu">Login</button></a>
-            </div>
-        </li>
-        <li>
-            <div class="">
-                <a href="../p_LoginPrestador/index.php"><button id="btoMenu">Cadastrar</button></a>
-            </div>
-        </li>
-    </div>
 
     <div class="position">
         <div class="center-one-tela">
             <div class="col-sm-12">
-                <button class="form-control" style="color: red;">TEste</button>
+                <button class="botao22">Cliente</button>
             </div>
         </div>
-
+        <br>
         <div class="center-one-tela">
             <div class="col-sm-12">
-                <button class="botao22" style="color: red;">TEste</button>
+                <button class="botao22">Prestador</button>
             </div>
         </div>
+        <br>
         <div class="center-one-tela">
             <div class="col-sm-12">
-                <button class="botao22" style="color: red;">TEste</button>
+                <button class="botao22">Empresa</button>
             </div>
         </div>
     </div>
