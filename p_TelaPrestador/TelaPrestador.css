@@ -1,3 +1,5 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
 .redondo {
 	border-radius: 150px;
 	margin-top: 150px;
@@ -52,13 +54,27 @@ a:active {
 }
 
 .Icone {
-	margin-left: 800px;
-	margin-top: 85px;
+	position: absolute;
+	right: 30px;
+	top: 200px;
 }
 
 .Icone2 {
-	margin-left: 10px;
-	margin-top: 85px;
+	position: absolute;
+	right: 80px;
+	top: 200px;
+}
+
+.Icone3 {
+	position: absolute;
+	right: 130px;
+	top: 200px;
+}
+
+.Icone4 {
+	position: absolute;
+	right: 180px;
+	top: 195px;
 }
 
 .cliente {
@@ -74,6 +90,7 @@ a:active {
 .borda {
 	border: 2px solid;
 	border-color: white;
+	position: relative;
 
 	padding-top: 5px;
 	padding-bottom: 20px;
@@ -83,4 +100,229 @@ a:active {
 	color: white;
 	margin-left: 20px;
 	margin-top: -65px;
+}
+
+textarea:focus,
+input:focus {
+	outline: none;
+}
+
+.inputtexto {
+	margin-left: 20px;
+	width: 100%;
+	border-color: #ff00b4 !important;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	background-color: #121212;
+
+	color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+	body .btn-roxo {
+		position: absolute;
+		right: 10px;
+		top: 20px;
+	}
+}
+
+@media (max-width: 995px) {
+	.imagemm {
+		-ms-flex: 0 0 100px;
+		flex: 0 0 100px;
+	}
+
+	.rate > label:before {
+		display: inline-block;
+		font-size: 1.5rem !important;
+		padding: 0.3rem 0.2rem;
+		margin: 0;
+		cursor: pointer;
+		font-family: FontAwesome;
+		content: "\f005 "; /* full star */
+	}
+
+	body .btn-roxo {
+		position: absolute;
+		right: 10px;
+		top: 20px;
+	}
+
+	.textao {
+		margin-left: 100px;
+		width: 80%;
+	}
+
+	.inputtexto {
+		margin-left: 18px;
+	}
+}
+
+@media (max-width: 767px) {
+	.imagemm {
+		-ms-flex: 0 0 100px;
+		flex: 0 0 100px;
+	}
+
+	.estrelas {
+		-ms-flex: 0 0 200px;
+		flex: 0 0 200px;
+		position: absolute;
+		top: -80px;
+		left: 120px;
+	}
+
+	body .btn-roxo {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	.inputtexto {
+		margin-left: 25px;
+	}
+
+	.textao {
+		margin-top: -25px;
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 575px) {
+	.inputtexto {
+		margin-left: -0px;
+	}
+}
+
+@media (max-width: 520px) {
+	.textao {
+		margin-left: 100px;
+		width: 75%;
+	}
+}
+
+.estrela {
+	margin-top: -40px !important;
+}
+
+.banner_prestador {
+	position: relative;
+}
+
+.text_area {
+	width: 100%;
+	margin-left: 20px;
+	margin-top: -60px;
+	border-color: #ff00b4 !important;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	background-color: #121212;
+
+	color: #ffffff;
+}
+
+.estrela1 {
+	position: fixed;
+	width: 0px;
+}
+
+.estrelas {
+	position: relative;
+}
+
+.brancodaestrela {
+	color: rgb(230, 212, 226);
+}
+
+.s1 {
+	position: absolute;
+	left: 10px;
+}
+
+.s2 {
+	position: absolute;
+	left: 40px;
+}
+
+.s3 {
+	position: absolute;
+	left: 70px;
+}
+
+.s4 {
+	position: absolute;
+	left: 100px;
+}
+
+.s5 {
+	position: absolute;
+	left: 130px;
+}
+
+.rate {
+	display: inline-block;
+	border: 0;
+}
+/* Hide radio */
+.rate > input {
+	display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate > label {
+	float: right;
+}
+/* The star of the show */
+.rate > label:before {
+	display: inline-block;
+	font-size: 1.7rem;
+	padding: 0.3rem 0.2rem;
+	margin: 0;
+	cursor: pointer;
+	font-family: FontAwesome;
+	content: "\f005 "; /* full star */
+}
+
+/* Half star trick */
+.rate .half:before {
+	content: "\f089 "; /* half star no outline */
+	position: absolute;
+	padding-right: 0;
+}
+/* Click + hover color */
+input:checked ~ label, /* color current and previous stars on checked */
+label:hover, label:hover ~ label {
+	color: #ff00b4;
+} /* color previous stars on hover */
+
+/* Hover highlights */
+input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
+input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+label:hover ~ input:checked ~ label /* highlight previous selected stars */ {
+	color: #ff00b4;
+}
+
+body .btn-roxo {
+	border-color: #ff00b4;
+
+	color: #ff00b4;
+}
+
+body .btn-roxo:hover,
+body .btn-roxo:focus {
+	border-color: #ff00b4;
+
+	background-color: #ff00b4;
+
+	color: #fff;
+}
+
+body .btn-roxo:active,
+body .btn-roxo:visited,
+body .btn-roxo:active:focus,
+body .btn-roxo:active:hover {
+	border-color: #ff00b4;
+
+	background-color: #ff00b4;
+
+	color: #fff;
 }
