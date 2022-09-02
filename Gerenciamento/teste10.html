@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>Disabling browser back button</title>
+    <script src=
+        "https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity=
+"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+    </script>
+</head>
+  
+<body>
+    <a href="test2.html">Next page</a>
+  
+    <script>
+        $(document).ready(function() {
+            function disableBack() {
+                window.history.forward()
+            }
+            window.onload = disableBack();
+            window.onpageshow = function(e) {
+                if (e.persisted)
+                    disableBack();
+            }
+        });
+    </script>
+</body>
+  
+</html>
