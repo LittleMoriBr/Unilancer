@@ -72,12 +72,7 @@
     </div>
 
 
-
-
-
 </body>
-
-
 <!-- JS -->
 
 <script src="section.js">
