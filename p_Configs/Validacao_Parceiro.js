@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    $(".menu-button").click(function () {
+        $(".menu-bar").toggleClass("open");
+    })
+})
 $(function () {
     console.log("Entrou na pag.js");
 
@@ -5,7 +10,7 @@ $(function () {
         return false;
     });
 
-    $("#btoPesquisar").click(function () {
+    $("#Conta").click(function () {
         console.log("Cliquei no botão Pesquisar");
         const xhr = new XMLHttpRequest();
 
@@ -56,47 +61,7 @@ $(function () {
         };
     });
 
-    $("#btoCadastrar").click(function () {
-        console.log("Cliquei no botão Pesquisar");
-        const xhr = new XMLHttpRequest();
 
-        var formData = {
-            id_parceiro: $("#txtID").val(),
-            nome_parceiro: $("#txtNome").val(),
-            cnpj_parceiro: $("#txtCnpj").val(),
-            area_parceiro: $("#txtArea").val(),
-            email_parceiro: $("#txtEmail").val(),
-            nacionalidade_parceiro: $("#txtNacionalidade").val(),
-            celular_parceiro: $("#txtCelular").val(),
-            status_parceiro: $("#txtStatus").val(),
-            obs_parceiro: $("#comment").val(),
-            cep_parceiro: $("#txtCep").val(),
-            endereco_parceiro: $("#txtEndereco").val(),
-            numero_parceiro: $("#txtNumero").val(),
-            complemento_parceiro: $("#txtComplemento").val(),
-            cidade_parceiro: $("#txtCidade").val(),
-            uf_parceiro: $("#txtUF").val(),
-            bairro_parceiro: $("#txtBairro").val(),
-            login_parceiro: $("#txtLogin").val(),
-            senha_parceiro: $("#txtSenha").val(),
-            img_parceiro: $("#base64Code").val(),
-        };
-
-
-        formData = JSON.stringify(formData);
-        xhr.onload = function () {
-            const Resposta = document.getElementById("Resposta");
-            Resposta.innerHTML = this.responseText;
-        };
-
-        xhr.open("POST", "parceiro_cadastro.php", formData);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send(formData);
-
-        xhr.onreadystatechange = function () {
-            console.log(formData);
-        };
-    });
 
     $("#btoLimpar").click(function () {
         console.log("Cliquei no botão btoLimpar");

@@ -1,12 +1,12 @@
 $(function () {
 	console.log("Entrou na pag.js");
 
-	$("#formularioPrestador").submit(function () {
-		return false;
-	});
-
 	/*Botão Cadastrar*/
 	$(document).ready(function () {
+		$("#valval").submit(function () {
+			return false;
+		});
+
 		$("#btoCadastrar").click(function () {
 			console.log("Cliquei no botão btoCadastrar");
 			const xhr = new XMLHttpRequest();
@@ -20,11 +20,11 @@ $(function () {
 
 			formData = JSON.stringify(formData);
 			xhr.onload = function () {
-				const Resposta = document.getElementById("Resposta");
-				Resposta.innerHTML = this.responseText;
+				const Resposta2 = document.getElementById("Resposta2");
+				Resposta2.innerHTML = this.responseText;
 			};
 
-			xhr.open("POST", "prestador_cadastro.php", formData);
+			xhr.open("POST", "CadastroAval.php", formData);
 			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 			xhr.send(formData);
 

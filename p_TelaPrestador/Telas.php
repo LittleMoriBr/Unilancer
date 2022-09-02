@@ -10,7 +10,7 @@ if ($_GET && isset($_GET['tela'])) {
     }
 
     if ($_GET['tela'] == "Avaliacoes") {
-        include_once("Avaliacoes.php");
+        include_once("Avaliacoes.html");
     }
 
     if ($_GET['tela'] == "Historico") {
