@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="styleIndex.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+
+                <ul class="menu">
+
+                    <li title="home"><a href="frm_home.html" class="menu-button home">Home</a></li>
+                    <li title="about"><a href="frmAdmCliente.html" class="active about"></a></li>
+                    <li title="archive"><a href="frmAdm_prestador.html" class="archive"></a></li>
+                    <li title="contact"><a href="FrmAdmParceiro.html" class="contact"></a></li>
+                    <li title=""><a href="" class="">Ouvidoria</a></li>
+                    <li title="pencil"><a href="../index.php" class="pencil">Sair</a></li>
+                    
+                </ul>
+
+
+
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 ">
+                    <h1 style="text-align: center ;">Home</h1>
+                    <hr>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="Validacao_Prestador.js"></script>
+
+        <script>
+            console.log("teste");
+
+            function CarregarImg(imagem) {
+                var preview = document.getElementById("preImg");
+                var file = document.getElementById("txtImg").files[0];
+
+                var reader = new FileReader();
+
+                reader.onloadend = function () {
+                    var caminho = reader.result;
+                    preview.src = caminho;
+
+                    $("#base64Code").val(caminho);
+                }
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+                else {
+                    preview.src = "";
+                }
+            }
+
+        </script>
+
+
+
+</body>
+
+</html>

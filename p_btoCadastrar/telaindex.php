@@ -40,19 +40,19 @@
     <div class="position">
         <div class="center-one-tela">
             <div class="col-sm-12">
-                <a href="../p_LoginCliente/index.php"><button class="botao22">Cliente</button></a>
+               <a href="../Gerenciamento/Usuario-Gerenciamento/frm-cliente/index.php"><button class="botao22">Cliente</button></a> 
             </div>
         </div>
         <br>
         <div class="center-one-tela">
             <div class="col-sm-12">
-            <a href="../p_LoginPrestador/index.php"><button class="botao22">Prestador</button></a>
+            <a href="../Gerenciamento/Usuario-Gerenciamento/frm-prestador/frmAdm_prestador.html"><button class="botao22">Prestador</button></a> 
             </div>
         </div>
         <br>
         <div class="center-one-tela">
             <div class="col-sm-12">
-            <a href="../p_LoginEmpresa/index.php"><button class="botao22">Empresa</button></a>
+            <a href="../Gerenciamento/Usuario-Gerenciamento/frm-empresa/index.html"><button class="botao22">Empresa</button></a> 
             </div>
         </div>
     </div>

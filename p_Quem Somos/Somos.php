@@ -70,7 +70,6 @@
       </div>
     </div>
 
-    <div class="coluna11">
 <div class="container-fluid bg1">
     <div class="container">
       <div class="row">
@@ -89,12 +88,9 @@
           </div>
           </div>
         </div>
-      </div>
-    </div>
 
 
 
-    <div class="container-fluid bg3">
       <div class="container5">
         <h3 class="titFunda">Fundadores da Unilancer</h3>
         <div class="row">
@@ -115,13 +111,12 @@
           </div>
         </div>
       </div>
-    </div>
+      </div>
 
 
     
 
-    <div class="container-fluid bg3">
-    <div class="container text-center">
+    <div class="text-center">
       <div class="row">
         <div class="col-12">
           <button class="accordion">Posso achar profissionais de qualquer área?</button>
@@ -154,11 +149,8 @@
           </div>
 
           <div class="spa"></div>
-
-
         </div>
       </div>
-    </div>
   </div>
 
   </div>
