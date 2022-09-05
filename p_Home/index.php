@@ -42,7 +42,7 @@
     <a href="../p_btoLogin/telaindex.php"><button id="btoMenu">Login</button></a>
       </div></li>
       <li><div class="">
-    <a href="../p_LoginPrestador/index.php"><button id="btoMenu">Cadastrar</button></a>
+    <a href="../p_btoCadastrar/telaindex.php"><button id="btoMenu">Cadastrar</button></a>
       </div></li>
     </div>
 
@@ -78,7 +78,7 @@
     <div class="col-sm-12">
       <div class="alert info">
         <span class="closebtn">&times;</span>
-        <strong>ALERTA!</strong> O site está sem javascript no momento, volte mais tarde. :)
+        <strong>ALERTA!</strong> O site está com javascript no momento, volte mais tarde. :)
       </div>
     </div>
   </center>

@@ -104,7 +104,7 @@ include_once("../p_Configs/conexao.php");
                     else if($usuarioLogado != "" && $tentouEntrar == 1)
                         {
                             echo "usuário seja bem vindo";
-                            header("Location:../Gerenciamento/frm_home.html");
+                            header("Location:../Gerenciamento/ADM-Gerenciamento/frm_home.html");
                         }
                 ?>
                 

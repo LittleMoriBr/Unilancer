@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
@@ -13,32 +15,38 @@
 
     <script src="js/bootstrap.bundle.js"></script>
 
+    <section class="top-nav">
+        <div>
+          <img class="imgUni" src="img/amare12.png" alt="">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+          <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+          <li><a class="link-re" href="../../../p_LoginEmpresa/index.php">Login</a></li>
+        </ul>
+      </section>
+
 
 
     <div class="container">
         
-            <form action="" method="post" class="form-control" id="frmEmpresa" enctype="multipart/form-data">
+            <form action="" method="post" class="form-control  form-back" id="frmEmpresa" enctype="multipart/form-data">
 
                     <div class="row">
 
-                        <div class="col-sm-5">
+                        <div style="display: none;" class="col-sm-5">
 
-                            <label for="txtIDParceiro" class="form-label">ID</label><br>
+                            <label for="txtIDParceiro" class="form-label form-control inputBorder">ID</label><br>
                             <input type="text" id="txtIDParceiro" name="txtIDParceiro" placeholder="ID" class="form-control">
 
                         </div>
 
-                        <div class="col-sm-2 text-center">
-
-                            <label for="" class="form-label">&nbsp</label><br>
-                            <p align="left"><button class="btn btn-primary" formaction="parceiro.php" name="btoPesquisar" id="btoPesquisar"><img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/20/000000/external-magnifying-glass-interface-kiranshastry-lineal-kiranshastry.png"/></button></p>
-
-                        </div>
-
-                        <div class="col-sm-5">
+                        <div style="display: none;" class="col-sm-3">
 
                             <label for="txtDataParceiro" class="form-label">Data</label><br>
-                            <input type="date" id="txtDataParceiro" name="txtDataParceiro" placeholder="Informe Data" class="form-control">
+                            <input type="date" id="txtDataParceiro" name="txtDataParceiro" placeholder="Informe Data" class="form-control inputBorder">
 
                         </div>
 
@@ -49,34 +57,32 @@
                         <div class="col-sm-6">
 
                             <label for="txtNomeParceiro" class="form-label">Nome</label><br>
-                            <input type="text" id="txtNomeParceiro" name="txtNomeParceiro" placeholder="Informe o Nome" class="form-control">
+                            <input type="text" id="txtNomeParceiro" name="txtNomeParceiro" placeholder="Informe o Nome" class="form-control inputBorder">
 
                             <br>
                         </div>
 
 
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div>
                                 <label for="txtImgParceiro" class="form-label">Foto de perfil</label>
-                                <input type="file" class="form-control" id="txtImgParceiro" name="txtImgParceiro"
+                                <input type="file" class="form-control inputBorder" id="txtImgParceiro" name="txtImgParceiro"
                                     onchange="CarregarFto(this)">
                                 <img src="" id="preImg" height="200">
                             </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div style="display: none;" class="col-sm-6">
                         <label for="base64Code">Base 64</label>
-                        <textarea name="base64Code" id="base64Code" rows="5" class="form-control"></textarea>
+                        <textarea name="base64Code" id="base64Code" rows="5" class="form-control inputBorder"></textarea>
                     </div>
                     </div>
-
-          <br>
 
                     <div class="row">
 
                         <div class="col-sm-6">
 
                             <label for="txtAreaParceiro" class="form-label">Area de atuação</label><br>
-                            <select class="form-select" id="txtAreaParceiro" name="txtAreaParceiro" aria-label="Default select example" name="txtAreaParceiro">
+                            <select class="form-select inputBorder" id="txtAreaParceiro" name="txtAreaParceiro" aria-label="Default select example" name="txtAreaParceiro">
 
                             <option value="Area 1">Area 1</option>
 
@@ -90,7 +96,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtNacionalidadeParceiro" class="form-label">Nacionalidade</label><br>
-                            <input type="text" id="txtNacionalidadeParceiro" name="txtNacionalidadeParceiro" placeholder="Informe a nacionalidade" class="form-control">
+                            <input type="text" id="txtNacionalidadeParceiro" name="txtNacionalidadeParceiro" placeholder="Informe a nacionalidade" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -104,7 +110,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtCnpjParceiro" class="form-label">CNPJ</label><br>
-                            <input type="text" id="txtCnpjParceiro" name="txtCnpjParceiro" placeholder="Informe o CNPJ" class="form-control">
+                            <input type="text" id="txtCnpjParceiro" name="txtCnpjParceiro" placeholder="Informe o CNPJ" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -113,7 +119,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtCelularParceiro" class="form-label">Numero de telefone</label><br>
-                            <input type="number" id="txtCelularParceiro" name="txtCelularParceiro" placeholder="Informe seu numero de contato" class="form-control">
+                            <input type="number" id="txtCelularParceiro" name="txtCelularParceiro" placeholder="Informe seu numero de contato" class="inputBorder form-control">
 
                             <br>
                         </div>
@@ -126,7 +132,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtEmailParceiro" class="form-label">Email</label><br>
-                            <input type="email" id="txtEmailParceiro" name="txtEmailParceiro" placeholder="Informe seu Email" class="form-control">
+                            <input type="email" id="txtEmailParceiro" name="txtEmailParceiro" placeholder="Informe seu Email" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -134,8 +140,8 @@
 
                         <div class="col-sm-6">
 
-                            <label for="txtCepParceiro" class="form-label">CEP</label><br>
-                            <input type="text" id="txtCepParceiro" name="txtCepParceiro" placeholder="Informe seu CEP" class="form-control">
+                            <label for="txtCepParceiro" class="form-label ">CEP</label><br>
+                            <input type="text" id="txtCepParceiro" name="txtCepParceiro" placeholder="Informe seu CEP" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -146,7 +152,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtCidadeParceiro" class="form-label">Cidade</label><br>
-                            <input type="text" id="txtCidadeParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="form-control">
+                            <input type="text" id="txtCidadeParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="inputBorder">
 
                             <br>
                         </div>
@@ -154,7 +160,7 @@
                         <div class="col-sm-2">
 
                             <label for="txtUFParceiro" class="form-label">UF</label><br>
-                            <select id="txtUFParceiro" class="form-select" aria-label="Default select example" name="txtUFParceiro">
+                            <select id="txtUFParceiro" class="form-select inputBorder" aria-label="Default select example" name="txtUFParceiro">
 
                             <option id="txtRJ" value="RJ">RJ</option>
 
@@ -167,7 +173,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtBairroParceiro" class="form-label">Bairro</label><br>
-                            <input type="text" id="txtBairroParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="form-control">
+                            <input type="text" id="txtBairroParceiro" name="txtCidadeParceiro" placeholder="Informe seu Cidade" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -179,7 +185,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtEnderecoParceiro" class="form-label">Endereço</label><br>
-                            <input type="text" id="txtEnderecoParceiro" name="txtEnderecoParceiro" placeholder="Informe seu Endereço" class="form-control">
+                            <input type="text" id="txtEnderecoParceiro" name="txtEnderecoParceiro" placeholder="Informe seu Endereço" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -187,7 +193,7 @@
                         <div class="col-sm-2">
 
                             <label for="txtNumeroParceiro" class="form-label">Numero</label><br>
-                            <input type="text" id="txtNumeroParceiro" name="txtNumeroParceiro" placeholder="Nº de endereço" class="form-control">
+                            <input type="text" id="txtNumeroParceiro" name="txtNumeroParceiro" placeholder="Nº de endereço" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -195,7 +201,7 @@
                         <div class="col-sm-5">
 
                             <label for="txtComplementoParceiro" class="form-label">Complemento</label><br>
-                            <input type="text" id="txtComplementoParceiro" name="txtComplementoParceiro" placeholder="Informe seu Complemento" class="form-control">
+                            <input type="text" id="txtComplementoParceiro" name="txtComplementoParceiro" placeholder="Informe seu Complemento" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -206,7 +212,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtLoginParceiro" class="form-label">Login</label><br>
-                            <input type="text" id="txtLoginParceiro" name="txtLoginParceiro" placeholder="Informe seu Login" class="form-control">
+                            <input type="text" id="txtLoginParceiro" name="txtLoginParceiro" placeholder="Informe seu Login" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -214,7 +220,7 @@
                         <div class="col-sm-6">
 
                             <label for="txtSenhaParceiro" class="form-label">Senha</label><br>
-                            <input type="password" id="txtSenhaParceiro" name="txtSenhaParceiro" placeholder="Informe sua Senha" class="form-control">
+                            <input type="password" id="txtSenhaParceiro" name="txtSenhaParceiro" placeholder="Informe sua Senha" class="form-control inputBorder">
 
                             <br>
                         </div>
@@ -226,7 +232,7 @@
                         <div class="col-sm-1">
 
                         <label for="txtStatusParceiro" class="form-label">Status</label><br>
-                                <select name="txtStatusParceiro" id="txtStatusParceiro" class="form-control">
+                                <select name="txtStatusParceiro" id="txtStatusParceiro" class="form-control inputBorder">
                                     <option value="Ativo">Ativo</option>
 
                                     <option value="Inativo">Inativo</option>
@@ -244,7 +250,7 @@
                         <div class="col-sm-12">
 
                             <label for="txtObsParceiro" class="form-label">Observação</label><br>
-                            <textarea name="txtObsParceiro" id="txtObsParceiro" cols="30" rows="5" class="form-control"></textarea>
+                            <textarea name="txtObsParceiro" id="txtObsParceiro" cols="30" rows="5" class="form-control inputBorder"></textarea>
 
                                 <br>
                         </div>
