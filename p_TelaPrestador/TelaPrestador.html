@@ -11,6 +11,9 @@
         integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
 
     <title>Document</title>
+
+
+
 </head>
 
 <body style="background-color: #121212;">
@@ -39,7 +42,8 @@
 
                 <a id="Info" class="butaos" href="TelaPrestador.html?tela=Informacoes">Informações</a>
                 <a id="Portifolio" class=" butaos1" href="TelaPrestador.html?tela=Portifolio">Portifolio</a>
-                <a id="Avaliacoes" class=" butaos2" href="TelaPrestador.html?tela=Avaliacoes">Avaliações</a>
+                <button id="Avaliacoes" onclick="return" class=" btn butaos2"
+                    href="TelaPrestador.html?tela=Avaliacoes">Avaliações</button>
 
 
 
@@ -48,17 +52,46 @@
             <br>
             <br><br>
 
+            <script src="jquery-3.6.0.js"></script>
+            <script src="Telas.js"></script>
+
+            <script>
+
+                function teste() {
+                    console.log("Cliquei no botão btoCadastrar");
+                    const xhr = new XMLHttpRequest();
 
 
-            <div id="Resposta" class="Resposta"></div>
-            <div class="Resposta2">
-            </div>
+
+
+                    var formData = {
+                        titulo_avaliacoes: $("#inputtexto").val(),
+                        descricao_avaliacoes: $("#text_area").val(),
+                        estrelas_avaliacoes: document.querySelector('input[name="rating"]:checked').value,
+
+                    };
+
+                    formData = JSON.stringify(formData);
+                    xhr.onload = function () {
+                        const Resposta2 = document.getElementById("Resposta2");
+                        Resposta2.innerHTML = this.responseText;
+                    };
+
+                    xhr.open("POST", "CadastroAval.php", formData);
+                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                    xhr.send(formData);
+
+                    xhr.onreadystatechange = function () {
+                        console.log(formData);
+                    };
+                }
+            </script>
+
+            <div style="color: white" id="Resposta" class="Resposta"></div>
+
         </div>
     </div>
 
-    <script src="jquery-3.6.0.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="Telas.js"></script>
 </body>
 
 </html>

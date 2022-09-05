@@ -1,95 +1,89 @@
-console.log("Entrou na pagina js");
+//console.log("Entrou na pagina js");
 
-$(function () {
-	$(document).ready(function () {
-		$("#Info").click(function () {
-			console.log("tuplac");
+$("#Info").click(function () {
+	console.log("tuplac");
 
-			var tuplac = "Informacoes";
+	var tuplac = "Informacoes";
 
-			console.log(tuplac);
+	console.log(tuplac);
 
-			const xhr = new XMLHttpRequest();
+	const xhr = new XMLHttpRequest();
 
-			xhr.onload = function () {
-				const Resposta = document.getElementById("Resposta");
-				Resposta.innerHTML = this.responseText;
-			};
+	xhr.onload = function () {
+		const Resposta = document.getElementById("Resposta");
+		Resposta.innerHTML = this.responseText;
+	};
 
-			xhr.open("get", "telas.php?tela=" + tuplac);
-			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-			xhr.send();
+	xhr.open("get", "telas.php?tela=" + tuplac);
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send();
 
-			return false;
-		});
-	});
+	return false;
+});
 
-	$(document).ready(function () {
-		$("#Portifolio").click(function () {
-			console.log("tuplac");
+$("#Portifolio").click(function () {
+	console.log("tuplac");
 
-			var tuplac = "Portifolio";
+	var tuplac = "Portifolio";
 
-			console.log(tuplac);
+	console.log(tuplac);
 
-			const xhr = new XMLHttpRequest();
+	const xhr = new XMLHttpRequest();
 
-			xhr.onload = function () {
-				const Resposta = document.getElementById("Resposta");
-				Resposta.innerHTML = this.responseText;
-			};
+	xhr.onload = function () {
+		const Resposta = document.getElementById("Resposta");
+		Resposta.innerHTML = this.responseText;
+	};
 
-			xhr.open("get", "telas.php?tela=" + tuplac);
-			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-			xhr.send();
+	xhr.open("get", "telas.php?tela=" + tuplac);
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send();
 
-			return false;
-		});
-	});
+	return false;
+});
 
-	$(document).ready(function () {
-		$("#Avaliacoes").click(function () {
-			console.log("tuplac");
+$("#Avaliacoes").click(function () {
+	console.log("tuplac");
 
-			var tuplac = "Avaliacoes";
+	var tuplac = "Avaliacoes";
 
-			console.log(tuplac);
+	console.log(tuplac);
 
-			const xhr = new XMLHttpRequest();
+	const xhr = new XMLHttpRequest();
 
-			xhr.onload = function () {
-				const Resposta = document.getElementById("Resposta");
-				Resposta.innerHTML = this.responseText;
-			};
+	xhr.onload = function () {
+		const Resposta = document.getElementById("Resposta");
+		Resposta.innerHTML = this.responseText;
+	};
 
-			xhr.open("get", "telas.php?tela=" + tuplac);
-			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-			xhr.send();
+	xhr.open("post", "Avaliacao.js");
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send();
 
-			return false;
-		});
-	});
+	xhr.open("get", "telas.php?tela=" + tuplac);
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send();
 
-	$(document).ready(function () {
-		$("#Historico").click(function () {
-			console.log("tuplac");
+	return false;
+});
 
-			var tuplac = "Historico";
+$("#Historico").click(function () {
+	console.log("tuplac");
 
-			console.log(tuplac);
+	var tuplac = "Historico";
 
-			const xhr = new XMLHttpRequest();
+	console.log(tuplac);
 
-			xhr.onload = function () {
-				const Resposta = document.getElementById("Resposta");
-				Resposta.innerHTML = this.responseText;
-			};
+	const xhr = new XMLHttpRequest();
 
-			xhr.open("get", "telas.php?tela=" + tuplac);
-			xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-			xhr.send();
+	xhr.onload = function () {
+		const Resposta = document.getElementById("Resposta");
+		Resposta.innerHTML = this.responseText;
+	};
 
-			return false;
-		});
-	});
+	xhr.open("get", "telas.php?tela=" + tuplac);
+	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xhr.send();
+
+	return false;
 });
