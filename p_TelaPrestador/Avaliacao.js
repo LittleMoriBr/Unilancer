@@ -7,6 +7,8 @@ $(function () {
 			return false;
 		});
 
+		alert("asdsadasdsa");
+
 		$("#btoCadastrar").click(function () {
 			console.log("Cliquei no botão btoCadastrar");
 			const xhr = new XMLHttpRequest();

@@ -1,328 +1,514 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 .redondo {
-	border-radius: 150px;
-	margin-top: 150px;
-	margin-left: 35px;
-	z-index: 3;
+  border-radius: 150px;
+  margin-top: 150px;
+  margin-left: 35px;
+  z-index: 3;
 }
 .baixo {
-	z-index: 2;
-	position: relative;
+  z-index: 2;
+  position: relative;
 }
 
 a {
-	text-decoration: none;
-	color: black;
-	padding-top: 6px;
-	padding-left: 12px;
-	padding-right: 12px;
+  text-decoration: none;
+  color: black;
+  padding-top: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
-	color: #ff00b4;
+  text-decoration: none;
+  color: #ff00b4;
 }
 
 a:active {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .baixo2 {
-	z-index: -10;
-	position: relative;
+  z-index: -10;
+  position: relative;
 }
 
 .butaos {
-	position: absolute;
-	right: 10px;
-	z-index: 100;
+  position: absolute;
+  right: 10px;
+  z-index: 100;
 }
 
 .butaos1 {
-	position: absolute;
-	right: 110px;
+  position: absolute;
+  right: 110px;
 }
 
 .butaos2 {
-	position: absolute;
-	right: 190px;
+  position: absolute;
+  right: 190px;
 }
 
 .Icone {
-	position: absolute;
-	right: 30px;
-	top: 200px;
+  position: absolute;
+  right: 30px;
+  top: 200px;
 }
 
 .Icone2 {
-	position: absolute;
-	right: 80px;
-	top: 200px;
+  position: absolute;
+  right: 80px;
+  top: 200px;
 }
 
 .Icone3 {
-	position: absolute;
-	right: 130px;
-	top: 200px;
+  position: absolute;
+  right: 130px;
+  top: 200px;
 }
 
 .Icone4 {
-	position: absolute;
-	right: 180px;
-	top: 195px;
+  position: absolute;
+  right: 180px;
+  top: 195px;
 }
 
 .cliente {
-	margin-top: 25px;
-	border-radius: 50px;
+  margin-top: 25px;
+  border-radius: 50px;
+}
+
+.imgform {
+  width: 100px;
+  height: 100px;
 }
 
 .titulo {
-	margin-left: 20px;
-	color: white;
+  margin-left: 20px;
+  color: white;
 }
 
 .borda {
-	border: 2px solid;
-	border-color: white;
-	position: relative;
+  border: 2px solid;
+  border-color: white;
+  position: relative;
 
-	padding-top: 5px;
-	padding-bottom: 20px;
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 .texto {
-	color: white;
-	margin-left: 20px;
-	margin-top: -65px;
+  color: white;
+  margin-left: 20px;
+  margin-top: -65px;
 }
 
 textarea:focus,
 input:focus {
-	outline: none;
+  outline: none;
 }
 
 .inputtexto {
-	margin-left: 20px;
-	width: 100%;
-	border-color: #ff00b4 !important;
-	border-style: solid;
-	border-width: 0px 0px 1px 0px;
-	background-color: #121212;
+  margin-left: 20px;
+  width: 100%;
+  border-color: #ff00b4 !important;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  background-color: #121212;
 
-	color: #ffffff;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
-	body .btn-roxo {
-		position: absolute;
-		right: 10px;
-		top: 20px;
-	}
+  body .btn-roxo {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
 }
 
 @media (max-width: 995px) {
-	.imagemm {
-		-ms-flex: 0 0 100px;
-		flex: 0 0 100px;
-	}
+  .imagemm {
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+  }
 
-	.rate > label:before {
-		display: inline-block;
-		font-size: 1.5rem !important;
-		padding: 0.3rem 0.2rem;
-		margin: 0;
-		cursor: pointer;
-		font-family: FontAwesome;
-		content: "\f005 "; /* full star */
-	}
+  .rate > label:before {
+    display: inline-block;
+    font-size: 1.5rem !important;
+    padding: 0.3rem 0.2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+  }
 
-	body .btn-roxo {
-		position: absolute;
-		right: 10px;
-		top: 20px;
-	}
+  body .btn-roxo {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
 
-	.textao {
-		margin-left: 100px;
-		width: 80%;
-	}
+  .textao {
+    margin-left: 100px;
+    width: 80%;
+  }
 
-	.inputtexto {
-		margin-left: 18px;
-	}
+  .inputtexto {
+    margin-left: 18px;
+  }
 }
 
 @media (max-width: 767px) {
-	.imagemm {
-		-ms-flex: 0 0 100px;
-		flex: 0 0 100px;
-	}
+  .imagemm {
+    -ms-flex: 0 0 100px;
+    flex: 0 0 100px;
+  }
 
-	.estrelas {
-		-ms-flex: 0 0 200px;
-		flex: 0 0 200px;
-		position: absolute;
-		top: -80px;
-		left: 120px;
-	}
+  .estrelas {
+    -ms-flex: 0 0 200px;
+    flex: 0 0 200px;
+    position: absolute;
+    top: -80px;
+    left: 120px;
+  }
 
-	body .btn-roxo {
-		position: absolute;
-		top: 20px;
-		right: 20px;
-	}
+  body .btn-roxo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 
-	.inputtexto {
-		margin-left: 25px;
-	}
+  .inputtexto {
+    margin-left: 25px;
+  }
 
-	.textao {
-		margin-top: -25px;
-		margin-left: 100px;
-	}
+  .textao {
+    margin-top: -25px;
+    margin-left: 100px;
+  }
 }
 
 @media (max-width: 575px) {
-	.inputtexto {
-		margin-left: -0px;
-	}
+  .inputtexto {
+    margin-left: -0px;
+  }
 }
 
 @media (max-width: 520px) {
-	.textao {
-		margin-left: 100px;
-		width: 75%;
-	}
+  .textao {
+    margin-left: 100px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 460px) {
+  .inputtexto {
+    width: 150px;
+  }
+}
+
+@media (max-width: 424px) {
+  .imgform {
+    height: 50px;
+    width: 50px;
+  }
+
+  .inputtexto {
+    margin-left: -40px;
+    width: 120%;
+  }
+
+  .estrelas {
+    position: absolute;
+    top: -30px;
+    left: 60px;
+  }
+  .textao {
+    margin-left: -60px;
+    margin-top: 15px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 387px) {
+  .inputtexto {
+    width: 110%;
+  }
 }
 
 .estrela {
-	margin-top: -40px !important;
+  margin-top: -40px !important;
 }
 
 .banner_prestador {
-	position: relative;
+  position: relative;
 }
 
 .text_area {
-	width: 100%;
-	margin-left: 20px;
-	margin-top: -60px;
-	border-color: #ff00b4 !important;
-	border-style: solid;
-	border-width: 0px 0px 1px 0px;
-	background-color: #121212;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: -60px;
+  border-color: #ff00b4 !important;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  background-color: #121212;
 
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .estrela1 {
-	position: fixed;
-	width: 0px;
+  position: fixed;
+  width: 0px;
 }
 
 .estrelas {
-	position: relative;
+  position: relative;
 }
 
 .brancodaestrela {
-	color: rgb(230, 212, 226);
+  color: rgb(230, 212, 226);
 }
 
+.imgResposta {
+  width: 100px;
+  height: 100px;
+}
 .s1 {
-	position: absolute;
-	left: 10px;
+  position: absolute;
+  left: 10px;
 }
 
 .s2 {
-	position: absolute;
-	left: 40px;
+  position: absolute;
+  left: 40px;
 }
 
 .s3 {
-	position: absolute;
-	left: 70px;
+  position: absolute;
+  left: 70px;
 }
 
 .s4 {
-	position: absolute;
-	left: 100px;
+  position: absolute;
+  left: 100px;
 }
 
 .s5 {
-	position: absolute;
-	left: 130px;
+  position: absolute;
+  left: 130px;
 }
 
 .rate {
-	display: inline-block;
-	border: 0;
+  display: inline-block;
+  border: 0;
 }
 /* Hide radio */
 .rate > input {
-	display: none;
+  display: none;
 }
 /* Order correctly by floating highest to the right */
 .rate > label {
-	float: right;
+  float: right;
 }
 /* The star of the show */
 .rate > label:before {
-	display: inline-block;
-	font-size: 1.7rem;
-	padding: 0.3rem 0.2rem;
-	margin: 0;
-	cursor: pointer;
-	font-family: FontAwesome;
-	content: "\f005 "; /* full star */
+  display: inline-block;
+  font-size: 1.7rem;
+  padding: 0.3rem 0.2rem;
+  margin: 0;
+  cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f005 "; /* full star */
 }
 
 /* Half star trick */
 .rate .half:before {
-	content: "\f089 "; /* half star no outline */
-	position: absolute;
-	padding-right: 0;
+  content: "\f089 "; /* half star no outline */
+  position: absolute;
+  padding-right: 0;
 }
 /* Click + hover color */
-input:checked ~ label, /* color current and previous stars on checked */
-label:hover, label:hover ~ label {
-	color: #ff00b4;
+.rate input:checked ~ label, /* color current and previous stars on checked */
+.rate label:hover, .rate label:hover ~ label {
+  color: #ff00b4;
 } /* color previous stars on hover */
 
 /* Hover highlights */
-input:checked + label:hover, input:checked ~ label:hover, /* highlight current and previous stars */
-input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
-label:hover ~ input:checked ~ label /* highlight previous selected stars */ {
-	color: #ff00b4;
+.rate input:checked + label:hover,.rate  input:checked ~ label:hover, /* highlight current and previous stars */
+.rate input:checked ~ label:hover ~ label, /* highlight previous selected stars for new rating */
+.rate label:hover ~ input:checked ~ label /* highlight previous selected stars */ {
+  color: #ff00b4;
 }
 
 body .btn-roxo {
-	border-color: #ff00b4;
+  border-color: #ff00b4;
 
-	color: #ff00b4;
+  color: #ff00b4;
 }
 
 body .btn-roxo:hover,
 body .btn-roxo:focus {
-	border-color: #ff00b4;
+  border-color: #ff00b4;
 
-	background-color: #ff00b4;
+  background-color: #ff00b4;
 
-	color: #fff;
+  color: #fff;
 }
 
 body .btn-roxo:active,
 body .btn-roxo:visited,
 body .btn-roxo:active:focus,
 body .btn-roxo:active:hover {
-	border-color: #ff00b4;
+  border-color: #ff00b4;
 
-	background-color: #ff00b4;
+  background-color: #ff00b4;
 
-	color: #fff;
+  color: #fff;
+}
+
+.ResposEstrela {
+}
+
+.relativisandoavida {
+  position: relative;
+  overflow: hidden;
+}
+
+.rate2 {
+  display: inline-block;
+  border: 0;
+}
+/* Hide radio */
+.rate2 > input {
+  display: none;
+}
+/* Order correctly by floating highest to the right */
+.rate2 > label {
+  float: right;
+}
+/* The star of the show */
+.rate2 > label:before {
+  display: inline-block;
+  font-size: 1.7rem;
+  padding: 0.3rem 0.2rem;
+  margin: 0;
+  cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f005 "; /* full star */
+}
+
+/* Half star trick */
+.rate2 .half:before {
+  content: "\f089 "; /* half star no outline */
+  position: absolute;
+  padding-right: 0;
+}
+/* Click + hover color */
+.rate2 input:checked ~ label /* color current and previous stars on checked */ {
+  color: #ff00b4;
+} /* color previous stars on hover */
+
+@media (max-width: 1200px) {
+  .ResposTitulo {
+    margin-left: 30px;
+  }
+
+  .Respostexto {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .ResposTitulo {
+    margin-left: 60px;
+    font-size: 18pt !important;
+  }
+
+  .Respostexto {
+    margin-left: 60px;
+  }
+
+  .ResposEstrela {
+    margin-left: -20px;
+  }
+
+  .rate2 > label:before {
+    display: inline-block;
+    font-size: 1.5rem !important;
+    padding: 0.3rem 0.2rem;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+  }
+}
+
+@media (max-width: 767px) {
+  .imgResposta {
+    height: 80px;
+    width: 80px;
+  }
+
+  .ResposTitulo {
+    position: absolute;
+    top: 0px;
+  }
+
+  .ResposEstrela {
+    position: absolute;
+    top: 40px;
+    left: 130px;
+  }
+
+  .Respostexto {
+    margin-top: -20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .ResposTitulo {
+    position: absolute;
+    left: 55px;
+    text-overflow: ellipsis;
+  }
+
+  .ResposEstrela {
+    position: absolute;
+    top: 40px;
+    left: 130px;
+  }
+
+  .Respostexto {
+    margin-top: -20px;
+    margin-left: 100px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 424px) {
+  .imgResposta {
+    height: 50px;
+    width: 50px;
+  }
+
+  .ResposTitulo {
+    left: 15px;
+  }
+
+  .Respostexto {
+    margin-left: 60px;
+    margin-top: 10px;
+    width: 90%;
+  }
+
+  .ResposEstrela {
+    top: 40px;
+    left: 90px;
+  }
 }
