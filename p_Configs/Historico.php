@@ -27,7 +27,7 @@
                 try {
                     $sql = $conn->query("SELECT contrato.*, prestador.nome_prestador, prestador.sobrenome_prestador, prestador.atuacao_prestador, prestador.img_prestador FROM contrato
 inner JOIN prestador on contrato.id_prestador = prestador.id_prestador
-WHERE id_cliente = 2");
+WHERE id_cliente = 27");
 
                     foreach ($sql as $dados) {
 

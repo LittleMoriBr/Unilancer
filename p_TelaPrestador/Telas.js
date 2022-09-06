@@ -1,89 +1,85 @@
 //console.log("Entrou na pagina js");
 
 $("#Info").click(function () {
-	console.log("tuplac");
+  console.log("tuplac");
 
-	var tuplac = "Informacoes";
+  var tuplac = "Informacoes";
 
-	console.log(tuplac);
+  console.log(tuplac);
 
-	const xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
-	xhr.onload = function () {
-		const Resposta = document.getElementById("Resposta");
-		Resposta.innerHTML = this.responseText;
-	};
+  xhr.onload = function () {
+    const Resposta = document.getElementById("Resposta");
+    Resposta.innerHTML = this.responseText;
+  };
 
-	xhr.open("get", "telas.php?tela=" + tuplac);
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send();
+  xhr.open("get", "telas.php?tela=" + tuplac);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.send();
 
-	return false;
+  return false;
 });
 
 $("#Portifolio").click(function () {
-	console.log("tuplac");
+  console.log("tuplac");
 
-	var tuplac = "Portifolio";
+  var tuplac = "Portifolio";
 
-	console.log(tuplac);
+  console.log(tuplac);
 
-	const xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
-	xhr.onload = function () {
-		const Resposta = document.getElementById("Resposta");
-		Resposta.innerHTML = this.responseText;
-	};
+  xhr.onload = function () {
+    const Resposta = document.getElementById("Resposta");
+    Resposta.innerHTML = this.responseText;
+  };
 
-	xhr.open("get", "telas.php?tela=" + tuplac);
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send();
+  xhr.open("get", "telas.php?tela=" + tuplac);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.send();
 
-	return false;
+  return false;
 });
 
 $("#Avaliacoes").click(function () {
-	console.log("tuplac");
+  console.log("tuplac");
 
-	var tuplac = "Avaliacoes";
+  var tuplac = "Avaliacoes";
 
-	console.log(tuplac);
+  console.log(tuplac);
 
-	const xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
-	xhr.onload = function () {
-		const Resposta = document.getElementById("Resposta");
-		Resposta.innerHTML = this.responseText;
-	};
+  xhr.onload = function () {
+    const Resposta = document.getElementById("Resposta");
+    Resposta.innerHTML = this.responseText;
+  };
 
-	xhr.open("post", "Avaliacao.js");
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send();
+  xhr.open("get", "telas.php?tela=" + tuplac);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.send();
 
-	xhr.open("get", "telas.php?tela=" + tuplac);
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send();
-
-	return false;
+  return false;
 });
 
 $("#Historico").click(function () {
-	console.log("tuplac");
+  console.log("tuplac");
 
-	var tuplac = "Historico";
+  var tuplac = "Historico";
 
-	console.log(tuplac);
+  console.log(tuplac);
 
-	const xhr = new XMLHttpRequest();
+  const xhr = new XMLHttpRequest();
 
-	xhr.onload = function () {
-		const Resposta = document.getElementById("Resposta");
-		Resposta.innerHTML = this.responseText;
-	};
+  xhr.onload = function () {
+    const Resposta = document.getElementById("Resposta");
+    Resposta.innerHTML = this.responseText;
+  };
 
-	xhr.open("get", "telas.php?tela=" + tuplac);
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.send();
+  xhr.open("get", "telas.php?tela=" + tuplac);
+  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  xhr.send();
 
-	return false;
+  return false;
 });

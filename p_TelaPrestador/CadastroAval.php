@@ -4,7 +4,7 @@ include_once("controlesessao.php");
 
 $id_cliente = $usuarioLogadoID;
 $data = json_decode(file_get_contents('php://input'), true);
-$id_prestador = 10;
+$id_prestador = 27;
 
 extract($data);
 
