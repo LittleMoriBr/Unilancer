@@ -43,24 +43,26 @@ $("#Portifolio").click(function () {
 });
 
 $("#Avaliacoes").click(function () {
-  console.log("tuplac");
+  function Aval() {
+    console.log("tuplac");
 
-  var tuplac = "Avaliacoes";
+    var tuplac = "Avaliacoes";
 
-  console.log(tuplac);
+    console.log(tuplac);
 
-  const xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest();
 
-  xhr.onload = function () {
-    const Resposta = document.getElementById("Resposta");
-    Resposta.innerHTML = this.responseText;
-  };
+    xhr.onload = function () {
+      const Resposta = document.getElementById("Resposta");
+      Resposta.innerHTML = this.responseText;
+    };
 
-  xhr.open("get", "telas.php?tela=" + tuplac);
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  xhr.send();
+    xhr.open("get", "telas.php?tela=" + tuplac);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send();
 
-  return false;
+    return false;
+  }
 });
 
 $("#Historico").click(function () {

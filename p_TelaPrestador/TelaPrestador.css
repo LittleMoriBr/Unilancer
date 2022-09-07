@@ -371,9 +371,6 @@ body .btn-roxo:active:hover {
   color: #fff;
 }
 
-.ResposEstrela {
-}
-
 .relativisandoavida {
   position: relative;
   overflow: hidden;
@@ -511,4 +508,32 @@ body .btn-roxo:active:hover {
     top: 40px;
     left: 90px;
   }
+}
+
+.bordaa {
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.1s;
+}
+
+.bordaa:hover {
+  transition: 0.1s;
+  border-color: #ff00b4 !important;
+  border-width: 2px !important;
+  padding: 1px;
+
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #ff00b4;
+}
+
+::selection {
+  color: white;
+  background: #ff00b4;
 }

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="bla" action="">
+      <h1>1</h1>
+      <input
+        type="file"
+        class="inputBorder"
+        id="txtImg1"
+        name="txtImg1"
+        onchange="CarregarImg1(this)"
+      />
+
+      <div style="display: none">
+        <label for="base64Code1">Base 64</label>
+        <textarea
+          name="base64Code"
+          id="base64Code"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <h1>2</h1>
+      <input
+        type="file"
+        class="inputBorder"
+        id="txtImg2"
+        name="txtImg2"
+        onchange="CarregarImg2(this)"
+      />
+
+      <div style="display: none">
+        <label for="base64Code2">Base 64</label>
+        <textarea
+          name="base64Code"
+          id="base64Code"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <h1>3</h1>
+      <input
+        type="file"
+        class="inputBorder"
+        id="txtImg3"
+        name="txtImg3"
+        onchange="CarregarImg3(this)"
+      />
+
+      <div style="display: none">
+        <label for="base64Code3">Base 64</label>
+        <textarea
+          name="base64Code"
+          id="base64Code"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <h1>4</h1>
+      <input
+        type="file"
+        class="inputBorder"
+        id="txtImg4"
+        name="txtImg4"
+        onchange="CarregarImg4(this)"
+      />
+
+      <div style="display: none">
+        <label for="base64Code4">Base 64</label>
+        <textarea
+          name="base64Code"
+          id="base64Code"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <h1>5</h1>
+      <input
+        type="file"
+        class="inputBorder"
+        id="txtImg5"
+        name="txtImg5"
+        onchange="CarregarImg5(this)"
+      />
+
+      <div style="display: none">
+        <label for="base64Code5">Base 64</label>
+        <textarea
+          name="base64Code"
+          id="base64Code"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <h1>6</h1>
+      <input
+        type="file"
+        class="inputBorder"
+        id="txtImg6"
+        name="txtImg6"
+        onchange="CarregarImg6(this)"
+      />
+
+      <div style="display: none">
+        <label for="base64Code6">Base 64</label>
+        <textarea
+          name="base64Code"
+          id="base64Code"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+
+      <button id="enviar">Enviar</button>
+    </form>
+
+    <div id="Resposta" style="color: white" class="Resposta"></div>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+      $("#bla").submit(function () {
+        return false;
+      });
+
+      $(document).ready(function () {
+        $("#enviar").click(function () {
+          console.log("Cliquei no botão btoCadastrar");
+          const xhr = new XMLHttpRequest();
+          var formData = {
+            img1_portifolio: $("#txtImg1").val(),
+            img2_portifolio: $("#txtImg2").val(),
+            img3_portifolio: $("#txtImg3").val(),
+            img4_portifolio: $("#txtImg4").val(),
+            img5_portifolio: $("#txtImg5").val(),
+            img6_portifolio: $("#txtImg6").val(),
+          };
+
+          formData = JSON.stringify(formData);
+          xhr.onload = function () {
+            const Resposta = document.getElementById("Resposta");
+            Resposta.innerHTML = this.responseText;
+          };
+
+          xhr.open("POST", "improviso.php", formData);
+          xhr.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded"
+          );
+          xhr.send(formData);
+
+          xhr.onreadystatechange = function () {
+            console.log(formData);
+          };
+        });
+      });
+    </script>
+
+    <script>
+      function CarregarImg1(imagem) {
+        var file = document.getElementById("txtImg1").files[0];
+
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          var caminho = reader.result;
+
+          $("#base64Code1").val(caminho);
+        };
+      }
+    </script>
+
+    <script>
+      function CarregarImg2(imagem) {
+        var file = document.getElementById("txtImg2").files[0];
+
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          var caminho = reader.result;
+
+          $("#base64Code2").val(caminho);
+        };
+      }
+    </script>
+
+    <script>
+      function CarregarImg3(imagem) {
+        var file = document.getElementById("txtImg3").files[0];
+
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          var caminho = reader.result;
+
+          $("#base64Code3").val(caminho);
+        };
+      }
+    </script>
+
+    <script>
+      function CarregarImg4(imagem) {
+        var file = document.getElementById("txtImg4").files[0];
+
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          var caminho = reader.result;
+          p;
+          $("#base64Code4").val(caminho);
+        };
+      }
+    </script>
+
+    <script>
+      function CarregarImg5(imagem) {
+        var file = document.getElementById("txtImg5").files[0];
+
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          var caminho = reader.result;
+
+          $("#base64Code5").val(caminho);
+        };
+      }
+    </script>
+
+    <script>
+      function CarregarImg6(imagem) {
+        var file = document.getElementById("txtImg6").files[0];
+
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+          var caminho = reader.result;
+
+          $("#base64Code6").val(caminho);
+        };
+      }
+    </script>
+  </body>
+</html>
