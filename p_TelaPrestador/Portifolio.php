@@ -40,22 +40,31 @@
 
                 echo   '<!--2 e 3-->';
                 echo     '<div class="row mt-3">';
-                echo        '<div class="col border setembrochove"></div>';
-                echo        '<div class="col border setembrochove"></div>';
-                echo    '</div>';
+                echo        '<div class="col border setembrochove">';
+                 echo          '<img src="'.$img2.'" alt="">';
+                echo           '</div>';
+                echo        '<div class="col border setembrochove">';
+                 echo          '<img src="'.$img3.'" alt="">';
+                echo           '</div>';
 
 
                 echo ' <!--4, 5 e 6-->';
                 echo     '<div class="row mt-4">';
                 echo       ' <div class="col espacin border segundou">';
-                echo             '<div class="div border segundou"></div>';
+                echo             '<div class="div border segundou">';
+                echo                '<img src="'.$img4.'" alt="">';
+                echo              '</div>';
                 echo        '</div>';
-                echo        '<div class="col espacin border segundou">';
-                echo           '<div class="div border segundou"></div>';
-                echo       '</div>';
-                echo        '<div class="col espacin border segundou">';
-                echo            '<div class="div border segundou"></div>';
-                echo         '</div>';
+                echo        ' <div class="col espacin border segundou">';
+                echo             '<div class="div border segundou">';
+                echo                '<img src="'.$img5.'" alt="">';
+                echo              '</div>';
+                echo        '</div>';
+                echo        ' <div class="col espacin border segundou">';
+                echo             '<div class="div border segundou">';
+                echo                '<img src="'.$img6.'" alt="">';
+                echo              '</div>';
+                echo        '</div>';
                 echo     '</div>';
 
                     

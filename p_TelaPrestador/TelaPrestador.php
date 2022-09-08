@@ -16,18 +16,25 @@
     <title>Document</title>
   </head>
 
+  <?php   ?>
+
   <body style="background-color: #121212">
     <div class="container">
       <div class="row">
         <div style="height: 250px" class="col-sm-12 bg-dark banner_prestador">
-          <img
-            class="redondo"
-            height="220px"
-            width="220px"
-            src="img/ratatouille.jpg"
-            alt=""
-          />
 
+          <?php 
+          include_once("conexao.php");
+          try{
+            $sql = $conn->query("select * from prestador where id_prestador = 27");
+              foreach ($sql as $dados) {
+                echo  '<img class="redondo" height="220px" width="220px" src="'.$dados['img_prestador'].'" alt="" />';
+              }
+          }catch (PDOException $e) {
+
+                            echo $e->getMessage();
+                        }
+          ?>
           <img
             class="Icone"
             src="https://img.icons8.com/fluency-systems-regular/38/ffffff/instagram-new--v1.png"
@@ -59,14 +66,14 @@
             href="TelaPrestador.html?tela=Portifolio"
             >Portifolio</a
           >
-          <button
+          <a
             id="Avaliacoes"
-            onclick="Aval();"
-            class="btn butaos2"
+            onclick="Aval(); return false;"
+            class="butaos2"
             href="TelaPrestador.html?tela=Avaliacoes"
           >
             Avaliações
-          </button>
+          </a>
         </div>
         <br /><br />
         <br />

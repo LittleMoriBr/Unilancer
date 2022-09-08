@@ -31,6 +31,7 @@ WHERE id_cliente = 27");
 
                     foreach ($sql as $dados) {
 
+                       
 
                         echo   '<div class="row border b-1 pb-4 rounded bordaa">';
                         echo      ' <div class="col-sm-2 pt-4 ">';

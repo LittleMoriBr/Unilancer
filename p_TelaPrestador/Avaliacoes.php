@@ -10,11 +10,27 @@
   </head>
 
   <body>
+
+  <?php
+   include_once("conexao.php");
+    include_once("controlesessao.php"); 
+    ?>
     <div class="container mt-3 mb-3">
       <form id="valval" action="" onsubmit="return false;">
         <div class="row border borda">
           <div class="col-sm-1 imagemm">
-            <img class="cliente imgform" src="img/ratatouille.jpg" alt="" />
+            <?php 
+          
+          try{
+            $sql = $conn->query("select * from cliente where id_cliente =". $usuarioLogadoID);
+              foreach ($sql as $dados) {
+                echo  '<img class="cliente imgform" src="'.$dados['img_cliente'].'" alt="" />';
+              }
+          }catch (PDOException $e) {
+
+                            echo $e->getMessage();
+                        }
+          ?>
           </div>
 
           <div class="col-6 mt-4">
@@ -116,8 +132,7 @@
 
     <?php 
 
-    include_once("conexao.php");
-    include_once("controlesessao.php");
+    
 
     $id_cliente = $usuarioLogadoID;
 

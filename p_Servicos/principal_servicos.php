@@ -31,6 +31,8 @@
 
         $sql = $conn->query("select * from prestador");
 
+
+        
         foreach ($sql as $dados) {
           echo '<div class="border">';
           echo '<div class="col-sm-3 m-3">';

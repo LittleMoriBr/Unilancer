@@ -4,11 +4,35 @@
   border-radius: 150px;
   margin-top: 150px;
   margin-left: 35px;
+  height: 220px;
+  width: 220px;
   z-index: 3;
 }
 .baixo {
-  z-index: 2;
+  z-index: 0;
   position: relative;
+}
+
+@media (max-width: 767px) {
+  .redondo {
+    margin-top: 170px;
+    height: 190px;
+    width: 190px;
+  }
+}
+
+@media (max-width: 545px) {
+  .redondo {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 515px) {
+  .redondo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
 
 a {
