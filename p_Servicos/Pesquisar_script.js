@@ -20,7 +20,7 @@ $(function () {
                 Resposta.innerHTML = this.responseText;
             };
 
-            xhr.open("POST", "Pesquisar_Servico.php", formData);
+            xhr.open("POST", "PesquisarTodos_Servico.php", formData);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.send(formData);
 

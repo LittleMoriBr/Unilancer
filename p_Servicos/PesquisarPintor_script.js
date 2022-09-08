@@ -7,7 +7,7 @@ $(function () {
 
     $(document).ready(function () {
         $("#Pintor2").click(function () {
-            console.log("Cliquei no botão Fotografo");
+            console.log("Cliquei no botão Pitores");
             const xhr = new XMLHttpRequest();
 
             var formData = {

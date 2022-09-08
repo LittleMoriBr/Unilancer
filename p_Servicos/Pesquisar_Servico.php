@@ -34,15 +34,20 @@
 
                         foreach ($sql as $dados) {
 
-                            echo '<div class="col-sm-4 m-3  ">';
+                            echo '<div class="col-sm-4 m-4  ">';
+                            echo '<div class="row">';
                             echo '<img class="tamanho" src="' . $dados['img_prestador'] . '">';
+                            echo '<div class="col-sm-4">';
+                            echo '<button type="submit" class="btn btn cor" formaction="">Contrate</button>';
+                            echo '</div>';
+                            echo '</div>';
                             echo '</div>';
                             echo '<div class="col-sm-8 m-3 ">';
                             echo '<div class="row">';
 
                             echo '<p class="name-pesquisa">' . $dados['nome_prestador'] . '</p>';
                             echo '<div class="col-sm-4">';
-                            echo '<button type="submit" class="btn btn cor" formaction="">Contrate</button>';
+                            
                             echo '<p class="t"></p>';
 
                             echo "</div>";
